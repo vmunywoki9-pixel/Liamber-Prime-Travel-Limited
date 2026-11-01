@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn about Liamber Prime Travels Limited, a Nairobi-based travel company offering Kenya safaris, wildlife adventures, cultural experiences and tailor-made holidays.">
+<title>About Us | Liamber Prime Travels Limited</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+:root {
+  --navy:#17242b;
+  --green:#173d30;
+  --deep-green:#102d24;
+  --orange:#e99a32;
+  --gold:#efbd60;
+  --cream:#f8f6f0;
+  --ink:#252b28;
+  --muted:#68736d;
+  --line:#e9e8e2;
+  --heading:"Playfair Display",Georgia,serif;
+  --body:"DM Sans",Arial,sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);line-height:1.7}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%}
+.container{width:min(1160px,92%);margin:auto}
+.section{padding:80px 0}
+
+h1,h2,h3{font-family:var(--heading);line-height:1.2;font-weight:600}
+
+.eyebrow{
+  color:#b97927;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  display:inline-block;
+  margin-bottom:12px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:12px 21px;
+  font-size:12px;
+  font-weight:700;
+  transition:.25s;
+}
+
+.btn-orange{background:var(--orange);color:#1c211e}
+.btn-orange:hover{background:var(--gold)}
+.btn-green{background:var(--green);color:white}
+.btn-green:hover{background:#245641}
+.btn-outline{border:1px solid white;color:white}
+
+/* HEADER */
+.site-header{
+  position:relative;
+  z-index:10;
+  background:rgba(20,34,39,.98);
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.navbar{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{display:flex;align-items:center;gap:11px}
+.brand img{
+  width:57px;height:57px;object-fit:contain;
+  background:white;border-radius:50%;
+}
+.brand-name{color:white;line-height:1.15}
+.brand-name strong{
+  display:block;font-family:var(--heading);font-size:17px;
+}
+.brand-name span{
+  display:block;color:#d9b37a;font-size:10px;
+  letter-spacing:1.4px;text-transform:uppercase;
+}
+
+.nav-links{display:flex;align-items:center;gap:21px}
+.nav-links a{color:white;font-size:11px;font-weight:600}
+.nav-links a:hover{color:var(--gold)}
+.nav-links .nav-book{
+  background:var(--orange);color:#17221e;padding:11px 18px;
+}
+.menu-toggle{
+  display:none;background:none;border:0;color:white;
+  font-size:24px;cursor:pointer;
+}
+
+/* PAGE HERO */
+.page-hero{
+  position:relative;
+  min-height:440px;
+  display:flex;
+  align-items:center;
+  color:white;
+  background:
+    linear-gradient(90deg,rgba(9,22,19,.86),rgba(9,22,19,.35)),
+    url("images/about-hero.jpg") center/cover no-repeat;
+}
+
+.page-hero-content{max-width:720px;padding:85px 0}
+.page-hero h1{font-size:clamp(42px,6vw,65px);margin-bottom:18px}
+.page-hero h1 span{color:var(--gold)}
+.page-hero p{max-width:600px;color:rgba(255,255,255,.87);font-size:15px}
+.breadcrumbs{font-size:11px;margin-bottom:22px;color:#e8c38b}
+.breadcrumbs a{color:white}
+
+/* INTRODUCTION */
+.intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+.intro-image{height:480px;overflow:hidden}
+.intro-image img{height:100%;object-fit:cover}
+.intro-copy h2{font-size:39px;color:var(--green);margin-bottom:18px}
+.intro-copy p{font-size:14px;color:var(--muted);margin-bottom:15px}
+
+/* MISSION AND VISION */
+.mission-section{background:var(--cream)}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.mission-card{
+  background:white;padding:35px;border:1px solid var(--line);
+}
+.mission-card .icon{
+  color:#b97927;font-size:27px;margin-bottom:17px;
+}
+.mission-card h3{font-size:25px;color:var(--green);margin-bottom:12px}
+.mission-card p{font-size:13px;color:var(--muted)}
+
+/* VALUES */
+.values-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:25px;
+}
+.value-card{text-align:center;padding:20px 10px}
+.value-card i{font-size:26px;color:#b97927;margin-bottom:15px}
+.value-card h3{
+  font-family:var(--body);font-size:15px;color:var(--green);
+  margin-bottom:8px;
+}
+.value-card p{font-size:12px;color:var(--muted)}
+
+/* EXPERIENCE */
+.experience-section{background:var(--deep-green);color:white}
+.experience-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;
+}
+.experience-grid h2{font-size:37px;margin-bottom:17px}
+.experience-grid p{color:rgba(255,255,255,.77);font-size:14px;margin-bottom:20px}
+.experience-image{height:390px;overflow:hidden}
+.experience-image img{height:100%;object-fit:cover}
+
+/* SERVICES */
+.services-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.service-card{
+  padding:25px;background:var(--cream);
+  border-bottom:3px solid var(--orange);
+}
+.service-card i{font-size:24px;color:#b97927;margin-bottom:15px}
+.service-card h3{font-size:21px;color:var(--green);margin-bottom:9px}
+.service-card p{font-size:13px;color:var(--muted);margin-bottom:13px}
+
+/* CTA */
+.cta{
+  background:linear-gradient(rgba(15,48,36,.92),rgba(15,48,36,.92)),
+  url("images/booking-cta.jpg") center/cover;
+  text-align:center;color:white;padding:75px 20px;
+}
+.cta h2{font-size:clamp(30px,4vw,43px);margin-bottom:13px}
+.cta p{max-width:650px;margin:0 auto 24px;font-size:14px;color:rgba(255,255,255,.8)}
+.cta-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+
+/* FOOTER */
+.site-footer{background:#10271f;color:white;padding:60px 0 0}
+.footer-grid{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.2fr;
+  gap:28px;padding-bottom:40px;
+}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:15px}
+.footer-brand img{width:52px;height:52px;object-fit:contain;background:white;border-radius:50%}
+.footer-brand strong{font-family:var(--heading);font-size:16px}
+.footer-column h3{
+  font-family:var(--body);font-size:13px;color:var(--gold);margin-bottom:15px
+}
+.footer-column p,.footer-column a{font-size:11px;color:rgba(255,255,255,.72)}
+.footer-column p{margin-bottom:12px}
+.footer-column ul{list-style:none}
+.footer-column li{margin-bottom:9px}
+.footer-column a:hover{color:var(--gold)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.13);
+  padding:18px 0;display:flex;justify-content:space-between;
+  color:rgba(255,255,255,.6);font-size:10px;gap:15px;
+}
+.footer-social{display:flex;gap:15px}
+.whatsapp-float{
+  position:fixed;right:22px;bottom:22px;z-index:50;
+  width:53px;height:53px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:#25d366;color:white;font-size:27px;
+  box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+/* RESPONSIVE */
+@media(max-width:1050px){
+  .nav-links{gap:12px}
+  .nav-links a{font-size:10px}
+  .footer-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:800px){
+  .menu-toggle{display:block}
+  .nav-links{
+    display:none;position:absolute;top:82px;left:0;width:100%;
+    background:var(--navy);padding:18px 5%;
+    flex-direction:column;align-items:stretch;gap:0;
+  }
+  .nav-links.show{display:flex}
+  .nav-links a{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  .nav-links .nav-book{text-align:center;margin-top:10px}
+  .intro-grid,.experience-grid{grid-template-columns:1fr;gap:30px}
+  .intro-image{height:350px}
+  .mission-grid{grid-template-columns:1fr 1fr}
+  .values-grid{grid-template-columns:1fr 1fr}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:520px){
+  .section{padding:60px 0}
+  .brand img{width:48px;height:48px}
+  .brand-name strong{font-size:14px}
+  .page-hero{min-height:390px}
+  .page-hero-content{padding:65px 0}
+  .mission-grid,.services-grid{grid-template-columns:1fr}
+  .intro-copy h2,.experience-grid h2{font-size:31px}
+  .experience-image{height:290px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:25px 15px}
+  .footer-grid .footer-column:first-child,
+  .footer-grid .footer-column:last-child{grid-column:1/-1}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="images/liamber-logo.png" alt="Liamber Prime Travels Limited logo">
+      <div class="brand-name">
+        <strong>LIAMBER PRIME</strong>
+        <span>Travels Limited</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="safaris.html">Kenya Safaris</a>
+      <a href="excursions.html">Experiences</a>
+      <a href="packages.html">Packages</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-book" href="contact.html#booking">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- PAGE INTRODUCTION -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a> / About Us
+    </div>
+    <span class="eyebrow">Get to know us</span>
+    <h1>Discover the Story Behind <span>Liamber Prime</span></h1>
+    <p>
+      We are passionate about helping travellers discover Kenya through
+      memorable safaris, inspiring destinations and meaningful travel experiences.
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT THE COMPANY -->
+<section class="section">
+  <div class="container intro-grid">
+    <div class="intro-image">
+      <img src="images/about-company.jpg" alt="Kenyan safari landscape">
+    </div>
+
+    <div class="intro-copy">
+      <span class="eyebrow">Who we are</span>
+      <h2>Travel Beyond the Ordinary</h2>
+      <p>
+        Liamber Prime Travels Limited is a travel company based in Nairobi, Kenya,
+        focused on helping travellers explore the country's remarkable destinations.
+      </p>
+      <p>
+        From the wildlife-rich plains of the Maasai Mara to the elephant country
+        of Amboseli, the wilderness of Tsavo and the beautiful Kenyan coast,
+        we aim to make discovering Kenya an enjoyable and well-planned experience.
+      </p>
+      <p>
+        We offer safari arrangements, holiday packages, excursions and
+        tailor-made travel experiences designed around each traveller's interests,
+        schedule and preferences.
+      </p>
+      <a href="safaris.html" class="btn btn-orange">Explore Our Safaris <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION AND VISION -->
+<section class="section mission-section">
+  <div class="container">
+    <div class="section-heading" style="text-align:center;margin-bottom:35px">
+      <span class="eyebrow">Our direction</span>
+      <h2 style="font-size:38px;color:var(--green)">What Guides Us</h2>
+    </div>
+
+    <div class="mission-grid">
+      <article class="mission-card">
+        <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Our Mission</h3>
+        <p>
+          To create enjoyable and memorable travel experiences by connecting
+          travellers with Kenya's wildlife, landscapes, cultures and destinations
+          through thoughtful travel planning and personalised service.
+        </p>
+      </article>
+
+      <article class="mission-card">
+        <div class="icon"><i class="fa-regular fa-eye"></i></div>
+        <h3>Our Vision</h3>
+        <p>
+          To grow as a trusted travel company recognised for inspiring journeys,
+          quality travel experiences and a passion for showcasing Kenya and
+          the wider East African region.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY VALUES -->
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">What matters to us</span>
+      <h2>Our Values</h2>
+      <p>The principles that shape how we plan journeys and serve our travellers.</p>
+    </div>
+
+    <div class="values-grid">
+      <article class="value-card">
+        <i class="fa-solid fa-handshake"></i>
+        <h3>Integrity</h3>
+        <p>Clear communication and honest information throughout the planning process.</p>
+      </article>
+
+      <article class="value-card">
+        <i class="fa-solid fa-star"></i>
+        <h3>Quality</h3>
+        <p>Attention to the details that help make every journey enjoyable.</p>
+      </article>
+
+      <article class="value-card">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Personal Service</h3>
+        <p>Listening to each traveller's interests and individual travel needs.</p>
+      </article>
+
+      <article class="value-card">
+        <i class="fa-solid fa-leaf"></i>
+        <h3>Responsible Travel</h3>
+        <p>Encouraging respect for wildlife, local communities and natural environments.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- OUR APPROACH -->
+<section class="section experience-section">
+  <div class="container experience-grid">
+    <div>
+      <span class="eyebrow">Our approach to travel</span>
+      <h2>Every Journey Begins with Your Story</h2>
+      <p>
+        We believe that travel should reflect the people taking the journey.
+        Some travellers want an exciting wildlife safari, others prefer a
+        relaxing coastal holiday, while some want to experience a little of everything.
+      </p>
+      <p>
+        Our approach begins by understanding your dates, group size, interests
+        and preferred travel style. From there, we can discuss a suitable itinerary
+        and provide a proposal for your consideration.
+      </p>
+      <a href="contact.html#booking" class="btn btn-orange">Start Planning Your Trip</a>
+    </div>
+
+    <div class="experience-image">
+      <img src="images/about-experience.jpg" alt="Safari vehicle exploring Kenya">
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE OFFER -->
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Explore with us</span>
+      <h2>Travel Experiences We Offer</h2>
+      <p>Discover different ways to experience Kenya and beyond.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <i class="fa-solid fa-binoculars"></i>
+        <h3>Wildlife Safaris</h3>
+        <p>Discover Kenya's national parks and reserves through guided safari journeys.</p>
+        <a class="text-link" href="safaris.html">Explore safaris →</a>
+      </article>
+
+      <article class="service-card">
+        <i class="fa-solid fa-umbrella-beach"></i>
+        <h3>Beach Holidays</h3>
+        <p>Enjoy Kenya's coast, beautiful beaches and relaxing holiday experiences.</p>
+        <a class="text-link" href="beach-holidays.html">Explore holidays →</a>
+      </article>
+
+      <article class="service-card">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <h3>Day Trips & Excursions</h3>
+        <p>Discover local attractions and experiences through shorter journeys.</p>
+        <a class="text-link" href="excursions.html">Explore excursions →</a>
+      </article>
+
+      <article class="service-card">
+        <i class="fa-solid fa-suitcase-rolling"></i>
+        <h3>Tailor-made Packages</h3>
+        <p>Discuss a personalised itinerary based on your time and travel preferences.</p>
+        <a class="text-link" href="packages.html">View packages →</a>
+      </article>
+
+      <article class="service-card">
+        <i class="fa-solid fa-plane"></i>
+        <h3>Travel Arrangements</h3>
+        <p>Enquire about flight, hotel and other travel arrangements for your trip.</p>
+        <a class="text-link" href="contact.html">Make an enquiry →</a>
+      </article>
+
+      <article class="service-card">
+        <i class="fa-solid fa-globe"></i>
+        <h3>International Tours</h3>
+        <p>Contact our team to discuss travel opportunities beyond Kenya.</p>
+        <a class="text-link" href="international-tours.html">Explore tours →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow">Let's explore together</span>
+    <h2>Your Next Adventure Starts Here</h2>
+    <p>
+      Tell us where you would like to go, when you would like to travel
+      and the experience you have in mind. Let's start planning.
+    </p>
+    <div class="cta-buttons">
+      <a class="btn btn-orange" href="contact.html#booking">Plan Your Journey <i class="fa-solid fa-arrow-right"></i></a>
+      <a class="btn btn-outline" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-column">
+        <div class="footer-brand">
+          <img src="images/liamber-logo.png" alt="Liamber Prime logo">
+          <strong>LIAMBER PRIME<br>TRAVELS LIMITED</strong>
+        </div>
+        <p>
+          Discover Kenya through wildlife safaris, coastal holidays,
+          cultural experiences and tailor-made journeys.
+        </p>
+        <p><strong>Explore. Experience. Enjoy.</strong></p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="safaris.html">Kenya Safaris</a></li>
+          <li><a href="packages.html">Safari Packages</a></li>
+          <li><a href="excursions.html">Day Trips</a></li>
+          <li><a href="beach-holidays.html">Beach Holidays</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Travel Information</h3>
+        <ul>
+          <li><a href="flight-booking.html">Flight Booking</a></li>
+          <li><a href="hotel-booking.html">Hotel Booking</a></li>
+          <li><a href="transfers.html">Airport Transfers</a></li>
+          <li><a href="corporate-travel.html">Corporate Travel</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+254721116715">+254 721 116 715</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/254721116715">WhatsApp Us</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Liamber Prime Travels Limited. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/254721116715" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:chirchirkb@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+   target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("show");
+  menuToggle.setAttribute("aria-expanded", open);
+  menuToggle.innerHTML = open
+    ? '<i class="fa-solid fa-xmark"></i>'
+    : '<i class="fa-solid fa-bars"></i>';
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("show");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
