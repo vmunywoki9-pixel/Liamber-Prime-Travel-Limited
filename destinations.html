@@ -4,166 +4,173 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Explore Kenya's famous safari destinations, coastal towns, marine parks, cultural heritage and natural attractions with Liamber Prime Travels Limited.">
-<meta name="theme-color" content="#123d32">
-<title>Kenya Destinations | Liamber Prime Travels Limited</title>
+<title>Kenya Safari & Coastal Destinations | Liamber Prime Travels</title>
+<meta name="description" content="Discover Kenya's top safari and coastal destinations with Liamber Prime Travels Limited. Explore Maasai Mara, Amboseli, Tsavo, Watamu, Diani, Malindi and more.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <style>
 :root{
---green:#123d32;
---green2:#1c5948;
---gold:#c49a42;
---cream:#f7f5ef;
---ink:#202b27;
---muted:#68736d;
---line:#e8e5dc;
+ --green:#123d32;
+ --green2:#1c5948;
+ --gold:#c49a42;
+ --cream:#f7f5ef;
+ --text:#26352f;
+ --muted:#6e7973;
+ --white:#fff;
+ --border:#e9e8e1;
+ --shadow:0 10px 30px rgba(18,61,50,.09);
 }
-*{box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);line-height:1.7}
+body{font-family:'DM Sans',sans-serif;color:var(--text);line-height:1.65;background:#fff}
 a{text-decoration:none;color:inherit}
-img{max-width:100%;display:block}
-.container{width:min(1160px,calc(100% - 40px));margin:auto}
+img{display:block;width:100%;object-fit:cover}
+.container{width:min(1160px,92%);margin:auto}
 
-.topbar{background:var(--green);color:#eaf0eb;font-size:13px}
-.topbar .container{display:flex;justify-content:space-between;align-items:center;padding:9px 0;gap:15px}
-.topbar i{color:#e2bd70;margin-right:6px}
-.topbar a{margin-left:18px}
+.topbar{background:var(--green);color:#fff;padding:9px 0;font-size:12px}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.topbar a{color:#fff}
 
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid #eee;backdrop-filter:blur(12px)}
-.nav-wrap{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;min-width:220px}
-.brand img{width:58px;height:58px;object-fit:contain}
-.brand-name{font-family:"Playfair Display",serif;font-size:19px;font-weight:700;color:var(--green);line-height:1.15}
-.brand-name small{display:block;font:600 9px "DM Sans",sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-top:5px}
-nav{display:flex;align-items:center;gap:22px;font-size:13px;font-weight:700}
+header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 3px 18px rgba(0,0,0,.06)}
+.navbar{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;min-width:190px}
+.brand img{width:66px;height:66px;object-fit:contain}
+.brand strong{font-family:'Playfair Display',serif;color:var(--green);font-size:19px;line-height:1.15}
+.brand small{display:block;font-size:9px;letter-spacing:2px;color:var(--gold);font-weight:700;margin-top:5px}
+nav{display:flex;align-items:center;gap:22px}
+nav a{font-size:13px;font-weight:700;color:#34443c;transition:.2s}
 nav a:hover,nav a.active{color:var(--gold)}
-.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;background:var(--gold);color:#17251e;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;border:1px solid var(--gold);transition:.25s}
-.nav-cta:hover,.btn:hover{background:#ad8330;color:white;transform:translateY(-2px)}
-.menu-toggle{display:none;background:none;border:0;font-size:24px;color:var(--green)}
+.nav-cta{background:var(--green);color:#fff!important;padding:12px 19px;border-radius:3px}
+.menu-toggle{display:none;background:none;border:0;color:var(--green);font-size:24px}
 
 .hero{
-min-height:440px;
-display:flex;
-align-items:center;
-color:white;
-background:linear-gradient(90deg,rgba(7,35,27,.84),rgba(7,35,27,.35)),url("destinations-hero.jpg") center/cover no-repeat;
+ min-height:440px;
+ background:linear-gradient(90deg,rgba(8,35,28,.83),rgba(8,35,28,.22)),url('destinations-hero.jpg') center/cover;
+ display:flex;align-items:center;color:#fff;
 }
-.hero-content{padding:85px 0;max-width:760px}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase}
-.eyebrow:before{content:"";width:34px;height:1px;background:currentColor}
-h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.17;margin:0 0 17px}
-h1{font-size:clamp(42px,6vw,68px);margin-top:18px}
-.hero p{font-size:17px;color:#edf1ed;max-width:620px}
-.breadcrumb{font-size:12px;color:#e5e9e5;margin-top:25px}
-.breadcrumb a{color:#f1cc7a}
+.hero-content{padding:75px 0;max-width:720px}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:3px;color:var(--gold);font-weight:800}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(38px,5.4vw,64px);line-height:1.12;margin:15px 0}
+.hero p{font-size:16px;max-width:620px;color:#f2f3ee}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:3px;font-weight:800;font-size:12px;letter-spacing:.3px;transition:.2s;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-outline{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn:hover{transform:translateY(-2px);filter:brightness(.96)}
 
-section{padding:82px 0}
-.section-heading{text-align:center;max-width:760px;margin:0 auto 42px}
-.section-heading h2{font-size:clamp(32px,4vw,46px);color:var(--green);margin:13px 0}
-.section-heading p{color:var(--muted);margin:0}
-.intro{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
-.intro img{width:100%;height:410px;object-fit:cover}
-.intro h2{font-size:clamp(32px,4vw,44px);color:var(--green);margin:13px 0 18px}
-.intro p{color:var(--muted)}
-.cream{background:var(--cream)}
+.trust-strip{background:var(--cream);padding:18px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:center}
+.trust-item{font-size:12px;font-weight:700;color:var(--green)}
+.trust-item i{color:var(--gold);margin-right:7px}
 
-.category-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:0 auto 38px}
-.category-links a{padding:10px 19px;border:1px solid #d9d5c9;background:white;font-size:12px;font-weight:700;color:var(--green);transition:.2s}
-.category-links a:hover{background:var(--green);color:white;border-color:var(--green)}
+.section{padding:76px 0}
+.section.soft{background:var(--cream)}
+.section-head{text-align:center;max-width:730px;margin:0 auto 38px}
+.section-head h2{font-family:'Playfair Display',serif;color:var(--green);font-size:clamp(29px,4vw,42px);line-height:1.2;margin:10px 0}
+.section-head p{font-size:14px;color:var(--muted)}
 
-.destination-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.destination-card{background:white;box-shadow:0 8px 28px rgba(0,0,0,.055);overflow:hidden;transition:.3s}
-.destination-card:hover{transform:translateY(-6px);box-shadow:0 15px 35px rgba(0,0,0,.12)}
-.destination-image{height:245px;position:relative;overflow:hidden;background:#ddd}
-.destination-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.destination-card:hover .destination-image img{transform:scale(1.06)}
-.destination-tag{position:absolute;top:17px;left:17px;background:var(--gold);color:#17251e;padding:7px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
-.destination-content{padding:25px}
-.destination-content h3{font-size:24px;color:var(--green);margin-bottom:10px}
-.destination-content p{font-size:13px;color:var(--muted);margin:0 0 17px}
-.destination-link{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px}
-.destination-link i{color:var(--gold)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.intro-grid img{height:360px;border-radius:4px}
+.intro-copy h2{font:700 35px/1.2 'Playfair Display';color:var(--green);margin:12px 0 16px}
+.intro-copy p{font-size:14px;color:var(--muted);margin-bottom:15px}
 
-.coastal-intro{max-width:760px;margin:0 auto 38px;text-align:center;color:var(--muted)}
-.coastal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.coastal-card{position:relative;height:230px;overflow:hidden;background:#ddd;color:white}
-.coastal-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.4s}
-.coastal-card:hover img{transform:scale(1.07)}
-.coastal-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,28,22,.85),transparent 75%)}
-.coastal-card h3{position:absolute;z-index:2;bottom:15px;left:18px;font-size:22px;margin:0}
+.destination-section{padding:72px 0}
+.destination-section.soft{background:var(--cream)}
+.destination-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+.destination-heading h2{font:700 clamp(28px,4vw,39px)/1.2 'Playfair Display';color:var(--green);margin-top:8px}
+.destination-heading p{font-size:13px;color:var(--muted);max-width:470px}
+.destination-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
 
-.highlight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.highlight-card{padding:28px;background:white;border:1px solid var(--line)}
-.highlight-card i{font-size:25px;color:var(--gold);margin-bottom:18px}
-.highlight-card h3{font-size:21px;color:var(--green);margin-bottom:10px}
-.highlight-card p{font-size:13px;color:var(--muted);margin:0}
+.destination-card{
+ background:#fff;
+ border:1px solid var(--border);
+ border-radius:5px;
+ overflow:hidden;
+ display:flex;
+ flex-direction:column;
+ transition:transform .25s,box-shadow .25s;
+}
+.destination-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.destination-image{height:225px;position:relative;overflow:hidden;background:#e9e8e1}
+.destination-image img{height:100%;transition:transform .5s}
+.destination-card:hover .destination-image img{transform:scale(1.045)}
+.destination-tag{
+ position:absolute;top:15px;left:15px;
+ background:var(--green);color:#fff;
+ padding:7px 12px;font-size:10px;font-weight:800;
+ letter-spacing:1px;text-transform:uppercase;border-radius:2px
+}
+.destination-body{padding:21px;display:flex;flex-direction:column;flex:1}
+.destination-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+.destination-category{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;font-weight:800;color:var(--gold)}
+.destination-location{font-size:11px;color:var(--muted)}
+.destination-body h3{font:700 21px/1.25 'Playfair Display';color:var(--green);margin-bottom:9px}
+.destination-body p{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:17px}
+.destination-highlights{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.destination-highlights span{font-size:10px;color:#52645a;background:var(--cream);padding:6px 9px;border-radius:2px}
+.destination-actions{display:flex;gap:9px;margin-top:auto;padding-top:15px;border-top:1px solid var(--border)}
+.destination-actions a{flex:1;text-align:center;padding:11px 8px;font-size:11px;font-weight:800;border-radius:3px}
+.view-link{background:var(--green);color:#fff}
+.quote-link{border:1px solid var(--green);color:var(--green)}
+.destination-actions a:hover{filter:brightness(.92)}
 
-.travel-note{background:var(--green);color:white;padding:55px}
-.travel-note h2{font-size:35px;margin:12px 0}
-.travel-note p{color:#e0e9e2;max-width:850px}
-.travel-note .eyebrow{color:#e7c477}
+.experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.experience-card{background:#fff;border:1px solid var(--border);padding:24px;border-radius:4px}
+.experience-card i{font-size:25px;color:var(--gold);margin-bottom:15px}
+.experience-card h3{font:700 19px 'Playfair Display';color:var(--green);margin-bottom:8px}
+.experience-card p{font-size:12px;color:var(--muted)}
 
-.cta-band{padding:70px 0;color:white;background:linear-gradient(90deg,rgba(13,54,43,.94),rgba(13,54,43,.78)),url("destinations-cta.jpg") center/cover}
-.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
-.cta-inner h2{font-size:clamp(30px,4vw,42px);margin:12px 0}
-.cta-inner p{color:#e2e9e4;max-width:650px;margin:0}
-.cta-actions{display:flex;gap:12px;flex-wrap:wrap}
-.btn-outline{background:transparent;color:white;border-color:rgba(255,255,255,.6)}
-.btn-outline:hover{background:white;color:var(--green)}
+.travel-note{background:#fff;border:1px solid var(--border);padding:25px;border-radius:4px;margin-top:35px}
+.travel-note h3{font:700 21px 'Playfair Display';color:var(--green);margin-bottom:10px}
+.travel-note p{font-size:13px;color:var(--muted)}
 
-footer{background:#0c2b24;color:#dbe4de;padding:60px 0 20px}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:35px;padding-bottom:38px}
-.footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:17px}
-.footer-brand img{width:54px;height:54px;object-fit:contain}
-.footer-brand strong{font:700 19px "Playfair Display",serif;color:white}
-footer p,footer li{font-size:13px;color:#b9c8bf}
-footer ul{list-style:none;margin:0;padding:0}
-footer li{margin:8px 0}
-footer h3{font:700 15px "DM Sans",sans-serif;color:white;margin-bottom:18px}
-footer a:hover{color:#e7c477}
-.footer-contact i{width:20px;color:#e2bd70}
-.copyright{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;display:flex;justify-content:space-between;gap:15px;font-size:12px;color:#9eafa5}
-.float-wa{position:fixed;right:22px;bottom:22px;width:54px;height:54px;display:grid;place-items:center;background:#1eae63;color:white;font-size:26px;z-index:60;box-shadow:0 8px 22px rgba(0,0,0,.2)}
+.cta{background:linear-gradient(90deg,rgba(9,39,31,.88),rgba(9,39,31,.65)),url('destinations-cta.jpg') center/cover;padding:75px 0;color:#fff;text-align:center}
+.cta h2{font:700 clamp(30px,4vw,43px) 'Playfair Display';margin:10px 0}
+.cta p{font-size:14px;max-width:650px;margin:0 auto 24px;color:#e9eee9}
+
+footer{background:#0d2d25;color:#dce5df;padding:55px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:35px}
+footer h3{font:700 19px 'Playfair Display';color:#fff;margin-bottom:17px}
+footer p,footer li{font-size:12px;color:#c1d0c7}
+footer ul{list-style:none}
+footer li{margin:10px 0}
+footer a:hover{color:var(--gold)}
+.footer-brand img{width:75px;height:75px;object-fit:contain;margin-bottom:10px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:35px;padding-top:18px;text-align:center;font-size:11px;color:#aebfb5}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:54px;height:54px;border-radius:50%;background:#20b965;color:#fff;display:grid;place-items:center;font-size:26px;z-index:200;box-shadow:0 5px 18px #0003}
 
 @media(max-width:950px){
-nav{gap:12px}
-.nav-cta{display:none}
-.coastal-grid{grid-template-columns:repeat(2,1fr)}
-.footer-grid{grid-template-columns:1fr 1fr}
+ nav{gap:13px}nav a{font-size:11px}
+ .destination-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:700px){
-.topbar .container{justify-content:center}
-.topbar .top-right{display:none}
-.nav-wrap{min-height:72px}
-.brand img{width:48px;height:48px}
-.brand-name{font-size:16px}
-.menu-toggle{display:block}
-nav{display:none;position:absolute;top:72px;left:0;right:0;background:white;padding:20px 24px;box-shadow:0 15px 25px rgba(0,0,0,.1);flex-direction:column;align-items:flex-start;gap:17px}
-nav.open{display:flex}
-nav a{width:100%}
-.hero{min-height:390px}
-.hero-content{padding:70px 0}
-section{padding:65px 0}
-.intro{grid-template-columns:1fr;gap:30px}
-.intro img{height:300px}
-.destination-grid,.highlight-grid{grid-template-columns:1fr 1fr}
-.destination-image{height:200px}
-.cta-inner{flex-direction:column;align-items:flex-start}
-.footer-grid{grid-template-columns:1fr 1fr}
-.copyright{flex-direction:column}
+ .topbar .container{justify-content:center;text-align:center}
+ .navbar{min-height:72px}.brand img{width:55px;height:55px}.brand strong{font-size:16px}
+ .menu-toggle{display:block}
+ nav{display:none;position:absolute;top:72px;left:0;width:100%;background:#fff;padding:20px 5%;box-shadow:0 12px 20px #0001;flex-direction:column;align-items:stretch;gap:0}
+ nav.open{display:flex}
+ nav a{padding:12px 0;font-size:13px;border-bottom:1px solid var(--border)}
+ nav .nav-cta{margin-top:12px;text-align:center}
+ .hero{min-height:390px}.hero-content{padding:60px 0}
+ .trust-grid{grid-template-columns:1fr;gap:9px}
+ .section,.destination-section{padding:58px 0}
+ .intro-grid{grid-template-columns:1fr;gap:25px}
+ .intro-grid img{height:270px}
+ .destination-grid{grid-template-columns:1fr;gap:20px}
+ .destination-image{height:230px}
+ .destination-heading{display:block}
+ .destination-heading p{margin-top:12px}
+ .experience-grid{grid-template-columns:1fr}
+ .footer-grid{grid-template-columns:1fr 1fr;gap:25px}
 }
-@media(max-width:480px){
-.container{width:calc(100% - 30px)}
-.destination-grid,.highlight-grid,.coastal-grid{grid-template-columns:1fr}
-.coastal-card{height:220px}
-.footer-grid{grid-template-columns:1fr}
-.travel-note{padding:32px 22px}
+@media(max-width:420px){
+ .footer-grid{grid-template-columns:1fr}
+ .destination-actions a{font-size:10px}
 }
 </style>
 </head>
@@ -171,373 +178,446 @@ section{padding:65px 0}
 <body>
 
 <div class="topbar">
-<div class="container">
-<div><i class="fa-solid fa-location-dot"></i> Kenya · Safaris, holidays & travel experiences</div>
-<div class="top-right">
-<a href="tel:+254721116715"><i class="fa-solid fa-phone"></i> +254 721 116 715</a>
-<a href="mailto:chirchirkb@gmail.com"><i class="fa-regular fa-envelope"></i> Email us</a>
-</div>
-</div>
+ <div class="container">
+  <span><i class="fa-solid fa-location-dot"></i> Kenya Safari & Coastal Holidays</span>
+  <span>
+   <a href="mailto:chirchirkb@gmail.com"><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</a>
+   &nbsp; | &nbsp;
+   <a href="tel:+254721116715"><i class="fa-solid fa-phone"></i> +254 721 116 715</a>
+  </span>
+ </div>
 </div>
 
 <header>
-<div class="container nav-wrap">
-<a class="brand" href="index.html">
-<img src="liamber-logo.png" alt="Liamber Prime Travels logo">
-<span class="brand-name">Liamber Prime Travels<small>Limited · Explore Kenya</small></span>
-</a>
+ <div class="container navbar">
+  <a href="index.html" class="brand">
+   <img src="liamber-logo.png" alt="Liamber Prime Travels logo">
+   <span><strong>Liamber Prime<br>Travels Limited</strong><small>EXPLORE • EXPERIENCE • ENJOY</small></span>
+  </a>
 
-<button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
-<i class="fa-solid fa-bars"></i>
-</button>
+  <button class="menu-toggle" aria-label="Open navigation" onclick="document.querySelector('nav').classList.toggle('open')">
+   <i class="fa-solid fa-bars"></i>
+  </button>
 
-<nav id="mainNav">
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a class="active" href="destinations.html">Destinations</a>
-<a href="packages.html">Safari Packages</a>
-<a href="experiences.html">Experiences</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-<a class="nav-cta" href="booking.html">Plan Your Trip <i class="fa-solid fa-arrow-right"></i></a>
-</div>
+  <nav>
+   <a href="index.html">Home</a>
+   <a href="about.html">About</a>
+   <a href="destinations.html" class="active">Destinations</a>
+   <a href="packages.html">Packages</a>
+   <a href="experiences.html">Experiences</a>
+   <a href="gallery.html">Gallery</a>
+   <a href="contact.html">Contact</a>
+   <a href="booking.html" class="nav-cta">Plan Your Trip</a>
+  </nav>
+ </div>
 </header>
 
-<main>
-
-<!-- DESTINATION HERO -->
 <section class="hero">
-<div class="container hero-content">
-<div class="eyebrow">Explore Kenya</div>
-<h1>Discover extraordinary places.</h1>
-<p>From the wildlife-rich savannahs of Kenya to the Indian Ocean coastline, explore destinations filled with natural beauty, culture and unforgettable experiences.</p>
-<div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Destinations</div>
-</div>
+ <div class="container hero-content">
+  <span class="eyebrow">Explore the Beauty of Kenya</span>
+  <h1>Discover Kenya's Remarkable Destinations</h1>
+  <p>From unforgettable wildlife encounters in the savannah to beautiful beaches along the Indian Ocean, explore the destinations that make Kenya special.</p>
+  <div class="hero-actions">
+   <a href="#safari" class="btn btn-gold">Explore Destinations <i class="fa-solid fa-arrow-right"></i></a>
+   <a href="contact.html" class="btn btn-outline">Plan Your Journey</a>
+  </div>
+ </div>
 </section>
 
-<!-- INTRODUCTION -->
-<section>
-<div class="container intro">
-<div>
-<img src="destinations-intro.jpg" alt="Kenyan landscape with wildlife">
+<div class="trust-strip">
+ <div class="container trust-grid">
+  <div class="trust-item"><i class="fa-solid fa-paw"></i> Kenya Wildlife Destinations</div>
+  <div class="trust-item"><i class="fa-solid fa-water"></i> Indian Ocean Experiences</div>
+  <div class="trust-item"><i class="fa-solid fa-route"></i> Personalised Travel Planning</div>
+ </div>
 </div>
-<div>
-<div class="eyebrow">Your journey begins here</div>
-<h2>Explore the many sides of Kenya.</h2>
-<p>Kenya offers an exceptional variety of travel experiences. Discover open savannahs, remarkable wildlife, dramatic landscapes, tropical beaches, historic coastal towns and rich cultural heritage.</p>
-<p>Whether you are planning a wildlife safari, a relaxing beach holiday, a day excursion or a journey combining several destinations, we can help you explore the possibilities.</p>
-<p>Share your preferred travel dates, group size, starting location and interests with our team so that we can discuss suitable arrangements.</p>
-<a class="btn" href="booking.html">Plan your journey <i class="fa-solid fa-arrow-right"></i></a>
-</div>
-</div>
+
+<section class="section">
+ <div class="container intro-grid">
+  <img src="destinations-intro.jpg" alt="Kenya's beautiful wildlife and natural scenery">
+  <div class="intro-copy">
+   <span class="eyebrow">A Country of Many Experiences</span>
+   <h2>One Country, Endless Discoveries</h2>
+   <p>Kenya brings together diverse wildlife habitats, dramatic landscapes, rich cultural heritage and an extraordinary coastline.</p>
+   <p>Whether you are looking for a safari adventure, a peaceful beach holiday, nature walks or cultural experiences, there are many ways to discover the country.</p>
+   <a href="packages.html" class="btn btn-green">Explore Our Packages <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+ </div>
 </section>
 
-<!-- SAFARI DESTINATIONS -->
-<section class="cream" id="safari-destinations">
-<div class="container">
+<section class="destination-section soft" id="safari">
+ <div class="container">
+  <div class="destination-heading">
+   <div>
+    <span class="eyebrow">Wildlife & Nature</span>
+    <h2>Kenya Safari Destinations</h2>
+   </div>
+   <p>Discover iconic national parks and reserves, each offering distinctive landscapes and opportunities to experience Kenya's wildlife.</p>
+  </div>
 
-<div class="section-heading">
-<div class="eyebrow">Wildlife & nature</div>
-<h2>Kenya safari destinations</h2>
-<p>Discover some of Kenya's best-known wildlife and nature destinations. Safari arrangements depend on your starting point, available time, accommodation preferences and confirmed itinerary.</p>
-</div>
+  <div class="destination-grid">
 
-<div class="destination-grid">
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-mara.jpg" alt="Wildlife on the open plains of Maasai Mara">
+     <span class="destination-tag">Wildlife Safari</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">National Reserve</span><span class="destination-location">Narok County</span></div>
+     <h3>Maasai Mara</h3>
+     <p>Explore the famous open savannahs of the Maasai Mara, known for abundant wildlife and the seasonal Great Migration.</p>
+     <div class="destination-highlights"><span>Big cats</span><span>Game drives</span><span>Great Migration</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Maasai%20Mara">Explore Safari</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20am%20interested%20in%20a%20Maasai%20Mara%20safari." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<article class="destination-card">
-<div class="destination-image">
-<img src="destination-mara.jpg" alt="Maasai Mara wildlife and savannah">
-<span class="destination-tag">Wildlife Safari</span>
-</div>
-<div class="destination-content">
-<h3>Maasai Mara</h3>
-<p>Explore Kenya's celebrated savannah landscape, known for its wildlife and seasonal Great Migration. Game drives offer opportunities to observe animals in their natural habitat.</p>
-<a class="destination-link" href="packages.html">Explore safari packages <i class="fa-solid fa-arrow-right"></i></a>
-</div>
-</article>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-tsavo-east.jpg" alt="Elephants in Tsavo East National Park">
+     <span class="destination-tag">Wildlife Safari</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">National Park</span><span class="destination-location">Coastal Region</span></div>
+     <h3>Tsavo East</h3>
+     <p>Discover vast open plains, striking red-earth landscapes and the wildlife that makes Tsavo East a remarkable safari destination.</p>
+     <div class="destination-highlights"><span>Red elephants</span><span>Open plains</span><span>Game drives</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Tsavo%20East">Explore Safari</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20am%20interested%20in%20a%20Tsavo%20East%20safari." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<article class="destination-card">
-<div class="destination-image">
-<img src="destination-tsavo-east.jpg" alt="Tsavo East National Park landscape">
-<span class="destination-tag">Wildlife Safari</span>
-</div>
-<div class="destination-content">
-<h3>Tsavo East</h3>
-<p>Discover wide-open landscapes, wildlife viewing and the distinctive scenery of one of Kenya's major national parks. A popular safari option from the coast.</p>
-<a class="destination-link" href="packages.html">Explore safari packages <i class="fa-solid fa-arrow-right"></i></a>
-</div>
-</article>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-tsavo-west.jpg" alt="Scenic wilderness in Tsavo West National Park">
+     <span class="destination-tag">Wildlife & Nature</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">National Park</span><span class="destination-location">Southern Kenya</span></div>
+     <h3>Tsavo West</h3>
+     <p>Experience dramatic scenery, volcanic landscapes, natural springs and diverse habitats in one of Kenya's largest national parks.</p>
+     <div class="destination-highlights"><span>Mzima Springs</span><span>Scenic drives</span><span>Wildlife</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Tsavo%20West">Explore Safari</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20am%20interested%20in%20a%20Tsavo%20West%20safari." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<article class="destination-card">
-<div class="destination-image">
-<img src="destination-tsavo-west.jpg" alt="Tsavo West landscape">
-<span class="destination-tag">Wildlife & Nature</span>
-</div>
-<div class="destination-content">
-<h3>Tsavo West</h3>
-<p>Experience varied scenery, natural features and wildlife habitats in Tsavo West. It can be considered as part of a wider southern Kenya safari itinerary.</p>
-<a class="destination-link" href="packages.html">Explore safari packages <i class="fa-solid fa-arrow-right"></i></a>
-</div>
-</article>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-amboseli.jpg" alt="Elephants with Mount Kilimanjaro in Amboseli">
+     <span class="destination-tag">Classic Safari</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">National Park</span><span class="destination-location">Kajiado County</span></div>
+     <h3>Amboseli</h3>
+     <p>Enjoy wide-open landscapes, impressive elephant herds and views of Mount Kilimanjaro when the weather is clear.</p>
+     <div class="destination-highlights"><span>Elephants</span><span>Kilimanjaro views</span><span>Birdlife</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Amboseli">Explore Safari</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20am%20interested%20in%20an%20Amboseli%20safari." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<article class="destination-card">
-<div class="destination-image">
-<img src="destination-amboseli.jpg" alt="Amboseli elephants with Mount Kilimanjaro">
-<span class="destination-tag">Wildlife & Scenery</span>
-</div>
-<div class="destination-content">
-<h3>Amboseli</h3>
-<p>Enjoy views of Mount Kilimanjaro and the park's open landscapes, with opportunities to see elephants and other wildlife during game drives.</p>
-<a class="destination-link" href="packages.html">Explore safari packages <i class="fa-solid fa-arrow-right"></i></a>
-</div>
-</article>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-taita-hills.jpg" alt="Wildlife and landscapes in Taita Hills">
+     <span class="destination-tag">Nature & Wildlife</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">Wildlife Sanctuary</span><span class="destination-location">Taita-Taveta County</span></div>
+     <h3>Taita Hills</h3>
+     <p>Discover a distinctive landscape of hills, wildlife habitats and scenic views, ideal for a nature-focused safari experience.</p>
+     <div class="destination-highlights"><span>Wildlife</span><span>Scenery</span><span>Nature</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Taita%20Hills">Explore Safari</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20am%20interested%20in%20visiting%20Taita%20Hills." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<article class="destination-card">
-<div class="destination-image">
-<img src="destination-taita-hills.jpg" alt="Taita Hills wildlife landscape">
-<span class="destination-tag">Nature & Safari</span>
-</div>
-<div class="destination-content">
-<h3>Taita Hills</h3>
-<p>Explore the scenic Taita Hills area and its wildlife surroundings. This destination can be considered for travellers looking to combine coastal stays with inland nature experiences.</p>
-<a class="destination-link" href="packages.html">Explore safari packages <i class="fa-solid fa-arrow-right"></i></a>
-</div>
-</article>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-samburu.jpg" alt="Samburu wildlife and dry northern Kenya landscape">
+     <span class="destination-tag">Unique Wildlife</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">National Reserve</span><span class="destination-location">Northern Kenya</span></div>
+     <h3>Samburu</h3>
+     <p>Explore northern Kenya's distinctive landscapes and look out for wildlife species associated with this special region.</p>
+     <div class="destination-highlights"><span>Special Five</span><span>River scenery</span><span>Culture</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Samburu">Explore Safari</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20am%20interested%20in%20a%20Samburu%20safari." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<article class="destination-card">
-<div class="destination-image">
-<img src="destination-samburu.jpg" alt="Samburu landscape and wildlife">
-<span class="destination-tag">Northern Kenya</span>
-</div>
-<div class="destination-content">
-<h3>Samburu</h3>
-<p>Discover northern Kenya's distinctive landscapes and wildlife. Share your travel dates and preferences to discuss a suitable itinerary.</p>
-<a class="destination-link" href="booking.html">Enquire about Samburu <i class="fa-solid fa-arrow-right"></i></a>
-</div>
-</article>
-
-</div>
-</div>
+  </div>
+ </div>
 </section>
 
-<!-- COASTAL DESTINATIONS -->
-<section id="coastal-destinations">
-<div class="container">
+<section class="destination-section" id="coast">
+ <div class="container">
+  <div class="destination-heading">
+   <div>
+    <span class="eyebrow">Sun, Sea & Culture</span>
+    <h2>Kenya Coastal Destinations</h2>
+   </div>
+   <p>Explore the Indian Ocean coastline, from relaxing white-sand beaches to marine parks, historic towns and traditional coastal communities.</p>
+  </div>
 
-<div class="section-heading">
-<div class="eyebrow">Indian Ocean experiences</div>
-<h2>Discover the Kenyan coast</h2>
-<p>Explore coastal towns, beaches, marine environments, historic sites and local culture along Kenya's Indian Ocean shoreline.</p>
-</div>
+  <div class="destination-grid">
 
-<div class="coastal-grid">
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-malindi.jpg" alt="Malindi beach and Indian Ocean">
+     <span class="destination-tag">Coastal Escape</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">Beach & Culture</span><span class="destination-location">Kilifi County</span></div>
+     <h3>Malindi</h3>
+     <p>Enjoy beautiful beaches, coastal heritage, local markets and marine experiences around this historic seaside town.</p>
+     <div class="destination-highlights"><span>Beaches</span><span>Town tours</span><span>Marine life</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Malindi">Explore Destination</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20visit%20Malindi." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<a class="coastal-card" href="experiences.html">
-<img src="destination-malindi.jpg" alt="Malindi coastal town">
-<h3>Malindi</h3>
-</a>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-watamu.jpg" alt="Turquoise waters and beach in Watamu">
+     <span class="destination-tag">Marine Paradise</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">Marine & Beach</span><span class="destination-location">Kilifi County</span></div>
+     <h3>Watamu</h3>
+     <p>Discover clear coastal waters, beautiful beaches and opportunities to explore the Watamu Marine National Park.</p>
+     <div class="destination-highlights"><span>Snorkelling</span><span>Marine park</span><span>Beach life</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Watamu">Explore Destination</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20visit%20Watamu." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<a class="coastal-card" href="experiences.html">
-<img src="destination-watamu.jpg" alt="Watamu beach and ocean">
-<h3>Watamu</h3>
-</a>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-kilifi.jpg" alt="Kilifi Creek and coastal scenery">
+     <span class="destination-tag">Coastal Discovery</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">Nature & Culture</span><span class="destination-location">Kilifi County</span></div>
+     <h3>Kilifi</h3>
+     <p>Experience the peaceful beauty of Kilifi Creek, coastal scenery, sailing opportunities and local community life.</p>
+     <div class="destination-highlights"><span>Kilifi Creek</span><span>Sailing</span><span>Culture</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Kilifi">Explore Destination</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20visit%20Kilifi." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<a class="coastal-card" href="experiences.html">
-<img src="destination-kilifi.jpg" alt="Kilifi Creek">
-<h3>Kilifi</h3>
-</a>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-mombasa.jpg" alt="Mombasa coastline and historic city">
+     <span class="destination-tag">Coastal Heritage</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">City & Beach</span><span class="destination-location">Mombasa County</span></div>
+     <h3>Mombasa</h3>
+     <p>Explore the island city's rich Swahili heritage, historic landmarks, vibrant streets and nearby beaches.</p>
+     <div class="destination-highlights"><span>Old Town</span><span>Fort Jesus</span><span>Beaches</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Mombasa">Explore Destination</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20visit%20Mombasa." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<a class="coastal-card" href="experiences.html">
-<img src="destination-mombasa.jpg" alt="Mombasa coastal city">
-<h3>Mombasa</h3>
-</a>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-diani.jpg" alt="White sandy beach in Diani">
+     <span class="destination-tag">Beach Holiday</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">Beach & Adventure</span><span class="destination-location">Kwale County</span></div>
+     <h3>Diani Beach</h3>
+     <p>Relax along the beautiful white sands of Diani and enquire about optional water activities and nearby nature experiences.</p>
+     <div class="destination-highlights"><span>White sand</span><span>Water sports</span><span>Beach leisure</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Diani%20Beach">Explore Destination</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20visit%20Diani%20Beach." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<a class="coastal-card" href="experiences.html">
-<img src="destination-diani.jpg" alt="Diani white sand beach">
-<h3>Diani Beach</h3>
-</a>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-lamu.jpg" alt="Traditional architecture and dhow boats in Lamu">
+     <span class="destination-tag">Cultural Heritage</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">Culture & History</span><span class="destination-location">Lamu County</span></div>
+     <h3>Lamu Island</h3>
+     <p>Discover the character of Lamu through its historic old town, Swahili architecture, traditional dhow sailing and island culture.</p>
+     <div class="destination-highlights"><span>Old Town</span><span>Dhow sailing</span><span>Heritage</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Lamu%20Island">Explore Destination</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20visit%20Lamu." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<a class="coastal-card" href="experiences.html">
-<img src="destination-lamu.jpg" alt="Lamu traditional Swahili architecture">
-<h3>Lamu</h3>
-</a>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-wasini.jpg" alt="Wasini Island and Indian Ocean marine scenery">
+     <span class="destination-tag">Marine Adventure</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">Island & Marine</span><span class="destination-location">South Coast</span></div>
+     <h3>Wasini Island</h3>
+     <p>Explore the coastal island experience, with marine excursions and opportunities to discover the local island environment.</p>
+     <div class="destination-highlights"><span>Kisite Marine Park</span><span>Snorkelling</span><span>Dhow trips</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Wasini%20Island">Explore Destination</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20visit%20Wasini%20Island." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<a class="coastal-card" href="experiences.html">
-<img src="destination-wasini.jpg" alt="Wasini Island coastline">
-<h3>Wasini Island</h3>
-</a>
+   <article class="destination-card">
+    <div class="destination-image">
+     <img src="destination-mida-creek.jpg" alt="Mangrove channels and water at Mida Creek">
+     <span class="destination-tag">Nature Experience</span>
+    </div>
+    <div class="destination-body">
+     <div class="destination-meta"><span class="destination-category">Nature & Marine</span><span class="destination-location">Watamu</span></div>
+     <h3>Mida Creek</h3>
+     <p>Experience a beautiful coastal ecosystem of mangroves and tidal channels, with opportunities for boat excursions and birdwatching.</p>
+     <div class="destination-highlights"><span>Mangroves</span><span>Birdwatching</span><span>Boat trips</span></div>
+     <div class="destination-actions">
+      <a class="view-link" href="booking.html?destination=Mida%20Creek">Explore Destination</a>
+      <a class="quote-link" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20visit%20Mida%20Creek." target="_blank">Enquire</a>
+     </div>
+    </div>
+   </article>
 
-<a class="coastal-card" href="experiences.html">
-<img src="destination-mida-creek.jpg" alt="Mida Creek mangroves">
-<h3>Mida Creek</h3>
-</a>
-
-</div>
-</div>
+  </div>
+ </div>
 </section>
 
-<!-- EXPERIENCES BY INTEREST -->
-<section class="cream">
-<div class="container">
+<section class="section soft">
+ <div class="container">
+  <div class="section-head">
+   <span class="eyebrow">Discover More</span>
+   <h2>Experiences Across Kenya</h2>
+   <p>Make your journey more memorable with activities that connect you to the country's wildlife, nature and coastal heritage.</p>
+  </div>
 
-<div class="section-heading">
-<div class="eyebrow">Find your experience</div>
-<h2>More ways to discover Kenya</h2>
-<p>Explore destinations according to the kind of experience you would like to enjoy.</p>
-</div>
+  <div class="experience-grid">
+   <div class="experience-card">
+    <i class="fa-solid fa-paw"></i>
+    <h3>Wildlife Safaris</h3>
+    <p>Discover Kenya's national parks and reserves through guided wildlife viewing and game drives.</p>
+   </div>
+   <div class="experience-card">
+    <i class="fa-solid fa-water"></i>
+    <h3>Marine Adventures</h3>
+    <p>Explore coastal waters, marine parks, snorkelling opportunities and traditional boat experiences.</p>
+   </div>
+   <div class="experience-card">
+    <i class="fa-solid fa-landmark"></i>
+    <h3>Culture & Heritage</h3>
+    <p>Discover historic towns, local traditions, heritage sites and community experiences.</p>
+   </div>
+   <div class="experience-card">
+    <i class="fa-solid fa-tree"></i>
+    <h3>Nature Experiences</h3>
+    <p>Enjoy coastal forests, nature walks, birdwatching and scenic landscapes.</p>
+   </div>
+   <div class="experience-card">
+    <i class="fa-solid fa-person-hiking"></i>
+    <h3>Outdoor Adventures</h3>
+    <p>Explore selected outdoor activities and scenic excursions according to availability.</p>
+   </div>
+   <div class="experience-card">
+    <i class="fa-solid fa-umbrella-beach"></i>
+    <h3>Beach Holidays</h3>
+    <p>Enjoy Kenya's coastline with time to relax, explore and experience the Indian Ocean.</p>
+   </div>
+  </div>
 
-<div class="highlight-grid">
-
-<article class="highlight-card">
-<i class="fa-solid fa-paw"></i>
-<h3>Wildlife & Safaris</h3>
-<p>Explore national parks and wildlife areas, including Tsavo, Amboseli, Maasai Mara and Taita Hills. Game drives and sightings depend on the itinerary and natural conditions.</p>
-</article>
-
-<article class="highlight-card">
-<i class="fa-solid fa-water"></i>
-<h3>Marine & Ocean Experiences</h3>
-<p>Discover coastal marine environments around Watamu, Mida Creek, Malindi, Mombasa and the South Coast. Snorkeling and boating depend on weather and sea conditions.</p>
-</article>
-
-<article class="highlight-card">
-<i class="fa-solid fa-landmark"></i>
-<h3>Culture & Heritage</h3>
-<p>Explore Swahili coastal heritage, historic settlements, local markets and community experiences around Malindi, Mombasa, Watamu, Kilifi and Lamu.</p>
-</article>
-
-<article class="highlight-card">
-<i class="fa-solid fa-tree"></i>
-<h3>Nature & Conservation</h3>
-<p>Discover natural landscapes such as Arabuko Sokoke Forest, Shimba Hills and coastal forest environments, with nature walks and wildlife observation where available.</p>
-</article>
-
-<article class="highlight-card">
-<i class="fa-solid fa-person-hiking"></i>
-<h3>Adventure & Exploration</h3>
-<p>Explore distinctive landscapes and outdoor experiences, including Marafa Hell's Kitchen, Mambrui Sand Dunes and selected coastal excursions.</p>
-</article>
-
-<article class="highlight-card">
-<i class="fa-solid fa-umbrella-beach"></i>
-<h3>Beach & Relaxation</h3>
-<p>Enjoy the Kenyan coastline, from Diani's white sands to the beaches of Watamu and Malindi, with time for relaxation and optional activities.</p>
-</article>
-
-</div>
-</div>
+  <div class="travel-note">
+   <h3>Planning Your Destination Visit</h3>
+   <p>Travel arrangements, access, activities, accommodation and transport depend on the destination and your chosen itinerary. Marine activities may depend on tides, weather and sea conditions. Wildlife sightings are never guaranteed. Contact us to discuss current arrangements and receive a quotation based on your travel plans.</p>
+  </div>
+ </div>
 </section>
 
-<!-- TRAVEL INFORMATION -->
-<section>
-<div class="container">
-<div class="travel-note">
-<div class="eyebrow">Plan with confidence</div>
-<h2>Choose a destination that suits your journey.</h2>
-<p>The best destination depends on where you are starting, how much time you have, your preferred activities and your travel budget. Safari distances, road conditions, park arrangements, accommodation availability and coastal sea conditions can affect the final itinerary.</p>
-<p>For marine activities, snorkeling and wildlife encounters, sightings and conditions cannot be guaranteed. Activities are confirmed according to local availability, weather, safety and the arrangements agreed before travel.</p>
-<p>Contact us with your dates, number of travellers, pickup location and preferred destinations. We will discuss the practical options and prepare a quotation based on your requirements.</p>
-</div>
-</div>
+<section class="cta">
+ <div class="container">
+  <span class="eyebrow">Your Next Adventure Starts Here</span>
+  <h2>Where Would You Like to Go?</h2>
+  <p>Tell us your preferred destination and travel dates. We will be happy to discuss a safari, coastal escape or tailor-made Kenya holiday.</p>
+  <a href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20help%20planning%20a%20trip%20to%20Kenya." target="_blank" class="btn btn-gold"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+  <a href="packages.html" class="btn btn-outline">View Packages</a>
+ </div>
 </section>
-
-<!-- CALL TO ACTION -->
-<section class="cta-band">
-<div class="container cta-inner">
-<div>
-<div class="eyebrow">Let's plan your trip</div>
-<h2>Where would you like to go?</h2>
-<p>Tell us the destinations you want to explore and the experiences you have in mind. We can help you discuss a suitable Kenya itinerary.</p>
-</div>
-<div class="cta-actions">
-<a class="btn" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20Kenya%20destinations." target="_blank" rel="noopener">
-<i class="fa-brands fa-whatsapp"></i> WhatsApp us
-</a>
-<a class="btn btn-outline" href="booking.html">Plan your trip</a>
-</div>
-</div>
-</section>
-
-</main>
 
 <footer>
-<div class="container">
-<div class="footer-grid">
-
-<div>
-<div class="footer-brand">
-<img src="liamber-logo.png" alt="Liamber Prime Travels logo">
-<strong>Liamber Prime Travels Limited</strong>
-</div>
-<p>Discover Kenya through wildlife safaris, coastal holidays, cultural experiences and journeys planned around your interests.</p>
-</div>
-
-<div>
-<h3>Quick Links</h3>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About Us</a></li>
-<li><a href="destinations.html">Destinations</a></li>
-<li><a href="packages.html">Safari Packages</a></li>
-<li><a href="experiences.html">Experiences</a></li>
-</ul>
-</div>
-
-<div>
-<h3>Plan Your Trip</h3>
-<ul>
-<li><a href="booking.html">Make an Enquiry</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact Us</a></li>
-</ul>
-</div>
-
-<div>
-<h3>Get in Touch</h3>
-<ul class="footer-contact">
-<li><i class="fa-solid fa-phone"></i> <a href="tel:+254721116715">+254 721 116 715</a></li>
-<li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/254721116715" target="_blank" rel="noopener">WhatsApp</a></li>
-<li><i class="fa-regular fa-envelope"></i> <a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a></li>
-<li><i class="fa-solid fa-location-dot"></i> Kenya</li>
-</ul>
-</div>
-
-</div>
-
-<div class="copyright">
-<span>© <span id="year"></span> Liamber Prime Travels Limited. All rights reserved.</span>
-<span>Explore Kenya · Discover more</span>
-</div>
-</div>
+ <div class="container">
+  <div class="footer-grid">
+   <div class="footer-brand">
+    <img src="liamber-logo.png" alt="Liamber Prime Travels logo">
+    <h3>Liamber Prime Travels Limited</h3>
+    <p>Discover Kenya through memorable safari adventures, coastal holidays and personalised travel experiences.</p>
+   </div>
+   <div>
+    <h3>Quick Links</h3>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="destinations.html">Destinations</a></li>
+     <li><a href="packages.html">Packages</a></li>
+    </ul>
+   </div>
+   <div>
+    <h3>Explore</h3>
+    <ul>
+     <li><a href="experiences.html">Experiences</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+     <li><a href="booking.html">Plan Your Trip</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </div>
+   <div>
+    <h3>Get in Touch</h3>
+    <ul>
+     <li><i class="fa-solid fa-phone"></i> <a href="tel:+254721116715">+254 721 116 715</a></li>
+     <li><i class="fa-solid fa-envelope"></i> <a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a></li>
+     <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/254721116715">WhatsApp Us</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="footer-bottom">© <span id="year"></span> Liamber Prime Travels Limited. All rights reserved.</div>
+ </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/254721116715" target="_blank" rel="noopener" aria-label="Chat with Liamber Prime Travels on WhatsApp">
-<i class="fa-brands fa-whatsapp"></i>
+<a class="whatsapp" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels" target="_blank" aria-label="Chat on WhatsApp">
+ <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 <script>
-const menuToggle=document.getElementById('menuToggle');
-const mainNav=document.getElementById('mainNav');
-
-menuToggle.addEventListener('click',()=>{
-const isOpen=mainNav.classList.toggle('open');
-menuToggle.setAttribute('aria-expanded',String(isOpen));
-menuToggle.innerHTML=isOpen
-? '<i class="fa-solid fa-xmark"></i>'
-: '<i class="fa-solid fa-bars"></i>';
-});
-
-mainNav.querySelectorAll('a').forEach(link=>{
-link.addEventListener('click',()=>{
-mainNav.classList.remove('open');
-menuToggle.setAttribute('aria-expanded','false');
-menuToggle.innerHTML='<i class="fa-solid fa-bars"></i>';
-});
-});
-
-document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
