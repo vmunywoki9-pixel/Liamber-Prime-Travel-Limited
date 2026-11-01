@@ -1,0 +1,1781 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover Kenya with Liamber Prime Travels Limited. Enjoy tailor-made Kenya safaris, wildlife experiences, coastal holidays and unforgettable journeys departing from Nairobi.">
+<meta name="theme-color" content="#142b24">
+<title>Kenya Safaris & Tours | Liamber Prime Travels Limited</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+:root {
+  --navy: #17242b;
+  --green: #173d30;
+  --deep-green: #102d24;
+  --orange: #e99a32;
+  --gold: #efbd60;
+  --cream: #f8f6f0;
+  --white: #ffffff;
+  --ink: #252b28;
+  --muted: #68736d;
+  --line: #e9e8e2;
+  --heading: "Playfair Display", Georgia, serif;
+  --body: "DM Sans", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--body);
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.7;
+}
+
+a { color: inherit; text-decoration: none; }
+img { display: block; width: 100%; }
+button { font: inherit; }
+
+.container {
+  width: min(1160px, 92%);
+  margin: auto;
+}
+
+.section { padding: 85px 0; }
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #b97927;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.section-heading h2 {
+  font-size: clamp(29px, 4vw, 42px);
+  color: var(--green);
+  margin-bottom: 13px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 21px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: .25s ease;
+  cursor: pointer;
+}
+
+.btn-orange {
+  background: var(--orange);
+  color: #1c211e;
+}
+
+.btn-orange:hover { background: var(--gold); }
+
+.btn-outline {
+  border-color: rgba(255,255,255,.75);
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--green);
+}
+
+.btn-green {
+  background: var(--green);
+  color: white;
+}
+
+.btn-green:hover { background: #245641; }
+
+.btn-light {
+  background: white;
+  color: var(--green);
+}
+
+/* 1. HEADER */
+
+.site-header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(20, 34, 39, .96);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.navbar {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 210px;
+}
+
+.brand img {
+  width: 57px;
+  height: 57px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+}
+
+.brand-name {
+  color: white;
+  line-height: 1.15;
+}
+
+.brand-name strong {
+  display: block;
+  font-family: var(--heading);
+  font-size: 17px;
+  letter-spacing: .5px;
+}
+
+.brand-name span {
+  display: block;
+  color: #d9b37a;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.nav-links a {
+  color: #f4f3ef;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-book {
+  background: var(--orange);
+  color: #17221e !important;
+  padding: 11px 18px;
+}
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 2. HERO / SEVEN-IMAGE SLIDER */
+
+.hero {
+  position: relative;
+  min-height: 690px;
+  height: 90vh;
+  max-height: 820px;
+  background: var(--navy);
+  overflow: hidden;
+  color: white;
+}
+
+.hero-slides,
+.hero-slide {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.1s ease;
+}
+
+.hero-slide.active { opacity: 1; }
+
+.hero-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(9,22,19,.84) 0%, rgba(9,22,19,.58) 48%, rgba(9,22,19,.16) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(1160px, 92%);
+  margin: auto;
+  padding-top: 190px;
+}
+
+.hero-copy { max-width: 690px; }
+
+.hero-label {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6.3vw, 70px);
+  line-height: 1.08;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero h1 span { color: var(--gold); }
+
+.hero-copy > p {
+  max-width: 580px;
+  color: rgba(255,255,255,.88);
+  font-size: 15px;
+  margin-bottom: 27px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 38px;
+}
+
+.hero-quick-links a {
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 3px;
+  color: white;
+  padding: 8px 13px;
+  font-size: 10px;
+  background: rgba(255,255,255,.08);
+}
+
+.hero-quick-links a:hover {
+  background: var(--orange);
+  color: var(--navy);
+}
+
+.hero-dots {
+  position: absolute;
+  z-index: 3;
+  bottom: 28px;
+  right: 5%;
+  display: flex;
+  gap: 8px;
+}
+
+.hero-dots button {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,.55);
+  cursor: pointer;
+}
+
+.hero-dots button.active {
+  width: 25px;
+  border-radius: 10px;
+  background: var(--orange);
+}
+
+/* 3. INTRODUCTION / FOUR IMAGE CARDS */
+
+.intro-section { background: white; }
+
+.image-four-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.image-tile {
+  position: relative;
+  height: 245px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.image-tile img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.image-tile:hover img { transform: scale(1.06); }
+
+.image-tile::after {
+  content: "";
+  position: absolute;
+  inset: 35% 0 0;
+  background: linear-gradient(transparent, rgba(0,0,0,.75));
+}
+
+.image-tile h3 {
+  position: absolute;
+  z-index: 2;
+  left: 17px;
+  right: 15px;
+  bottom: 16px;
+  color: white;
+  font-size: 19px;
+}
+
+/* 4. THREE EXPERIENCE LINKS */
+
+.experience-links {
+  background: var(--cream);
+  padding: 54px 0;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.experience-item { padding: 8px 10px; }
+
+.experience-item .number {
+  color: #bd873d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.experience-item h3 {
+  font-size: 23px;
+  color: var(--green);
+  margin: 8px 0;
+}
+
+.experience-item p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+
+.text-link {
+  color: #a96c22;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* 5. POPULAR SAFARIS */
+
+.safari-section { background: white; }
+
+.safari-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.safari-card {
+  border: 1px solid var(--line);
+  background: white;
+}
+
+.safari-card-image {
+  height: 230px;
+  overflow: hidden;
+  position: relative;
+}
+
+.safari-card-image img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+.safari-card:hover .safari-card-image img { transform: scale(1.05); }
+
+.safari-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 6px 10px;
+  background: var(--orange);
+  color: #20251f;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.safari-card-content { padding: 22px; }
+
+.safari-card-content h3 {
+  color: var(--green);
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.safari-card-content p {
+  color: var(--muted);
+  font-size: 13px;
+  min-height: 65px;
+}
+
+.safari-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 17px 0;
+  padding: 11px 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.safari-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.safari-actions .btn {
+  padding: 10px 13px;
+  font-size: 10px;
+}
+
+/* 6. TRIP DURATION */
+
+.duration-section {
+  background: var(--cream);
+}
+
+.duration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.duration-item {
+  padding: 15px 22px;
+  border-left: 2px solid var(--orange);
+}
+
+.duration-item h3 {
+  font-size: 22px;
+  color: var(--green);
+  margin-bottom: 9px;
+}
+
+.duration-item p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* 7. COASTAL AND OTHER EXPERIENCES */
+
+.coastal-section { background: white; }
+
+.coastal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.coastal-card { background: var(--cream); }
+
+.coastal-card img {
+  height: 225px;
+  object-fit: cover;
+}
+
+.coastal-card-content { padding: 20px; }
+
+.coastal-card h3 {
+  color: var(--green);
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.coastal-card p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.center-button {
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* 8. FOUR BENEFITS */
+
+.benefits-section {
+  background: var(--deep-green);
+  color: white;
+  padding: 65px 0;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.benefit-item { text-align: center; }
+
+.benefit-icon {
+  font-size: 25px;
+  color: var(--gold);
+  margin-bottom: 15px;
+}
+
+.benefit-item h3 {
+  font-family: var(--body);
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+
+.benefit-item p {
+  color: rgba(255,255,255,.72);
+  font-size: 12px;
+}
+
+/* 9. DESTINATIONS */
+
+.destination-section { background: var(--cream); }
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.destination-card {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.destination-card img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+.destination-card:hover img { transform: scale(1.06); }
+
+.destination-card::after {
+  content: "";
+  position: absolute;
+  inset: 25% 0 0;
+  background: linear-gradient(transparent, rgba(0,0,0,.78));
+}
+
+.destination-card h3 {
+  position: absolute;
+  z-index: 2;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 19px;
+}
+
+/* 10. FOUR BOOKING STEPS */
+
+.steps-section { background: white; }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.step-item { position: relative; }
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  background: var(--orange);
+  color: var(--navy);
+  font-weight: 700;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.step-item h3 {
+  color: var(--green);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.step-item p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* 11. ENQUIRY CHECKLIST */
+
+.enquiry-section { background: var(--cream); }
+
+.enquiry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.enquiry-copy h2 {
+  color: var(--green);
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.enquiry-copy p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.enquiry-checklist {
+  background: white;
+  padding: 30px;
+  border: 1px solid var(--line);
+}
+
+.enquiry-checklist h3 {
+  color: var(--green);
+  font-size: 23px;
+  margin-bottom: 17px;
+}
+
+.enquiry-checklist ul { list-style: none; }
+
+.enquiry-checklist li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.enquiry-checklist li i {
+  color: #b77b2e;
+  margin-right: 10px;
+}
+
+/* 12. FAQ */
+
+.faq-section { background: white; }
+
+.faq-list {
+  max-width: 850px;
+  margin: auto;
+}
+
+.faq-item { border-bottom: 1px solid var(--line); }
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: var(--green);
+  font-family: var(--heading);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.faq-question i { color: #b77b2e; }
+
+.faq-answer {
+  display: none;
+  color: var(--muted);
+  font-size: 13px;
+  padding: 0 25px 20px 0;
+}
+
+.faq-item.open .faq-answer { display: block; }
+
+/* 13. SEO CONTENT */
+
+.seo-section {
+  background: var(--cream);
+}
+
+.seo-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.seo-content h2 {
+  color: var(--green);
+  font-size: 32px;
+  margin-bottom: 17px;
+}
+
+.seo-content h3 {
+  color: var(--green);
+  font-size: 22px;
+  margin: 23px 0 9px;
+}
+
+.seo-content p {
+  color: #68736d;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+
+.seo-content a {
+  color: #a96c22;
+  font-weight: 700;
+}
+
+/* 14. FINAL BOOKING CTA */
+
+.booking-cta {
+  background:
+    linear-gradient(rgba(15,48,36,.91), rgba(15,48,36,.91)),
+    url("images/booking-cta.jpg") center/cover;
+  padding: 75px 0;
+  text-align: center;
+  color: white;
+}
+
+.booking-cta h2 {
+  font-size: clamp(30px, 4vw, 43px);
+  margin-bottom: 13px;
+}
+
+.booking-cta p {
+  color: rgba(255,255,255,.8);
+  font-size: 14px;
+  max-width: 650px;
+  margin: 0 auto 25px;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* 15. FOOTER */
+
+.site-footer {
+  background: #10271f;
+  color: white;
+  padding: 65px 0 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+  gap: 30px;
+  padding-bottom: 45px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.footer-brand img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  background: white;
+  border-radius: 50%;
+}
+
+.footer-brand strong {
+  font-family: var(--heading);
+  font-size: 17px;
+}
+
+.footer-column h3 {
+  font-family: var(--body);
+  font-size: 13px;
+  color: var(--gold);
+  margin-bottom: 17px;
+}
+
+.footer-column p,
+.footer-column a {
+  color: rgba(255,255,255,.7);
+  font-size: 11px;
+}
+
+.footer-column p { margin-bottom: 14px; }
+
+.footer-column ul { list-style: none; }
+
+.footer-column li { margin-bottom: 9px; }
+
+.footer-column a:hover { color: var(--gold); }
+
+.footer-contact i {
+  color: var(--gold);
+  width: 18px;
+  margin-right: 6px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 12px;
+}
+
+.newsletter-form input {
+  min-width: 0;
+  width: 100%;
+  padding: 11px;
+  border: 0;
+  outline: none;
+  font: inherit;
+  font-size: 11px;
+}
+
+.newsletter-form button {
+  border: 0;
+  padding: 0 13px;
+  background: var(--orange);
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.13);
+  padding: 19px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  color: rgba(255,255,255,.6);
+  font-size: 10px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-social a { font-size: 15px; }
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-float {
+  position: fixed;
+  z-index: 150;
+  right: 22px;
+  bottom: 22px;
+  width: 53px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  background: #25d366;
+  font-size: 27px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .nav-links { gap: 13px; }
+  .nav-links a { font-size: 10px; }
+  .footer-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 800px) {
+  .navbar { min-height: 72px; }
+  .brand img { width: 49px; height: 49px; }
+  .brand-name strong { font-size: 14px; }
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background: var(--navy);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav-links.show { display: flex; }
+
+  .nav-links a {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 12px;
+  }
+
+  .nav-links .nav-book {
+    margin-top: 12px;
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  .hero {
+    min-height: 690px;
+    height: 85vh;
+  }
+
+  .hero-content { padding-top: 165px; }
+  .hero h1 { font-size: clamp(39px, 9vw, 57px); }
+
+  .image-four-grid { grid-template-columns: repeat(2, 1fr); }
+  .experience-grid { grid-template-columns: 1fr; gap: 20px; }
+  .safari-grid, .coastal-grid { grid-template-columns: 1fr 1fr; }
+  .destination-grid { grid-template-columns: repeat(2, 1fr); }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .enquiry-grid { grid-template-columns: 1fr; gap: 30px; }
+  .duration-grid { grid-template-columns: 1fr; gap: 20px; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+  .section { padding: 62px 0; }
+  .hero { min-height: 690px; }
+  .hero-content { padding-top: 145px; }
+  .hero-copy > p { font-size: 13px; }
+  .hero-quick-links { gap: 7px; margin-top: 28px; }
+  .hero-quick-links a { font-size: 9px; padding: 7px 9px; }
+  .image-four-grid { gap: 10px; }
+  .image-tile { height: 180px; }
+  .image-tile h3 { font-size: 16px; }
+  .safari-grid, .coastal-grid { grid-template-columns: 1fr; }
+  .safari-card-image { height: 220px; }
+  .destination-card { height: 160px; }
+  .benefits-grid { gap: 24px 15px; }
+  .steps-grid { gap: 25px 15px; }
+  .enquiry-copy h2 { font-size: 30px; }
+  .enquiry-checklist { padding: 21px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 25px 18px; }
+  .footer-grid .footer-column:first-child,
+  .footer-grid .footer-column:last-child { grid-column: 1 / -1; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 1. NAVIGATION HEADER -->
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Liamber Prime Travels home">
+      <img src="images/liamber-logo.png" alt="Liamber Prime Travels Limited logo">
+      <div class="brand-name">
+        <strong>LIAMBER PRIME</strong>
+        <span>Travels Limited</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="safaris.html">Kenya Safaris</a>
+      <a href="excursions.html">Experiences</a>
+      <a href="packages.html">Packages</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-book" href="contact.html#booking">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- 2. HERO WITH SEVEN AUTOMATIC SLIDES -->
+<section class="hero">
+  <div class="hero-slides">
+    <div class="hero-slide active" style="background-image:url('images/hero-01.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero-02.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero-03.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero-04.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero-05.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero-06.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/hero-07.jpg')"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-copy">
+      <span class="hero-label">Explore Kenya with Liamber Prime</span>
+      <h1>Discover the Wild Beauty of <span>Kenya Safaris & Tours</span></h1>
+      <p>
+        Experience unforgettable wildlife safaris, breathtaking landscapes,
+        cultural encounters and coastal escapes. Begin your journey in Nairobi
+        with a travel experience thoughtfully planned around you.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn btn-orange" href="safaris.html">Explore Kenya Safaris <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-outline" href="contact.html#booking">Plan Your Trip</a>
+      </div>
+
+      <div class="hero-quick-links">
+        <a href="maasai-mara.html">Maasai Mara</a>
+        <a href="amboseli.html">Amboseli</a>
+        <a href="tsavo-east.html">Tsavo Safaris</a>
+        <a href="beach-holidays.html">Coastal Holidays</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots" aria-label="Choose hero slide">
+    <button class="active" aria-label="Slide 1"></button>
+    <button aria-label="Slide 2"></button>
+    <button aria-label="Slide 3"></button>
+    <button aria-label="Slide 4"></button>
+    <button aria-label="Slide 5"></button>
+    <button aria-label="Slide 6"></button>
+    <button aria-label="Slide 7"></button>
+  </div>
+</section>
+
+<!-- 3. INTRODUCTION AND FOUR IMAGE CARDS -->
+<section class="section intro-section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Discover Kenya with us</span>
+      <h2>Kenya Safaris, Wildlife Adventures & Coastal Experiences</h2>
+      <p>
+        From the great savannahs and iconic wildlife parks to beautiful beaches
+        and vibrant local cultures, discover the experiences that make Kenya special.
+      </p>
+    </div>
+
+    <div class="image-four-grid">
+      <a href="maasai-mara.html" class="image-tile">
+        <img src="images/intro-maasai-mara.jpg" alt="Wildlife in Maasai Mara">
+        <h3>Wildlife Safaris</h3>
+      </a>
+      <a href="amboseli.html" class="image-tile">
+        <img src="images/intro-amboseli.jpg" alt="Elephants in Amboseli">
+        <h3>Iconic Landscapes</h3>
+      </a>
+      <a href="beach-holidays.html" class="image-tile">
+        <img src="images/intro-coast.jpg" alt="Kenyan coast and beach">
+        <h3>Coastal Escapes</h3>
+      </a>
+      <a href="excursions.html" class="image-tile">
+        <img src="images/intro-culture.jpg" alt="Kenyan cultural experience">
+        <h3>Culture & Experiences</h3>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 4. THREE FEATURED EXPERIENCE LINKS -->
+<section class="experience-links">
+  <div class="container experience-grid">
+    <article class="experience-item">
+      <span class="number">01 / WILDLIFE</span>
+      <h3>Tsavo East & Tsavo West Safaris</h3>
+      <p>Explore vast wilderness, red-elephant country, scenic landscapes and unforgettable game drives.</p>
+      <a class="text-link" href="tsavo-east.html">Explore experience <i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+
+    <article class="experience-item">
+      <span class="number">02 / MOUNTAIN VIEWS</span>
+      <h3>Amboseli & Mount Kilimanjaro</h3>
+      <p>Discover large elephant herds and the remarkable scenery beneath Africa's highest mountain.</p>
+      <a class="text-link" href="amboseli.html">Explore experience <i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+
+    <article class="experience-item">
+      <span class="number">03 / THE SAVANNAH</span>
+      <h3>Maasai Mara Safaris</h3>
+      <p>Experience the open plains, rich wildlife and remarkable seasonal movements of the Mara.</p>
+      <a class="text-link" href="maasai-mara.html">Explore experience <i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+  </div>
+</section>
+
+<!-- 5. POPULAR SAFARIS -->
+<section class="section safari-section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Handpicked journeys</span>
+      <h2>Popular Kenya Safaris from Nairobi</h2>
+      <p>Explore some of Kenya's best-known wildlife destinations with journeys planned around your schedule.</p>
+    </div>
+
+    <div class="safari-grid">
+      <article class="safari-card">
+        <div class="safari-card-image">
+          <img src="images/package-mara.jpg" alt="Maasai Mara safari">
+          <span class="safari-tag">Wildlife Favourite</span>
+        </div>
+        <div class="safari-card-content">
+          <h3>Maasai Mara Safari</h3>
+          <p>Journey from Nairobi to the famous Mara plains for wildlife viewing and guided game drives.</p>
+          <div class="safari-meta">
+            <span><i class="fa-regular fa-clock"></i> 3 Days</span>
+            <span><i class="fa-solid fa-location-dot"></i> Nairobi return</span>
+          </div>
+          <div class="safari-actions">
+            <a class="btn btn-green" href="maasai-mara.html">View Itinerary</a>
+            <a class="btn btn-orange" href="contact.html#booking">Request Quote</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="safari-card">
+        <div class="safari-card-image">
+          <img src="images/package-amboseli.jpg" alt="Amboseli safari">
+          <span class="safari-tag">Mountain Views</span>
+        </div>
+        <div class="safari-card-content">
+          <h3>Amboseli National Park</h3>
+          <p>Discover Amboseli's elephants, open plains and spectacular views of Mount Kilimanjaro.</p>
+          <div class="safari-meta">
+            <span><i class="fa-regular fa-clock"></i> 3 Days</span>
+            <span><i class="fa-solid fa-location-dot"></i> Nairobi return</span>
+          </div>
+          <div class="safari-actions">
+            <a class="btn btn-green" href="amboseli.html">View Itinerary</a>
+            <a class="btn btn-orange" href="contact.html#booking">Request Quote</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="safari-card">
+        <div class="safari-card-image">
+          <img src="images/package-tsavo.jpg" alt="Tsavo safari">
+          <span class="safari-tag">Wilderness Escape</span>
+        </div>
+        <div class="safari-card-content">
+          <h3>Tsavo East & West</h3>
+          <p>Explore Kenya's expansive wilderness, diverse landscapes and remarkable wildlife.</p>
+          <div class="safari-meta">
+            <span><i class="fa-regular fa-clock"></i> 4 Days</span>
+            <span><i class="fa-solid fa-location-dot"></i> Nairobi return</span>
+          </div>
+          <div class="safari-actions">
+            <a class="btn btn-green" href="tsavo-east.html">View Itinerary</a>
+            <a class="btn btn-orange" href="contact.html#booking">Request Quote</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. TRIPS BY DURATION -->
+<section class="section duration-section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Choose your pace</span>
+      <h2>Find a Journey That Fits Your Time</h2>
+      <p>Whether you have a single day or a longer holiday, we can help plan your Kenyan experience.</p>
+    </div>
+
+    <div class="duration-grid">
+      <article class="duration-item">
+        <h3>One-day trips</h3>
+        <p>Make the most of a short stay with Nairobi attractions, wildlife experiences and day excursions.</p>
+        <a class="text-link" href="excursions.html">Explore day trips →</a>
+      </article>
+
+      <article class="duration-item">
+        <h3>Two to three days</h3>
+        <p>Enjoy a short safari getaway with time for game drives, scenic stops and relaxing lodge stays.</p>
+        <a class="text-link" href="packages.html">Explore short safaris →</a>
+      </article>
+
+      <article class="duration-item">
+        <h3>Four days or longer</h3>
+        <p>Combine destinations, discover more wildlife areas and enjoy a more immersive Kenya holiday.</p>
+        <a class="text-link" href="safaris.html">Explore longer safaris →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7. COASTAL, CULTURAL AND OTHER EXPERIENCES -->
+<section class="section coastal-section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">More to discover</span>
+      <h2>Kenya's Top Wildlife, Cultural & Coastal Experiences</h2>
+      <p>Go beyond the safari with memorable experiences across Kenya's landscapes, communities and coast.</p>
+    </div>
+
+    <div class="coastal-grid">
+      <article class="coastal-card">
+        <img src="images/experience-nairobi.jpg" alt="Nairobi city and attractions">
+        <div class="coastal-card-content">
+          <h3>Nairobi Experiences</h3>
+          <p>Discover Nairobi's attractions, wildlife experiences, city culture and nearby day trips.</p>
+          <a class="text-link" href="excursions.html">Explore experience →</a>
+        </div>
+      </article>
+
+      <article class="coastal-card">
+        <img src="images/experience-diani.jpg" alt="Diani Beach">
+        <div class="coastal-card-content">
+          <h3>Diani & Kenya Coast</h3>
+          <p>Enjoy beautiful beaches, ocean activities, coastal stays and relaxing beach holidays.</p>
+          <a class="text-link" href="beach-holidays.html">Explore experience →</a>
+        </div>
+      </article>
+
+      <article class="coastal-card">
+        <img src="images/experience-culture.jpg" alt="Kenyan cultural experience">
+        <div class="coastal-card-content">
+          <h3>Culture & Local Encounters</h3>
+          <p>Connect with Kenya's heritage through cultural visits, local experiences and community encounters.</p>
+          <a class="text-link" href="excursions.html">Explore experience →</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="center-button">
+      <a class="btn btn-green" href="excursions.html">View All Experiences <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FOUR REASONS / BENEFITS -->
+<section class="benefits-section">
+  <div class="container benefits-grid">
+    <article class="benefit-item">
+      <div class="benefit-icon"><i class="fa-regular fa-calendar-check"></i></div>
+      <h3>Simple & Flexible Bookings</h3>
+      <p>Share your plans and receive a proposal that suits your travel dates and preferences.</p>
+    </article>
+
+    <article class="benefit-item">
+      <div class="benefit-icon"><i class="fa-solid fa-people-group"></i></div>
+      <h3>Families & Groups</h3>
+      <p>Travel arrangements for couples, families, private groups and shared safari experiences.</p>
+    </article>
+
+    <article class="benefit-item">
+      <div class="benefit-icon"><i class="fa-solid fa-compass"></i></div>
+      <h3>Local Expertise</h3>
+      <p>Explore Kenya with carefully planned routes and destination-focused travel support.</p>
+    </article>
+
+    <article class="benefit-item">
+      <div class="benefit-icon"><i class="fa-regular fa-handshake"></i></div>
+      <h3>Clear & Honest Planning</h3>
+      <p>Understand your itinerary, inclusions and travel arrangements before confirming.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 9. KENYA SAFARI PARKS AND DESTINATIONS -->
+<section class="section destination-section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Explore the destinations</span>
+      <h2>Kenya Safari Parks & Destinations</h2>
+      <p>Discover iconic national parks, wildlife reserves, mountain landscapes and coastal destinations.</p>
+    </div>
+
+    <div class="destination-grid">
+      <a href="maasai-mara.html" class="destination-card">
+        <img src="images/destination-mara.jpg" alt="Maasai Mara">
+        <h3>Maasai Mara</h3>
+      </a>
+      <a href="amboseli.html" class="destination-card">
+        <img src="images/destination-amboseli.jpg" alt="Amboseli National Park">
+        <h3>Amboseli</h3>
+      </a>
+      <a href="tsavo-east.html" class="destination-card">
+        <img src="images/destination-tsavo.jpg" alt="Tsavo National Park">
+        <h3>Tsavo</h3>
+      </a>
+      <a href="lake-nakuru.html" class="destination-card">
+        <img src="images/destination-nakuru.jpg" alt="Lake Nakuru National Park">
+        <h3>Lake Nakuru</h3>
+      </a>
+      <a href="samburu.html" class="destination-card">
+        <img src="images/destination-samburu.jpg" alt="Samburu">
+        <h3>Samburu</h3>
+      </a>
+      <a href="beach-holidays.html" class="destination-card">
+        <img src="images/destination-diani.jpg" alt="Diani Beach">
+        <h3>Diani Beach</h3>
+      </a>
+      <a href="destinations.html" class="destination-card">
+        <img src="images/destination-nairobi.jpg" alt="Nairobi">
+        <h3>Nairobi</h3>
+      </a>
+      <a href="destinations.html" class="destination-card">
+        <img src="images/destination-mombasa.jpg" alt="Mombasa">
+        <h3>Mombasa</h3>
+      </a>
+    </div>
+
+    <div class="center-button">
+      <a href="destinations.html" class="btn btn-green">Explore All Destinations <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FOUR STEPS FROM IDEA TO TRIP -->
+<section class="section steps-section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Your journey starts here</span>
+      <h2>From Your Idea to Your Kenya Trip</h2>
+      <p>Planning your next holiday can be straightforward. Here is how to get started.</p>
+    </div>
+
+    <div class="steps-grid">
+      <article class="step-item">
+        <span class="step-number">01</span>
+        <h3>Share Your Plans</h3>
+        <p>Tell us your travel dates, number of guests, interests and preferred destinations.</p>
+      </article>
+
+      <article class="step-item">
+        <span class="step-number">02</span>
+        <h3>Receive a Proposal</h3>
+        <p>We prepare a suggested itinerary and quotation based on the information you provide.</p>
+      </article>
+
+      <article class="step-item">
+        <span class="step-number">03</span>
+        <h3>Review & Confirm</h3>
+        <p>Review the proposed arrangements, ask questions and confirm when you are ready.</p>
+      </article>
+
+      <article class="step-item">
+        <span class="step-number">04</span>
+        <h3>Prepare for Travel</h3>
+        <p>Receive your travel details and get ready for your Kenya experience.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 11. WHAT TO INCLUDE IN YOUR ENQUIRY -->
+<section class="section enquiry-section">
+  <div class="container enquiry-grid">
+    <div class="enquiry-copy">
+      <span class="eyebrow">Let's plan together</span>
+      <h2>What to Include in Your Enquiry</h2>
+      <p>
+        Help us understand the trip you have in mind. A few details about your
+        plans will make it easier for us to suggest a suitable itinerary and quotation.
+      </p>
+      <a class="btn btn-orange" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20plan%20a%20Kenya%20trip." target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp
+      </a>
+    </div>
+
+    <div class="enquiry-checklist">
+      <h3>Helpful details to share</h3>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> Your preferred travel dates</li>
+        <li><i class="fa-solid fa-check"></i> Number of adults and children</li>
+        <li><i class="fa-solid fa-check"></i> Destinations you would like to visit</li>
+        <li><i class="fa-solid fa-check"></i> Number of days available</li>
+        <li><i class="fa-solid fa-check"></i> Your preferred accommodation level</li>
+        <li><i class="fa-solid fa-check"></i> Your approximate budget per person</li>
+        <li><i class="fa-solid fa-check"></i> Any special interests or requests</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 12. FREQUENTLY ASKED QUESTIONS -->
+<section class="section faq-section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Need more information?</span>
+      <h2>Kenya Safari & Tour FAQs</h2>
+      <p>Answers to common questions to help you plan your trip with confidence.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Where do your Kenya safaris start?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          Our Kenya safari itineraries are planned to start in Nairobi and return to Nairobi,
+          unless a different arrangement is agreed and confirmed in your itinerary.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can you organise a private safari?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          Yes. You can enquire about a private safari for couples, families or groups.
+          Share your preferred dates, destinations and group size so that we can prepare a proposal.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I request a tailor-made itinerary?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          Yes. Share your travel interests, available time and budget, and we can discuss
+          an itinerary designed around your requirements.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is included in a safari package?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          Inclusions depend on the selected package. Your quotation and itinerary should
+          clearly state transport, accommodation, meals, park fees, guiding services and
+          any other included activities.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I request a safari quotation?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          Contact us through WhatsApp, email or the enquiry page. Include your dates,
+          group size, preferred destinations and accommodation preferences.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you arrange beach holidays?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          Yes. You can enquire about coastal holidays and combinations of wildlife safaris
+          with destinations such as Diani and Mombasa.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13. SEO INFORMATION SECTION -->
+<section class="section seo-section">
+  <div class="container seo-content">
+    <span class="eyebrow">Travel inspiration</span>
+    <h2>Plan Kenya Safaris and Holidays with Liamber Prime Travels</h2>
+
+    <p>
+      Kenya is one of Africa's remarkable travel destinations, offering wildlife-rich
+      national parks, expansive savannahs, mountain scenery, vibrant cultures and
+      beautiful Indian Ocean beaches. Whether you are visiting for a wildlife safari,
+      a family holiday, a romantic escape or a cultural experience, Kenya offers a
+      variety of journeys to discover.
+    </p>
+
+    <p>
+      Liamber Prime Travels Limited helps travellers explore Kenya through safari
+      experiences, holiday packages and tailor-made travel arrangements. Our journeys
+      can include destinations such as the
+      <a href="maasai-mara.html">Maasai Mara</a>,
+      <a href="amboseli.html">Amboseli National Park</a>,
+      <a href="tsavo-east.html">Tsavo</a>,
+      <a href="lake-nakuru.html">Lake Nakuru</a> and
+      <a href="samburu.html">Samburu</a>.
+    </p>
+
+    <h3>Kenya wildlife safaris</h3>
+    <p>
+      A Kenya safari provides opportunities to experience wildlife and landscapes
+      across different parks and reserves. Game drives, scenic journeys and time
+      spent in the natural environment can make each destination distinctive.
+      Explore our <a href="safaris.html">Kenya safari packages</a> to find a journey
+      that suits your available time.
+    </p>
+
+    <h3>Kenya beach holidays and coastal experiences</h3>
+    <p>
+      Kenya's coast offers a different pace of travel, with beaches, ocean experiences
+      and coastal culture. Discover our
+      <a href="beach-holidays.html">beach holiday options</a> and consider combining
+      a wildlife safari with time at the coast.
+    </p>
+
+    <h3>Tailor-made tours from Nairobi</h3>
+    <p>
+      Nairobi provides a convenient starting point for many Kenya safari itineraries.
+      Share your preferred travel dates, destinations and group size with our team.
+      We can discuss a suitable route and prepare a proposed itinerary for your review.
+      Visit our <a href="contact.html">contact page</a> to begin planning.
+    </p>
+  </div>
+</section>
+
+<!-- 14. DARK GREEN BOOKING CTA -->
+<section class="booking-cta" id="booking">
+  <div class="container">
+    <span class="eyebrow">Your Kenya journey awaits</span>
+    <h2>Tell Us Your Dates. We'll Help Plan Your Trip.</h2>
+    <p>
+      Share your travel plans with Liamber Prime Travels Limited and let us help
+      you put together a Kenya safari or holiday experience.
+    </p>
+    <div class="cta-buttons">
+      <a class="btn btn-orange" href="contact.html#booking">Send an Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+      <a class="btn btn-outline" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20plan%20a%20trip." target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 15. MULTI-COLUMN FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-column">
+        <div class="footer-brand">
+          <img src="images/liamber-logo.png" alt="Liamber Prime Travels Limited">
+          <strong>LIAMBER PRIME<br>TRAVELS LIMITED</strong>
+        </div>
+        <p>
+          Discover Kenya through wildlife safaris, coastal holidays, cultural
+          experiences and tailor-made journeys.
+        </p>
+        <p><strong>Explore. Experience. Enjoy.</strong></p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="safaris.html">Kenya Safaris</a></li>
+          <li><a href="packages.html">Safari Packages</a></li>
+          <li><a href="excursions.html">Day Trips & Experiences</a></li>
+          <li><a href="beach-holidays.html">Beach Holidays</a></li>
+          <li><a href="international-tours.html">International Tours</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#booking">Request a Quote</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Travel Information</h3>
+        <ul>
+          <li><a href="flight-booking.html">Flight Booking</a></li>
+          <li><a href="hotel-booking.html">Hotel Booking</a></li>
+          <li><a href="transfers.html">Airport Transfers</a></li>
+          <li><a href="corporate-travel.html">Corporate Travel</a></li>
+          <li><a href="visa-assistance.html">Visa Assistance</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+254721116715">+254 721 116 715</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/254721116715" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+
+        <h3 style="margin-top:20px;">Stay Connected</h3>
+        <p>Contact us for travel updates and new holiday ideas.</p>
+        <a class="text-link" href="contact.html">Get in touch →</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear"></span> Liamber Prime Travels Limited. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/254721116715" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:chirchirkb@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+   target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+// Mobile navigation
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("show");
+  menuToggle.setAttribute("aria-expanded", isOpen);
+  menuToggle.innerHTML = isOpen
+    ? '<i class="fa-solid fa-xmark"></i>'
+    : '<i class="fa-solid fa-bars"></i>';
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("show");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  });
+});
+
+// Seven-image automatic hero slider
+const slides = document.querySelectorAll(".hero-slide");
+const dots = document.querySelectorAll("#heroDots button");
+let currentSlide = 0;
+let slideTimer;
+
+function showSlide(index) {
+  slides[currentSlide].classList.remove("active");
+  dots[currentSlide].classList.remove("active");
+
+  currentSlide = (index + slides.length) % slides.length;
+
+  slides[currentSlide].classList.add("active");
+  dots[currentSlide].classList.add("active");
+}
+
+function startSlider() {
+  clearInterval(slideTimer);
+  slideTimer = setInterval(() => {
+    showSlide(currentSlide + 1);
+  }, 5500);
+}
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    showSlide(index);
+    startSlider();
+  });
+});
+
+startSlider();
+
+// Touch swipe on hero for mobile users
+let touchStartX = 0;
+const hero = document.querySelector(".hero");
+
+hero.addEventListener("touchstart", event => {
+  touchStartX = event.changedTouches[0].screenX;
+}, { passive: true });
+
+hero.addEventListener("touchend", event => {
+  const touchEndX = event.changedTouches[0].screenX;
+  const difference = touchStartX - touchEndX;
+
+  if (Math.abs(difference) > 45) {
+    showSlide(currentSlide + (difference > 0 ? 1 : -1));
+    startSlider();
+  }
+}, { passive: true });
+
+// FAQ accordion
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = button.closest(".faq-item");
+    const isOpen = item.classList.toggle("open");
+
+    button.setAttribute("aria-expanded", isOpen);
+    button.querySelector("i").className = isOpen
+      ? "fa-solid fa-minus"
+      : "fa-solid fa-plus";
+  });
+});
+
+// Automatic copyright year
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

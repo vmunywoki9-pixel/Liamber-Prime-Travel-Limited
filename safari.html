@@ -1,0 +1,1324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Kenya safaris with Liamber Prime Travels Limited. Discover Masai Mara, Amboseli, Tsavo, Samburu and more with tailor-made safari experiences departing from Nairobi.">
+<meta name="theme-color" content="#17231f">
+<title>Kenya Safaris | Liamber Prime Travels Limited</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --dark: #17231f;
+  --dark2: #26342e;
+  --gold: #c28a39;
+  --gold2: #dfa84e;
+  --cream: #f7f4ed;
+  --white: #fff;
+  --text: #333a35;
+  --muted: #747b75;
+  --green: #244d3c;
+  --border: #e7e3d9;
+  --shadow: 0 12px 35px rgba(0,0,0,.09);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  line-height: 1.65;
+  background: #fff;
+}
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+img { display: block; width: 100%; object-fit: cover; }
+.container { width: min(1160px, 91%); margin: auto; }
+
+.topbar {
+  background: #101a16;
+  color: #eee;
+  font-size: 12px;
+  padding: 9px 0;
+}
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.topbar a { color: #e9bd76; }
+
+header {
+  background: var(--dark);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 5px 20px rgba(0,0,0,.15);
+}
+.navbar {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 190px;
+}
+.brand img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: white;
+}
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  line-height: 1.25;
+  color: white;
+}
+.brand-name small {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #d8b77e;
+  margin-top: 4px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  list-style: none;
+  font-size: 12px;
+}
+.nav-links a { color: #eee; transition: .2s; }
+.nav-links a:hover { color: var(--gold2); }
+.nav-cta, .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gold);
+  color: #171b17;
+  padding: 12px 21px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  transition: .25s;
+}
+.nav-cta:hover, .btn:hover { background: var(--gold2); transform: translateY(-2px); }
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid #718078;
+  color: white;
+  padding: 7px 11px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.breadcrumb {
+  background: var(--cream);
+  padding: 12px 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+.breadcrumb span { color: var(--gold); }
+
+.hero {
+  min-height: 590px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(10,20,15,.87), rgba(10,20,15,.35)),
+    url('safari-hero.jpg') center/cover no-repeat;
+}
+.hero-content { max-width: 720px; padding: 95px 0; }
+.eyebrow {
+  color: var(--gold2);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.hero h1 { font-size: clamp(42px, 6vw, 68px); margin-bottom: 22px; }
+.hero p { max-width: 610px; color: #eee; font-size: 15px; }
+.hero-actions { display: flex; gap: 13px; flex-wrap: wrap; margin-top: 30px; }
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 21px;
+  border: 1px solid rgba(255,255,255,.75);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+.btn-outline:hover { background: white; color: var(--dark); }
+
+.highlights {
+  background: var(--dark);
+  color: white;
+  padding: 25px 0;
+}
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-right: 1px solid #46524b;
+  padding-right: 12px;
+}
+.highlight:last-child { border: 0; }
+.highlight-icon { font-size: 25px; color: var(--gold2); }
+.highlight strong { display: block; font-size: 12px; }
+.highlight small { color: #bdc5bf; font-size: 10px; }
+
+section { padding: 85px 0; }
+.section-heading { text-align: center; max-width: 720px; margin: 0 auto 42px; }
+.section-heading .eyebrow { color: var(--gold); }
+.section-heading h2 { font-size: clamp(30px, 4vw, 43px); color: var(--dark); margin-bottom: 15px; }
+.section-heading p { font-size: 13px; color: var(--muted); }
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+.intro-image { height: 420px; }
+.intro-image img { height: 100%; }
+.intro-copy h2 { font-size: 39px; color: var(--dark); margin-bottom: 20px; }
+.intro-copy p { color: var(--muted); font-size: 13px; margin-bottom: 15px; }
+.check-list { list-style: none; margin: 20px 0 27px; }
+.check-list li { font-size: 12px; padding: 7px 0; }
+.check-list li:before { content: "✓"; color: var(--gold); font-weight: bold; margin-right: 10px; }
+
+.destinations { background: var(--cream); }
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 18px;
+}
+.destination-card {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+  background: var(--dark);
+}
+.destination-card img { height: 100%; transition: transform .5s; }
+.destination-card:hover img { transform: scale(1.07); }
+.destination-card:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 35%, rgba(0,0,0,.85));
+}
+.destination-info {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 19px;
+  right: 19px;
+  color: white;
+}
+.destination-info h3 { font-size: 23px; margin-bottom: 7px; }
+.destination-info p { font-size: 11px; color: #eee; }
+
+.packages { background: white; }
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 30px;
+}
+.filter-btn {
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text);
+  padding: 9px 15px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.filter-btn.active, .filter-btn:hover {
+  background: var(--dark);
+  color: white;
+  border-color: var(--dark);
+}
+.package-count {
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 23px;
+}
+.package-card {
+  border: 1px solid var(--border);
+  background: white;
+  transition: .25s;
+}
+.package-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
+.package-card img { height: 205px; }
+.package-body { padding: 21px; }
+.package-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.package-body h3 { font-size: 21px; color: var(--dark); margin-bottom: 10px; }
+.package-body p { font-size: 12px; color: var(--muted); min-height: 57px; }
+.package-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 17px;
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+}
+.text-btn {
+  border: 0;
+  background: none;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.package-actions .btn { padding: 9px 13px; font-size: 10px; }
+.no-results { text-align: center; color: var(--muted); padding: 30px; display: none; }
+
+.why { background: var(--dark); color: white; }
+.why .section-heading h2 { color: white; }
+.why .section-heading p { color: #c5cdc7; }
+.why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 35px; }
+.why-card { border-top: 2px solid var(--gold); padding-top: 20px; }
+.why-card .number { color: var(--gold2); font-family: 'Playfair Display'; font-size: 27px; }
+.why-card h3 { font-size: 21px; margin: 10px 0; }
+.why-card p { font-size: 12px; color: #c5cdc7; }
+
+.steps { background: var(--cream); }
+.steps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 25px; }
+.step { background: white; padding: 28px; border-bottom: 3px solid var(--gold); }
+.step-number { color: var(--gold); font-size: 29px; font-family: 'Playfair Display'; }
+.step h3 { font-size: 20px; margin: 10px 0; color: var(--dark); }
+.step p { font-size: 12px; color: var(--muted); }
+
+.faq-list { max-width: 850px; margin: auto; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 20px 4px;
+  background: none;
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-weight: 700;
+  color: var(--dark);
+  cursor: pointer;
+  font-size: 13px;
+}
+.faq-answer { display: none; padding: 0 4px 20px; color: var(--muted); font-size: 12px; }
+.faq-item.open .faq-answer { display: block; }
+.faq-item.open .faq-question span:last-child { transform: rotate(45deg); }
+
+.pickup { background: var(--cream); }
+.pickup-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.pickup-grid img { height: 350px; }
+.pickup-copy h2 { color: var(--dark); font-size: 35px; margin-bottom: 17px; }
+.pickup-copy p { color: var(--muted); font-size: 13px; margin-bottom: 13px; }
+
+.booking { background: white; }
+.booking-wrap {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  box-shadow: var(--shadow);
+}
+.booking-aside {
+  padding: 45px;
+  background: var(--dark);
+  color: white;
+}
+.booking-aside h2 { font-size: 34px; margin-bottom: 18px; }
+.booking-aside p { font-size: 12px; color: #c7d0c9; margin-bottom: 20px; }
+.booking-aside ul { list-style: none; font-size: 12px; }
+.booking-aside li { padding: 9px 0; border-bottom: 1px solid #46524b; }
+.booking-form { padding: 40px; }
+.booking-form h3 { font-size: 27px; color: var(--dark); margin-bottom: 8px; }
+.booking-form > p { color: var(--muted); font-size: 11px; margin-bottom: 25px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+.form-group { display: flex; flex-direction: column; gap: 7px; }
+.form-group.full { grid-column: 1/-1; }
+.form-group label { font-size: 10px; font-weight: 700; color: var(--dark); }
+.form-group input, .form-group select, .form-group textarea {
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 12px;
+  font-size: 11px;
+  width: 100%;
+  outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); }
+.form-group textarea { min-height: 100px; resize: vertical; }
+.form-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.btn-green { background: var(--green); color: white; }
+.btn-green:hover { background: #32684f; }
+.form-note { font-size: 10px; color: var(--muted); margin-top: 13px; }
+
+.final-cta {
+  background:
+    linear-gradient(rgba(25,52,39,.87),rgba(25,52,39,.87)),
+    url('safari-cta.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+.final-cta h2 { font-size: clamp(32px,4vw,46px); margin-bottom: 15px; }
+.final-cta p { color: #e2e9e3; font-size: 13px; max-width: 620px; margin: 0 auto 25px; }
+
+footer { background: #101a16; color: white; padding: 65px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 35px; }
+.footer-brand { font-family: 'Playfair Display'; font-size: 21px; margin-bottom: 15px; }
+.footer-column h3 { font-family: 'DM Sans'; font-size: 12px; margin-bottom: 17px; color: var(--gold2); }
+.footer-column p, .footer-column a { font-size: 11px; color: #c0c9c2; }
+.footer-column ul { list-style: none; }
+.footer-column li { margin: 9px 0; }
+.footer-column a:hover { color: var(--gold2); }
+.footer-bottom {
+  border-top: 1px solid #34423a;
+  margin-top: 45px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: #aeb9b1;
+}
+.whatsapp-float {
+  position: fixed;
+  z-index: 1001;
+  right: 22px;
+  bottom: 22px;
+  background: #168c55;
+  color: white;
+  border-radius: 50px;
+  padding: 13px 19px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.25);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal.show { display: flex; }
+.modal-content {
+  background: white;
+  max-width: 650px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 35px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  right: 17px;
+  top: 12px;
+  border: 0;
+  background: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+.modal-content h2 { color: var(--dark); font-size: 29px; margin: 8px 0 15px; }
+.modal-content p, .modal-content li { color: var(--muted); font-size: 12px; }
+.modal-content ul { padding-left: 20px; margin: 15px 0; }
+
+@media(max-width:950px) {
+  .nav-links { gap: 12px; font-size: 10px; }
+  .nav-cta { display: none; }
+  .destination-grid { grid-template-columns: repeat(2,1fr); }
+  .package-grid { grid-template-columns: repeat(2,1fr); }
+  .footer-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media(max-width:700px) {
+  .topbar-inner { justify-content: center; text-align: center; }
+  .navbar { min-height: 72px; }
+  .brand img { width: 46px; height: 46px; }
+  .brand-name { font-size: 14px; }
+  .menu-toggle { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: var(--dark);
+    padding: 20px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+  }
+  .nav-links.show { display: flex; }
+  .hero { min-height: 520px; }
+  .hero-content { padding: 75px 0; }
+  .highlight-grid { grid-template-columns: repeat(2,1fr); }
+  .highlight:nth-child(2) { border: 0; }
+  section { padding: 65px 0; }
+  .intro-grid, .pickup-grid, .booking-wrap { grid-template-columns: 1fr; }
+  .intro-image { height: 300px; }
+  .destination-grid, .package-grid { grid-template-columns: 1fr; }
+  .destination-card { height: 320px; }
+  .why-grid, .steps-grid { grid-template-columns: 1fr; gap: 25px; }
+  .booking-aside, .booking-form { padding: 28px 22px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-group.full { grid-column: auto; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+}
+@media(max-width:420px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .highlight-grid { grid-template-columns: 1fr; }
+  .highlight { border: 0; }
+  .hero h1 { font-size: 39px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div>Call us: <a href="tel:+254721116715">+254 721 116 715</a></div>
+    <div>Email: <a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a></div>
+    <div>Safari planning and enquiries available 24/7</div>
+  </div>
+</div>
+
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="brand">
+      <img src="liamber-logo.png" alt="Liamber Prime Travels logo">
+      <div class="brand-name">LIAMBER PRIME<small>TRAVELS LIMITED</small></div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="safari.html">Safaris</a></li>
+      <li><a href="excursions.html">Excursions</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="transfers.html">Transfers</a></li>
+      <li><a href="stays.html">Stays</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="#booking" class="nav-cta">BOOK A SAFARI</a>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="container"><a href="index.html">Home</a> &nbsp;/&nbsp; <span>Kenya Safaris</span></div>
+</div>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">Discover the magic of Kenya</div>
+      <h1>Authentic Kenya Safari Experiences</h1>
+      <p>Explore Kenya's remarkable wildlife, breathtaking landscapes and unforgettable destinations with Liamber Prime Travels Limited. Begin your journey from Nairobi and discover Africa at your own pace.</p>
+      <div class="hero-actions">
+        <a href="#packages" class="btn">EXPLORE SAFARIS</a>
+        <a href="#booking" class="btn-outline">REQUEST A SAFARI</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="highlights">
+  <div class="container highlight-grid">
+    <div class="highlight"><div class="highlight-icon">✦</div><div><strong>Kenya Safari Experiences</strong><small>Explore iconic destinations</small></div></div>
+    <div class="highlight"><div class="highlight-icon">◇</div><div><strong>Flexible Travel Plans</strong><small>Journeys shaped around you</small></div></div>
+    <div class="highlight"><div class="highlight-icon">⌖</div><div><strong>Nairobi Departure</strong><small>Convenient trip planning</small></div></div>
+    <div class="highlight"><div class="highlight-icon">♡</div><div><strong>Personal Assistance</strong><small>Support from enquiry to trip</small></div></div>
+  </div>
+</div>
+
+<section>
+  <div class="container intro-grid">
+    <div class="intro-image">
+      <img src="safari-intro.jpg" alt="Wildlife safari in Kenya">
+    </div>
+    <div class="intro-copy">
+      <div class="eyebrow">Welcome to Liamber Prime</div>
+      <h2>Safari Adventures Across Kenya</h2>
+      <p>Kenya is home to extraordinary wildlife, diverse cultures and some of the world's most memorable safari landscapes. From the open plains of the Masai Mara to the dramatic scenery of Amboseli, every destination offers something special.</p>
+      <p>At Liamber Prime Travels Limited, we help travellers plan safari experiences that reflect their interests, schedules and preferred travel style.</p>
+      <ul class="check-list">
+        <li>Safari journeys departing from Nairobi</li>
+        <li>Private and tailor-made safari requests</li>
+        <li>Wildlife, scenery and cultural experiences</li>
+        <li>Flexible trip durations and travel preferences</li>
+      </ul>
+      <a href="#booking" class="btn">PLAN YOUR SAFARI</a>
+    </div>
+  </div>
+</section>
+
+<section class="destinations">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Explore Kenya</div>
+      <h2>Discover Our Safari Destinations</h2>
+      <p>Experience some of Kenya's most celebrated wildlife destinations and natural landscapes.</p>
+    </div>
+
+    <div class="destination-grid">
+      <a class="destination-card" href="#packages" data-destination-link="Mara">
+        <img src="masai-mara.jpg" alt="Masai Mara wildlife reserve">
+        <div class="destination-info"><h3>Masai Mara</h3><p>Famous wildlife plains and remarkable game viewing.</p></div>
+      </a>
+      <a class="destination-card" href="#packages" data-destination-link="Amboseli">
+        <img src="amboseli.jpg" alt="Elephants in Amboseli">
+        <div class="destination-info"><h3>Amboseli</h3><p>Elephants and spectacular views of Mount Kilimanjaro.</p></div>
+      </a>
+      <a class="destination-card" href="#packages" data-destination-link="Tsavo">
+        <img src="tsavo.jpg" alt="Tsavo National Park">
+        <div class="destination-info"><h3>Tsavo</h3><p>Vast wilderness, red elephants and beautiful scenery.</p></div>
+      </a>
+      <a class="destination-card" href="#packages" data-destination-link="Nakuru">
+        <img src="lake-nakuru.jpg" alt="Lake Nakuru National Park">
+        <div class="destination-info"><h3>Lake Nakuru</h3><p>Scenic landscapes and diverse birdlife and wildlife.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="packages" id="packages">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Find your journey</div>
+      <h2>Explore Safari Packages</h2>
+      <p>Browse sample safari ideas and send us your preferred trip. We will help you confirm a suitable itinerary and quotation.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">All Safaris</button>
+      <button class="filter-btn" data-filter="Mara">Masai Mara</button>
+      <button class="filter-btn" data-filter="Tsavo">Tsavo</button>
+      <button class="filter-btn" data-filter="Amboseli">Amboseli</button>
+      <button class="filter-btn" data-filter="Nakuru">Nakuru</button>
+      <button class="filter-btn" data-filter="Samburu">Samburu</button>
+      <button class="filter-btn" data-filter="short">1–3 Days</button>
+      <button class="filter-btn" data-filter="long">4+ Days</button>
+    </div>
+
+    <div class="package-count" id="packageCount">Showing all safari ideas</div>
+
+    <div class="package-grid" id="packageGrid">
+
+      <article class="package-card" data-place="Mara" data-days="3">
+        <img src="masai-mara.jpg" alt="Masai Mara safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Masai Mara</span><span>3 Days</span></div>
+          <h3>3-Day Masai Mara Safari</h3>
+          <p>Discover the famous Mara plains, wildlife habitats and unforgettable game-viewing opportunities.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Masai Mara Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Masai Mara Safari">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Tsavo" data-days="2">
+        <img src="tsavo.jpg" alt="Tsavo East safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Tsavo</span><span>2 Days</span></div>
+          <h3>2-Day Tsavo East Safari</h3>
+          <p>A short wildlife escape into one of Kenya's expansive and scenic national parks.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="2-Day Tsavo East Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="2-Day Tsavo East Safari">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Amboseli Tsavo" data-days="4">
+        <img src="amboseli.jpg" alt="Amboseli and Tsavo safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Amboseli & Tsavo</span><span>4 Days</span></div>
+          <h3>4-Day Amboseli & Tsavo</h3>
+          <p>Combine elephant country and the wide wilderness of Tsavo in one safari journey.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="4-Day Amboseli & Tsavo Combo">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="4-Day Amboseli & Tsavo Combo">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara Nakuru" data-days="5">
+        <img src="lake-nakuru.jpg" alt="Masai Mara and Lake Nakuru">
+        <div class="package-body">
+          <div class="package-meta"><span>Mara & Nakuru</span><span>5 Days</span></div>
+          <h3>5-Day Mara & Lake Nakuru</h3>
+          <p>Explore two distinctive destinations with a combination of wildlife and scenic landscapes.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="5-Day Masai Mara & Lake Nakuru">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="5-Day Masai Mara & Lake Nakuru">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Tsavo" data-days="1">
+        <img src="tsavo.jpg" alt="Tsavo day safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Tsavo</span><span>1 Day</span></div>
+          <h3>1-Day Tsavo Express</h3>
+          <p>A sample short safari concept for travellers interested in a one-day wildlife experience.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="1-Day Tsavo East Express">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="1-Day Tsavo East Express">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara Amboseli Tsavo Nakuru" data-days="6">
+        <img src="safari-circuit.jpg" alt="Kenya safari circuit">
+        <div class="package-body">
+          <div class="package-meta"><span>Kenya Circuit</span><span>6 Days</span></div>
+          <h3>6-Day Kenya Safari Circuit</h3>
+          <p>A multi-destination safari concept featuring some of Kenya's best-known wildlife areas.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="6-Day Kenya Safari Circuit">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="6-Day Kenya Safari Circuit">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Amboseli" data-days="3">
+        <img src="amboseli.jpg" alt="Amboseli National Park">
+        <div class="package-body">
+          <div class="package-meta"><span>Amboseli</span><span>3 Days</span></div>
+          <h3>3-Day Amboseli Safari</h3>
+          <p>Discover Amboseli's open plains, wildlife and iconic mountain scenery.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Amboseli Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Amboseli Safari">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara Nakuru Amboseli" data-days="7">
+        <img src="masai-mara.jpg" alt="Kenya safari destinations">
+        <div class="package-body">
+          <div class="package-meta"><span>Multi-destination</span><span>7 Days</span></div>
+          <h3>7-Day Mara, Nakuru & Amboseli</h3>
+          <p>A longer safari idea connecting three popular destinations across Kenya.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="7-Day Masai Mara, Nakuru & Amboseli">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="7-Day Masai Mara, Nakuru & Amboseli">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Tsavo" data-days="3">
+        <img src="tsavo.jpg" alt="Tsavo East and West">
+        <div class="package-body">
+          <div class="package-meta"><span>Tsavo</span><span>3 Days</span></div>
+          <h3>3-Day Tsavo East & West</h3>
+          <p>Explore the contrasting landscapes and wildlife experiences of Tsavo's two parks.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Tsavo East & West">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Tsavo East & West">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Nakuru" data-days="4">
+        <img src="lake-nakuru.jpg" alt="Lake Naivasha and Nakuru">
+        <div class="package-body">
+          <div class="package-meta"><span>Naivasha & Nakuru</span><span>4 Days</span></div>
+          <h3>4-Day Naivasha & Nakuru</h3>
+          <p>A scenic journey idea combining Rift Valley landscapes and nature experiences.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="4-Day Lake Naivasha & Nakuru">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="4-Day Lake Naivasha & Nakuru">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara Amboseli Tsavo Nakuru" data-days="8">
+        <img src="safari-circuit.jpg" alt="Kenya safari adventure">
+        <div class="package-body">
+          <div class="package-meta"><span>Kenya Circuit</span><span>8 Days</span></div>
+          <h3>8-Day Ultimate Kenya Safari</h3>
+          <p>An extended safari concept for travellers seeking a broader Kenya experience.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="8-Day Ultimate Kenya Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="8-Day Ultimate Kenya Safari">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Tsavo" data-days="3">
+        <img src="tsavo.jpg" alt="Tsavo West">
+        <div class="package-body">
+          <div class="package-meta"><span>Tsavo West</span><span>3 Days</span></div>
+          <h3>3-Day Tsavo West Safari</h3>
+          <p>Discover rugged scenery, natural features and wildlife in Tsavo West.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Tsavo West Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Tsavo West Safari">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara" data-days="10">
+        <img src="masai-mara.jpg" alt="Kenya and Tanzania safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Kenya & Tanzania</span><span>10 Days</span></div>
+          <h3>10-Day Kenya & Tanzania</h3>
+          <p>A cross-border safari concept subject to route, border and operator arrangements.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="10-Day Kenya & Tanzania Combo">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="10-Day Kenya & Tanzania Combo">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Tsavo" data-days="2">
+        <img src="tsavo.jpg" alt="Salt Lick safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Taita Taveta</span><span>2 Days</span></div>
+          <h3>2-Day Salt Lick Safari</h3>
+          <p>A short safari concept featuring the Taita Hills area and a distinctive lodge experience.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="2-Day Salt Lick Safari Lodge">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="2-Day Salt Lick Safari Lodge">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara" data-days="5">
+        <img src="masai-mara.jpg" alt="Great Migration safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Masai Mara</span><span>5 Days</span></div>
+          <h3>5-Day Great Migration Safari</h3>
+          <p>A Mara safari idea that can be planned around seasonal wildlife movement.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="5-Day Great Migration Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="5-Day Great Migration Safari">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Samburu" data-days="4">
+        <img src="samburu.jpg" alt="Samburu safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Samburu</span><span>4 Days</span></div>
+          <h3>4-Day Samburu & Mount Kenya</h3>
+          <p>Explore northern Kenya's distinctive landscapes and the Mount Kenya region.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="4-Day Samburu & Mount Kenya">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="4-Day Samburu & Mount Kenya">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara Amboseli" data-days="7">
+        <img src="safari-luxury.jpg" alt="Luxury Kenya safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Tailor-made</span><span>7 Days</span></div>
+          <h3>7-Day Luxury Kenya Honeymoon</h3>
+          <p>A tailor-made safari concept for couples seeking a special Kenya getaway.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="7-Day Luxury Kenya Honeymoon">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="7-Day Luxury Kenya Honeymoon">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Amboseli Tsavo" data-days="6">
+        <img src="amboseli.jpg" alt="Amboseli Tsavo and Taita">
+        <div class="package-body">
+          <div class="package-meta"><span>Southern Kenya</span><span>6 Days</span></div>
+          <h3>6-Day Amboseli, Tsavo & Taita</h3>
+          <p>A multi-stop journey idea through Kenya's southern safari region.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="6-Day Amboseli, Tsavo & Taita Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="6-Day Amboseli, Tsavo & Taita Safari">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara Amboseli Tsavo Nakuru Samburu" data-days="10">
+        <img src="safari-circuit.jpg" alt="Best of Kenya safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Kenya Circuit</span><span>10 Days</span></div>
+          <h3>10-Day Best of Kenya Safari</h3>
+          <p>An extended itinerary concept connecting several of Kenya's celebrated destinations.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="10-Day Best of Kenya Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="10-Day Best of Kenya Safari">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara" data-days="3">
+        <img src="masai-mara.jpg" alt="Masai Mara balloon safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Masai Mara</span><span>3 Days</span></div>
+          <h3>3-Day Mara Balloon Safari</h3>
+          <p>A Mara safari concept with an optional hot-air balloon experience, subject to availability.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Safari with Balloon Ride">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Safari with Balloon Ride">ENQUIRE</button></div>
+        </div>
+      </article>
+
+      <article class="package-card" data-place="Mara" data-days="4">
+        <img src="masai-mara.jpg" alt="Four day Masai Mara safari">
+        <div class="package-body">
+          <div class="package-meta"><span>Masai Mara</span><span>4 Days</span></div>
+          <h3>4-Day Masai Mara Safari</h3>
+          <p>Spend more time exploring the Mara with a flexible multi-day safari plan.</p>
+          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="4-Day Masai Mara Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="4-Day Masai Mara Safari">ENQUIRE</button></div>
+        </div>
+      </article>
+
+    </div>
+    <div class="no-results" id="noResults">No packages match this filter. Please try another category.</div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">The Liamber Prime experience</div>
+      <h2>Why Plan Your Safari With Us?</h2>
+      <p>We aim to make planning your Kenya journey straightforward, personal and enjoyable.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="number">01</div><h3>Local Knowledge</h3><p>Explore Kenya with safari planning informed by destination knowledge and local travel experience.</p></div>
+      <div class="why-card"><div class="number">02</div><h3>Flexible Itineraries</h3><p>Discuss your preferred destinations, travel dates, duration and experiences.</p></div>
+      <div class="why-card"><div class="number">03</div><h3>Personal Assistance</h3><p>Get assistance with your enquiry and the planning of your preferred safari.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Simple safari planning</div>
+      <h2>Your Journey Starts Here</h2>
+      <p>Tell us what you have in mind and let us help you plan the next step.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step"><div class="step-number">01</div><h3>Choose Your Dates</h3><p>Share your preferred travel dates and how long you would like to explore Kenya.</p></div>
+      <div class="step"><div class="step-number">02</div><h3>Choose Your Style</h3><p>Tell us whether you prefer a private journey, a group experience or a tailor-made safari.</p></div>
+      <div class="step"><div class="step-number">03</div><h3>Receive Your Quote</h3><p>We will review your request and respond with details for your consideration.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Helpful information</div>
+      <h2>Frequently Asked Questions</h2>
+      <p>Some useful information to help you plan your Kenya safari.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Where do the safaris start and end? <span>＋</span></button>
+        <div class="faq-answer">Our standard Kenya safari itineraries are planned to start and end in Nairobi unless a different arrangement is agreed in your quotation.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I request a private safari? <span>＋</span></button>
+        <div class="faq-answer">Yes. You can request a private safari. Share your group size, preferred destinations and travel dates so that the arrangements can be discussed.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can you customise a safari itinerary? <span>＋</span></button>
+        <div class="faq-answer">You can request a tailor-made itinerary based on your interests, travel period, preferred accommodation and budget.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Are the displayed packages fixed? <span>＋</span></button>
+        <div class="faq-answer">The packages displayed on this page are sample safari ideas. Final routes, availability, accommodation, park fees, transport, inclusions and prices are confirmed in your quotation.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I get a safari quotation? <span>＋</span></button>
+        <div class="faq-answer">Complete the safari request form on this page or contact us through WhatsApp or email with your travel details.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can children join a safari? <span>＋</span></button>
+        <div class="faq-answer">Children may be included in a safari request. Please provide their ages so that suitable arrangements can be discussed.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pickup">
+  <div class="container pickup-grid">
+    <img src="nairobi.jpg" alt="Nairobi city and safari departure">
+    <div class="pickup-copy">
+      <div class="eyebrow">Your safari departure point</div>
+      <h2>Convenient Safari Planning From Nairobi</h2>
+      <p>Nairobi is the starting point for many of Kenya's most exciting safari journeys. From the city, travellers can plan trips to the Masai Mara, Amboseli, Tsavo, Lake Nakuru, Samburu and other destinations.</p>
+      <p>When making your enquiry, let us know your hotel, residence, airport or preferred meeting point. Pickup arrangements will be confirmed with your safari quotation.</p>
+      <a href="#booking" class="btn">PLAN YOUR DEPARTURE</a>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Start planning today</div>
+      <h2>Request Your Kenya Safari</h2>
+      <p>Complete the details below. You can send your request directly to us through WhatsApp or email.</p>
+    </div>
+
+    <div class="booking-wrap">
+      <div class="booking-aside">
+        <div class="eyebrow">Let's plan together</div>
+        <h2>Your African Adventure Awaits</h2>
+        <p>Tell us about your preferred safari and our team will be ready to assist with the next steps.</p>
+        <ul>
+          <li>✦ Tailor-made safari enquiries</li>
+          <li>✦ Private and group travel requests</li>
+          <li>✦ Flexible destination combinations</li>
+          <li>✦ Nairobi pickup arrangements</li>
+          <li>✦ Personal enquiry assistance</li>
+        </ul>
+        <p style="margin-top:25px">Call or WhatsApp<br><strong>+254 721 116 715</strong></p>
+        <p>Email<br><strong>chirchirkb@gmail.com</strong></p>
+      </div>
+
+      <div class="booking-form">
+        <h3>Safari Request Form</h3>
+        <p>Fields marked with * are required.</p>
+
+        <form id="safariForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input id="fullName" name="fullName" required placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">WhatsApp / Phone Number *</label>
+              <input id="phone" name="phone" required placeholder="+254...">
+            </div>
+            <div class="form-group">
+              <label for="package">Preferred Safari *</label>
+              <select id="package" name="package" required>
+                <option value="">Select a safari</option>
+                <option>3-Day Masai Mara Safari</option>
+                <option>2-Day Tsavo East Safari</option>
+                <option>4-Day Amboseli & Tsavo Combo</option>
+                <option>5-Day Masai Mara & Lake Nakuru</option>
+                <option>6-Day Kenya Safari Circuit</option>
+                <option>3-Day Amboseli Safari</option>
+                <option>7-Day Masai Mara, Nakuru & Amboseli</option>
+                <option>3-Day Tsavo East & West</option>
+                <option>4-Day Lake Naivasha & Nakuru</option>
+                <option>8-Day Ultimate Kenya Safari</option>
+                <option>3-Day Tsavo West Safari</option>
+                <option>10-Day Kenya & Tanzania Combo</option>
+                <option>2-Day Salt Lick Safari Lodge</option>
+                <option>5-Day Great Migration Safari</option>
+                <option>4-Day Samburu & Mount Kenya</option>
+                <option>7-Day Luxury Kenya Honeymoon</option>
+                <option>6-Day Amboseli, Tsavo & Taita Safari</option>
+                <option>10-Day Best of Kenya Safari</option>
+                <option>3-Day Safari with Balloon Ride</option>
+                <option>4-Day Masai Mara Safari</option>
+                <option>Custom Safari</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="travelDate">Preferred Travel Date *</label>
+              <input id="travelDate" name="travelDate" type="date" required>
+            </div>
+            <div class="form-group">
+              <label for="pickup">Pickup / Meeting Point</label>
+              <input id="pickup" name="pickup" placeholder="Hotel, airport or location">
+            </div>
+            <div class="form-group">
+              <label for="adults">Number of Adults *</label>
+              <input id="adults" name="adults" type="number" min="1" value="2" required>
+            </div>
+            <div class="form-group">
+              <label for="children">Number of Children</label>
+              <input id="children" name="children" type="number" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="infants">Number of Infants</label>
+              <input id="infants" name="infants" type="number" min="0" value="0">
+            </div>
+            <div class="form-group">
+              <label for="style">Safari Style</label>
+              <select id="style" name="style">
+                <option>Private safari</option>
+                <option>Group safari</option>
+                <option>Family safari</option>
+                <option>Honeymoon safari</option>
+                <option>Luxury safari</option>
+                <option>Budget safari</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="transport">Transport Preference</label>
+              <select id="transport" name="transport">
+                <option>4x4 Land Cruiser</option>
+                <option>Safari van</option>
+                <option>Open to recommendation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="accommodation">Accommodation Preference</label>
+              <select id="accommodation" name="accommodation">
+                <option>Budget</option>
+                <option>Mid-range</option>
+                <option>Luxury</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="requests">Special Requests / Additional Information</label>
+              <textarea id="requests" name="requests" placeholder="Tell us more about your safari plans..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-buttons">
+            <button class="btn btn-green" type="button" id="whatsappSubmit">SEND VIA WHATSAPP</button>
+            <button class="btn" type="button" id="emailSubmit">SEND VIA EMAIL</button>
+          </div>
+          <p class="form-note">Your enquiry will open WhatsApp or your email application with the details filled in. You will need to press Send in that application to submit it.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <div class="eyebrow">Explore. Experience. Enjoy.</div>
+    <h2>Ready to Explore Kenya?</h2>
+    <p>Let Liamber Prime Travels Limited help you plan a memorable safari through Kenya's extraordinary landscapes and wildlife destinations.</p>
+    <a href="#booking" class="btn">REQUEST YOUR SAFARI</a>
+    <a href="https://wa.me/254721116715" target="_blank" rel="noopener" class="btn-outline" style="margin-left:8px">CHAT ON WHATSAPP</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <div class="footer-brand">LIAMBER PRIME<br>TRAVELS LIMITED</div>
+        <p>Discover Kenya through memorable safari experiences, wildlife adventures and tailor-made journeys. Let us help you plan your next African experience.</p>
+        <p style="margin-top:15px;color:#d9b36f">Explore. Experience. Enjoy.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>EXPLORE</h3>
+        <ul>
+          <li><a href="safari.html">Kenya Safaris</a></li>
+          <li><a href="excursions.html">Excursions</a></li>
+          <li><a href="packages.html">Tour Packages</a></li>
+          <li><a href="transfers.html">Transfers</a></li>
+          <li><a href="stays.html">Accommodation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#booking">Request a Safari</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>CONTACT US</h3>
+        <p>Nairobi, Kenya</p>
+        <p style="margin-top:10px"><a href="tel:+254721116715">+254 721 116 715</a></p>
+        <p><a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a></p>
+        <p style="margin-top:13px"><a href="https://wa.me/254721116715" target="_blank" rel="noopener">WhatsApp Us ↗</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Liamber Prime Travels Limited. All rights reserved.</div>
+      <div>Kenya Safari Experiences | Nairobi, Kenya</div>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/254721116715" target="_blank" rel="noopener">☏ WhatsApp</a>
+
+<div class="modal" id="itineraryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div class="eyebrow">Safari overview</div>
+    <h2 id="modalTitle">Safari itinerary</h2>
+    <div id="modalDescription"></div>
+    <p style="margin-top:18px"><strong>Important:</strong> This is an indicative itinerary outline, not a confirmed booking. Final routing, accommodation, availability, park fees, inclusions and pricing will be confirmed in your quotation.</p>
+    <button class="btn" id="modalEnquire" style="margin-top:20px">ENQUIRE ABOUT THIS SAFARI</button>
+  </div>
+</div>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('show'));
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const packageCards = document.querySelectorAll('.package-card');
+const packageCount = document.getElementById('packageCount');
+const noResults = document.getElementById('noResults');
+
+function applyFilter(filter) {
+  let visible = 0;
+
+  packageCards.forEach(card => {
+    const places = card.dataset.place.split(' ');
+    const days = Number(card.dataset.days);
+    let match = filter === 'all';
+
+    if (filter === 'short') match = days <= 3;
+    else if (filter === 'long') match = days >= 4;
+    else if (filter !== 'all') match = places.includes(filter);
+
+    card.style.display = match ? '' : 'none';
+    if (match) visible++;
+  });
+
+  packageCount.textContent = `Showing ${visible} safari idea${visible === 1 ? '' : 's'}`;
+  noResults.style.display = visible ? 'none' : 'block';
+}
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+    applyFilter(button.dataset.filter);
+  });
+});
+
+document.querySelectorAll('[data-destination-link]').forEach(link => {
+  link.addEventListener('click', () => {
+    const destination = link.dataset.destinationLink;
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    const target = [...filterButtons].find(btn => btn.dataset.filter === destination);
+    if (target) {
+      target.classList.add('active');
+      applyFilter(destination);
+    }
+  });
+});
+
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    question.parentElement.classList.toggle('open');
+  });
+});
+
+const modal = document.getElementById('itineraryModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalDescription = document.getElementById('modalDescription');
+const modalEnquire = document.getElementById('modalEnquire');
+let selectedPackage = '';
+
+function itineraryText(name) {
+  return `
+    <p><strong>Departure:</strong> Nairobi, Kenya.</p>
+    <p><strong>Day 1:</strong> Depart Nairobi and travel towards the first destination. Arrive and proceed with the planned safari activities, subject to the confirmed itinerary.</p>
+    <p><strong>Middle days:</strong> Explore the destination and enjoy planned wildlife, nature or cultural experiences. Activities and overnight arrangements will depend on the final quotation.</p>
+    <p><strong>Final day:</strong> Enjoy the scheduled final activities before returning to Nairobi.</p>
+    <p>This is a general outline. The exact day-by-day itinerary will be prepared according to your chosen safari, dates and preferences.</p>
+  `;
+}
+
+document.querySelectorAll('.itinerary-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    selectedPackage = button.dataset.package;
+    modalTitle.textContent = selectedPackage;
+    modalDescription.innerHTML = itineraryText(selectedPackage);
+    modal.classList.add('show');
+  });
+});
+
+document.getElementById('modalClose').addEventListener('click', () => {
+  modal.classList.remove('show');
+});
+
+modal.addEventListener('click', event => {
+  if (event.target === modal) modal.classList.remove('show');
+});
+
+function selectPackage(name) {
+  const packageSelect = document.getElementById('package');
+  const option = [...packageSelect.options].find(opt => opt.text === name);
+  packageSelect.value = option ? option.value : 'Custom Safari';
+  document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+}
+
+document.querySelectorAll('.request-btn').forEach(button => {
+  button.addEventListener('click', () => selectPackage(button.dataset.package));
+});
+
+modalEnquire.addEventListener('click', () => {
+  modal.classList.remove('show');
+  selectPackage(selectedPackage);
+});
+
+function getFormDetails() {
+  const form = document.getElementById('safariForm');
+  if (!form.reportValidity()) return null;
+
+  const data = new FormData(form);
+  const fields = [
+    ['Full Name', 'fullName'],
+    ['Email', 'email'],
+    ['Phone / WhatsApp', 'phone'],
+    ['Preferred Safari', 'package'],
+    ['Travel Date', 'travelDate'],
+    ['Pickup Point', 'pickup'],
+    ['Adults', 'adults'],
+    ['Children', 'children'],
+    ['Infants', 'infants'],
+    ['Safari Style', 'style'],
+    ['Transport', 'transport'],
+    ['Accommodation', 'accommodation'],
+    ['Special Requests', 'requests']
+  ];
+
+  return fields.map(([label, key]) => `${label}: ${data.get(key) || 'Not specified'}`).join('\n');
+}
+
+document.getElementById('whatsappSubmit').addEventListener('click', () => {
+  const details = getFormDetails();
+  if (!details) return;
+
+  const message = `Hello Liamber Prime Travels Limited, I would like to enquire about a Kenya safari.\n\n${details}`;
+  window.open(`https://wa.me/254721116715?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+});
+
+document.getElementById('emailSubmit').addEventListener('click', () => {
+  const details = getFormDetails();
+  if (!details) return;
+
+  const subject = 'Kenya Safari Enquiry - Liamber Prime Travels Limited';
+  const body = `Hello Liamber Prime Travels Limited,\n\nI would like to enquire about a Kenya safari.\n\n${details}\n\nKind regards`;
+  window.location.href = `mailto:chirchirkb@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+
+const travelDate = document.getElementById('travelDate');
+const today = new Date();
+const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
+  .toISOString().split('T')[0];
+travelDate.min = localToday;
+</script>
+
+</body>
+</html>
