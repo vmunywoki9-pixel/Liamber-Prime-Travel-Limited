@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Request a safari or holiday booking with Liamber Prime Travels Limited. Plan your Kenya travel experience with us.">
+<title>Book Your Trip | Liamber Prime Travels Limited</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+:root {
+    --green:#123d32;
+    --green2:#1c5948;
+    --gold:#c49a42;
+    --cream:#f7f5ef;
+    --ink:#24312d;
+    --muted:#68736e;
+    --line:#e5e8e3;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);line-height:1.65}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
+
+.topbar{background:var(--green);color:#fff;padding:9px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:13px}
+.topbar a{margin-right:18px}
+.topbar i{color:var(--gold);margin-right:7px}
+.header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 3px 18px #102a2010}
+.nav{max-width:1200px;margin:auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand img{width:178px;max-height:68px;object-fit:contain}
+.navlinks{display:flex;align-items:center;gap:18px;font-size:13px;font-weight:600}
+.navlinks a:hover,.navlinks a.active{color:var(--gold)}
+.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 20px;border:1px solid var(--green);background:var(--green);color:#fff;font-weight:700;font-size:13px;cursor:pointer;transition:.2s}
+.navcta:hover,.btn:hover{background:var(--gold);border-color:var(--gold)}
+.menu-toggle{display:none;border:0;background:none;color:var(--green);font-size:24px}
+
+.hero{min-height:350px;background:linear-gradient(90deg,#092a22d9,#092a2280),url('booking-hero.jpg') center/cover;display:flex;align-items:center;color:#fff}
+.hero-inner{max-width:1200px;width:100%;margin:auto;padding:70px 24px}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:2.5px;font-size:11px;font-weight:700}
+.crumb{font-size:12px;margin-bottom:18px;color:#e7e9e4}
+.crumb a{color:#fff}
+.hero h1{font:600 clamp(38px,6vw,60px)/1.1 'Playfair Display',serif;margin:12px 0}
+.hero p{max-width:620px;color:#f3f4ef}
+
+.section{padding:72px 24px}
+.container{max-width:1120px;margin:auto}
+.intro{text-align:center;max-width:700px;margin:0 auto 35px}
+.intro h2{font:600 clamp(29px,4vw,42px)/1.2 'Playfair Display',serif;color:var(--green);margin:9px 0 12px}
+.intro p{color:var(--muted);font-size:14px}
+
+.booking-layout{display:grid;grid-template-columns:1fr 320px;gap:26px;align-items:start}
+.booking-form{border:1px solid var(--line);padding:35px;background:#fff}
+.booking-form h3{font:600 25px 'Playfair Display',serif;color:var(--green);margin:0 0 7px}
+.booking-form>p{font-size:13px;color:var(--muted);margin:0 0 25px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:12px;font-weight:700;color:var(--green)}
+.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #dfe4df;background:#fcfcfa;outline:none;color:var(--ink);font-size:13px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}
+.field textarea{min-height:125px;resize:vertical}
+.required{color:#a13b32}
+.form-note{font-size:11px;color:var(--muted);margin:16px 0}
+.form-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-outline{background:#fff;color:var(--green)}
+
+.side-panel{background:var(--green);color:#fff;padding:28px}
+.side-panel h3{font:600 24px 'Playfair Display',serif;margin:0 0 10px}
+.side-panel>p{font-size:13px;color:#dbe5df}
+.side-feature{display:flex;gap:13px;margin:22px 0}
+.side-feature i{color:var(--gold);font-size:20px;margin-top:3px}
+.side-feature strong{display:block;font-size:13px}
+.side-feature span{font-size:12px;color:#dbe5df}
+.side-panel a{color:#fff}
+.side-contact{border-top:1px solid #ffffff30;padding-top:20px;margin-top:24px;font-size:13px}
+.side-contact p{margin:10px 0}
+.side-contact i{color:var(--gold);margin-right:8px}
+
+.steps{background:var(--cream)}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step-card{background:#fff;border:1px solid var(--line);padding:26px;text-align:center}
+.step-number{width:42px;height:42px;display:grid;place-items:center;margin:auto;background:var(--green);color:var(--gold);font:600 18px 'Playfair Display',serif}
+.step-card h3{font:600 20px 'Playfair Display',serif;color:var(--green);margin:13px 0 6px}
+.step-card p{font-size:13px;color:var(--muted);margin:0}
+
+.cta{padding:65px 24px;background:linear-gradient(90deg,#0d332bdc,#0d332b99),url('booking-cta.jpg') center/cover;text-align:center;color:#fff}
+.cta h2{font:600 clamp(28px,4vw,40px) 'Playfair Display',serif;margin:8px 0}
+.cta p{font-size:14px;color:#e5eae5;max-width:650px;margin:0 auto 22px}
+.cta .btn{background:var(--gold);border-color:var(--gold)}
+
+.footer{background:#0d2e26;color:#d7e0da;padding:50px 24px 20px}
+.footer-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px}
+.footer img{width:165px;max-height:65px;object-fit:contain;background:#fff;padding:5px}
+.footer p,.footer a{font-size:12px;color:#c5d1ca}
+.footer h3{font:600 19px 'Playfair Display',serif;color:#fff}
+.footer-links{display:grid;gap:8px}
+.footer a:hover{color:var(--gold)}
+.copyright{max-width:1150px;margin:30px auto 0;border-top:1px solid #ffffff20;padding-top:17px;font-size:11px;color:#aebdb4;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.whatsapp{position:fixed;right:22px;bottom:22px;z-index:30;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#20bd62;color:#fff;font-size:27px;box-shadow:0 6px 20px #0003}
+
+@media(max-width:900px){.navlinks{gap:10px;font-size:11px}.booking-layout{grid-template-columns:1fr 270px}}
+@media(max-width:760px){
+.topbar{justify-content:center;text-align:center}
+.menu-toggle{display:block}
+.nav{flex-wrap:wrap}
+.navlinks{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;padding:12px 0;gap:0}
+.navlinks.open{display:flex}
+.navlinks a{padding:11px 4px;border-top:1px solid var(--line)}
+.booking-layout{grid-template-columns:1fr}
+.step-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr}
+.section{padding:55px 18px}
+}
+@media(max-width:480px){
+.brand img{width:145px}
+.form-grid{grid-template-columns:1fr}
+.field.full{grid-column:auto}
+.booking-form{padding:24px 18px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div>
+        <a href="tel:+254721116715"><i class="fa-solid fa-phone"></i>+254 721 116 715</a>
+        <a href="mailto:chirchirkb@gmail.com"><i class="fa-regular fa-envelope"></i>chirchirkb@gmail.com</a>
+    </div>
+    <div><i class="fa-solid fa-location-dot"></i> Kenya • East Africa</div>
+</div>
+
+<header class="header">
+<nav class="nav">
+    <a class="brand" href="index.html"><img src="liamber-logo.png" alt="Liamber Prime Travels Limited"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="safaris.html">Safaris</a>
+        <a href="excursions.html">Experiences</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <a class="navcta active" href="booking.html">Plan Your Trip <i class="fa-solid fa-arrow-right"></i></a>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-inner">
+        <div class="crumb"><a href="index.html">Home</a> / Booking</div>
+        <div class="eyebrow">Your adventure starts here</div>
+        <h1>Plan Your Journey</h1>
+        <p>Tell us about the experience you are looking for. Our team will help you discuss the itinerary, travel arrangements and a quotation suited to your plans.</p>
+    </div>
+</section>
+
+<section class="section">
+<div class="container">
+
+    <div class="intro">
+        <div class="eyebrow">Booking enquiry</div>
+        <h2>Let's Create Your Travel Experience</h2>
+        <p>Complete the details below to request a safari, holiday, excursion or tailor-made journey. Submitting this form is an enquiry, not a confirmed booking.</p>
+    </div>
+
+    <div class="booking-layout">
+
+        <div class="booking-form">
+            <h3>Travel Details</h3>
+            <p>Fields marked with * are required.</p>
+
+            <form id="bookingForm">
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input id="fullName" name="fullName" required placeholder="Your full name">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input id="email" name="email" type="email" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone / WhatsApp <span class="required">*</span></label>
+                        <input id="phone" name="phone" type="tel" required placeholder="Include country code">
+                    </div>
+
+                    <div class="field">
+                        <label for="country">Country of Residence</label>
+                        <input id="country" name="country" placeholder="Your country">
+                    </div>
+
+                    <div class="field">
+                        <label for="tripType">Type of Experience <span class="required">*</span></label>
+                        <select id="tripType" name="tripType" required>
+                            <option value="">Choose an experience</option>
+                            <option>Wildlife Safari</option>
+                            <option>Beach Holiday</option>
+                            <option>Coastal Excursion</option>
+                            <option>Culture and Community</option>
+                            <option>Airport Transfer</option>
+                            <option>Multi-destination Holiday</option>
+                            <option>Tailor-made Journey</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="destination">Preferred Destination</label>
+                        <input id="destination" name="destination" placeholder="e.g. Maasai Mara, Watamu">
+                    </div>
+
+                    <div class="field">
+                        <label for="startDate">Arrival / Start Date <span class="required">*</span></label>
+                        <input id="startDate" name="startDate" type="date" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="endDate">Departure / End Date</label>
+                        <input id="endDate" name="endDate" type="date">
+                    </div>
+
+                    <div class="field">
+                        <label for="adults">Number of Adults <span class="required">*</span></label>
+                        <input id="adults" name="adults" type="number" min="1" value="2" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="children">Number of Children</label>
+                        <input id="children" name="children" type="number" min="0" value="0">
+                    </div>
+
+                    <div class="field">
+                        <label for="accommodation">Accommodation Preference</label>
+                        <select id="accommodation" name="accommodation">
+                            <option value="">Select preference</option>
+                            <option>Budget</option>
+                            <option>Mid-range</option>
+                            <option>Luxury</option>
+                            <option>Not sure - advise me</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="transport">Transport Preference</label>
+                        <select id="transport" name="transport">
+                            <option value="">Select preference</option>
+                            <option>Private safari vehicle</option>
+                            <option>Group / shared safari</option>
+                            <option>Not sure - advise me</option>
+                        </select>
+                    </div>
+
+                    <div class="field full">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your preferred activities, accommodation, budget range or any special requirements."></textarea>
+                    </div>
+
+                </div>
+
+                <p class="form-note">Your enquiry will be prepared for WhatsApp or email. No payment is collected through this form and your trip is not confirmed until arrangements are agreed with our team.</p>
+
+                <div class="form-actions">
+                    <button type="button" class="btn" id="whatsappSubmit"><i class="fa-brands fa-whatsapp"></i> Submit via WhatsApp</button>
+                    <button type="button" class="btn btn-outline" id="emailSubmit"><i class="fa-regular fa-envelope"></i> Submit via Email</button>
+                </div>
+            </form>
+        </div>
+
+        <aside class="side-panel">
+            <h3>Why Plan With Us?</h3>
+            <p>We help you explore travel options and shape an experience around your interests and travel dates.</p>
+
+            <div class="side-feature">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <div><strong>Tailor-made Experiences</strong><span>Discuss a journey suited to your travel interests.</span></div>
+            </div>
+
+            <div class="side-feature">
+                <i class="fa-solid fa-car"></i>
+                <div><strong>Travel Arrangements</strong><span>Discuss transport, accommodation and activities.</span></div>
+            </div>
+
+            <div class="side-feature">
+                <i class="fa-solid fa-comments"></i>
+                <div><strong>Personal Assistance</strong><span>Speak with our team about your enquiry.</span></div>
+            </div>
+
+            <div class="side-feature">
+                <i class="fa-solid fa-earth-africa"></i>
+                <div><strong>Kenya and East Africa</strong><span>Explore safari and coastal travel possibilities.</span></div>
+            </div>
+
+            <div class="side-contact">
+                <strong>Need assistance?</strong>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:+254721116715">+254 721 116 715</a></p>
+                <p><i class="fa-regular fa-envelope"></i><a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a></p>
+                <p><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/254721116715">Chat on WhatsApp</a></p>
+            </div>
+        </aside>
+
+    </div>
+</div>
+</section>
+
+<section class="section steps">
+<div class="container">
+    <div class="intro">
+        <div class="eyebrow">How it works</div>
+        <h2>From Enquiry to Adventure</h2>
+        <p>Our booking enquiry process helps us understand your plans before preparing the next steps.</p>
+    </div>
+
+    <div class="step-grid">
+        <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Send Your Enquiry</h3>
+            <p>Share your preferred destination, travel dates and group details.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Discuss Your Trip</h3>
+            <p>We discuss the itinerary, available arrangements and quotation with you.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Confirm Arrangements</h3>
+            <p>Review and agree on the final arrangements before your booking is confirmed.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="eyebrow">Explore. Experience. Enjoy.</div>
+        <h2>Your Next Journey Starts With a Conversation</h2>
+        <p>Contact Liamber Prime Travels Limited and let's discuss the experience you would love to have in Kenya and East Africa.</p>
+        <a href="https://wa.me/254721116715" class="btn"><i class="fa-brands fa-whatsapp"></i> Talk to Our Team</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="footer-grid">
+    <div>
+        <img src="liamber-logo.png" alt="Liamber Prime Travels Limited">
+        <p>Thoughtfully planned travel experiences across Kenya and East Africa. Let us help you plan your next journey.</p>
+    </div>
+
+    <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="packages.html">Packages</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="excursions.html">Experiences</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <div>
+        <h3>Contact Us</h3>
+        <div class="footer-links">
+            <a href="tel:+254721116715">+254 721 116 715</a>
+            <a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a>
+            <a href="https://wa.me/254721116715">WhatsApp Us</a>
+            <a href="contact.html">Contact Page</a>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <span>© <span id="year"></span> Liamber Prime Travels Limited. All rights reserved.</span>
+    <span>Explore. Experience. Enjoy.</span>
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254721116715" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+const menuButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.navlinks');
+
+menuButton.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.innerHTML = open
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const params = new URLSearchParams(window.location.search);
+const requestedExperience = params.get('experience');
+const requestedDestination = params.get('destination');
+
+if (requestedExperience) {
+    const typeSelect = document.getElementById('tripType');
+    const knownTypes = [...typeSelect.options].map(option => option.value);
+    if (knownTypes.includes(requestedExperience)) {
+        typeSelect.value = requestedExperience;
+    } else {
+        document.getElementById('message').value =
+            'I am interested in: ' + requestedExperience;
+    }
+}
+
+if (requestedDestination) {
+    document.getElementById('destination').value = requestedDestination;
+}
+
+function getBookingDetails() {
+    const form = document.getElementById('bookingForm');
+
+    if (!form.reportValidity()) return null;
+
+    const data = new FormData(form);
+
+    return `BOOKING ENQUIRY - LIAMBER PRIME TRAVELS LIMITED
+
+Name: ${data.get('fullName')}
+Email: ${data.get('email')}
+Phone / WhatsApp: ${data.get('phone')}
+Country: ${data.get('country') || 'Not provided'}
+
+Experience: ${data.get('tripType')}
+Destination: ${data.get('destination') || 'Not specified'}
+Start Date: ${data.get('startDate')}
+End Date: ${data.get('endDate') || 'Not specified'}
+
+Adults: ${data.get('adults')}
+Children: ${data.get('children') || '0'}
+Accommodation: ${data.get('accommodation') || 'Not specified'}
+Transport: ${data.get('transport') || 'Not specified'}
+
+Additional Information:
+${data.get('message') || 'None'}
+
+Please contact me to discuss the itinerary and quotation.`;
+}
+
+document.getElementById('whatsappSubmit').addEventListener('click', () => {
+    const message = getBookingDetails();
+
+    if (message) {
+        const url = 'https://wa.me/254721116715?text=' + encodeURIComponent(message);
+        window.open(url, '_blank', 'noopener');
+    }
+});
+
+document.getElementById('emailSubmit').addEventListener('click', () => {
+    const message = getBookingDetails();
+
+    if (message) {
+        const subject = encodeURIComponent('Booking Enquiry - Liamber Prime Travels');
+        window.location.href =
+            'mailto:chirchirkb@gmail.com?subject=' + subject +
+            '&body=' + encodeURIComponent(message);
+    }
+});
+</script>
+
+</body>
+</html>
