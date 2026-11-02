@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4-Day Lake Naivasha & Lake Nakuru Safari | Liamber Prime Travels</title>
+<meta name="description" content="Discover Lake Naivasha and Lake Nakuru National Park on a four-day Kenya safari with Liamber Prime Travels Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+:root{--green:#123d32;--green2:#1c5948;--gold:#c49a42;--cream:#f7f5ef;--ink:#24332d;--muted:#68756e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);line-height:1.7}
+a{text-decoration:none;color:inherit}
+img{width:100%;display:block;object-fit:cover}
+.container{width:min(1160px,92%);margin:auto}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.2}
+.topbar{background:var(--green);color:white;padding:9px 4%;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+header{position:sticky;top:0;background:white;z-index:1000;box-shadow:0 3px 18px #0000000c}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--green);font-weight:700}
+.brand img{width:65px;height:65px;object-fit:contain}
+.brand span{font-family:'Playfair Display',serif;font-size:18px;line-height:1.15}
+nav{display:flex;align-items:center;gap:20px;font-size:13px;font-weight:600}
+nav a:hover{color:var(--gold)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:white;padding:13px 21px;border:1px solid var(--green);font-size:13px;font-weight:700;transition:.25s}
+.nav-cta:hover,.btn:hover{background:var(--gold);border-color:var(--gold)}
+.menu-toggle{display:none;background:none;border:0;font-size:24px;color:var(--green)}
+.hero{min-height:510px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,#081e19df,#081e1955),url('itinerary-naivasha-nakuru-hero.jpg') center/cover}
+.hero-content{max-width:760px;padding:90px 0}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.hero h1{font-size:clamp(40px,6vw,66px);margin:17px 0}
+.hero p{font-size:17px;max-width:650px;color:#f1f1ed}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn.gold{background:var(--gold);border-color:var(--gold)}
+.btn.outline{background:transparent;border-color:#ffffffa8}
+.btn.outline:hover{background:white;color:var(--green)}
+.quick-facts{background:var(--cream);padding:24px 0}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fact{display:flex;align-items:center;gap:13px}
+.fact i{font-size:23px;color:var(--gold)}
+.fact strong{display:block;color:var(--green);font-size:14px}
+.fact span{font-size:12px;color:var(--muted)}
+section{padding:85px 0}
+.section-heading{text-align:center;max-width:720px;margin:0 auto 42px}
+.section-heading h2{font-size:clamp(30px,4vw,43px);color:var(--green);margin:12px 0}
+.section-heading p{color:var(--muted)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.intro-image{height:440px}
+.intro-image img{height:100%}
+.intro-copy h2{font-size:38px;color:var(--green);margin:13px 0 20px}
+.intro-copy p{color:var(--muted);margin-bottom:16px}
+.highlights{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:25px}
+.highlight{display:flex;gap:10px;align-items:center;font-size:14px;font-weight:600}
+.highlight i{color:var(--gold)}
+.itinerary-section{background:var(--cream)}
+.day-list{max-width:900px;margin:auto;display:grid;gap:18px}
+.day-card{background:white;border:1px solid #e8e5dc;padding:28px 32px;display:grid;grid-template-columns:90px 1fr;gap:25px}
+.day-number{width:72px;height:72px;background:var(--green);color:white;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.day-number small{font-size:10px;text-transform:uppercase;letter-spacing:1px}
+.day-number strong{font-family:'Playfair Display',serif;font-size:27px;line-height:1}
+.day-card h3{font-size:23px;color:var(--green);margin:2px 0 10px}
+.day-card p,.day-card li{color:var(--muted);font-size:14px}
+.day-card ul{padding-left:19px;margin-top:10px}
+.day-card li{margin:4px 0}
+.inclusions-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.inclusion-box{padding:32px;background:var(--cream);border:1px solid #e8e5dc}
+.inclusion-box h3{font-size:25px;color:var(--green);margin-bottom:20px}
+.inclusion-box ul{list-style:none;display:grid;gap:12px}
+.inclusion-box li{display:flex;gap:11px;color:var(--muted);font-size:14px}
+.inclusion-box li i{color:var(--gold);margin-top:5px}
+.note{background:#f8f2e6;padding:20px 23px;margin-top:25px;border-left:4px solid var(--gold);font-size:13px;color:#62563f}
+.cta{background:linear-gradient(90deg,#0c2d25e8,#0c2d25c9),url('itinerary-naivasha-nakuru-cta.jpg') center/cover;color:white;text-align:center}
+.cta h2{font-size:clamp(32px,4vw,45px);margin:13px 0}
+.cta p{max-width:650px;margin:0 auto 25px;color:#e8eee9}
+footer{background:#0b2822;color:#d9e1dc;padding:55px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h3{font-size:22px;color:white;margin-bottom:17px}
+footer p,footer a{font-size:13px;color:#c3d0c8}
+footer a:hover{color:var(--gold)}
+.footer-links{display:grid;gap:9px}
+.footer-bottom{border-top:1px solid #ffffff20;margin-top:35px;padding-top:18px;text-align:center;font-size:12px;color:#aebdb5}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:55px;height:55px;border-radius:50%;background:#25d366;color:white;display:grid;place-items:center;font-size:27px;z-index:999;box-shadow:0 5px 20px #0003}
+@media(max-width:850px){
+.menu-toggle{display:block}
+nav{display:none;position:absolute;top:82px;left:0;width:100%;background:white;padding:20px 5%;box-shadow:0 10px 15px #0001;flex-direction:column;align-items:flex-start}
+nav.open{display:flex}
+.nav-cta{display:none}
+.facts{grid-template-columns:repeat(2,1fr)}
+.intro-grid{grid-template-columns:1fr;gap:30px}
+.intro-image{height:330px}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+.topbar .container{justify-content:center;text-align:center}
+.brand span{font-size:15px}
+.brand img{width:52px;height:52px}
+.hero{min-height:470px}
+.hero-content{padding:70px 0}
+.day-card{grid-template-columns:1fr;padding:22px}
+.day-number{width:62px;height:62px}
+.inclusions-grid{grid-template-columns:1fr}
+section{padding:65px 0}
+.footer-grid{grid-template-columns:1fr}
+.highlights{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+<div class="topbar">
+<div class="container">
+<span><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</span>
+<span><i class="fa-solid fa-phone"></i> +254 721 116 715</span>
+</div>
+</div>
+
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">
+<img src="liamber-logo.png" alt="Liamber Prime Travels logo">
+<span>LIAMBER PRIME<br>TRAVELS LIMITED</span>
+</a>
+<button class="menu-toggle" aria-label="Open navigation" onclick="document.querySelector('nav').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="destinations.html">Destinations</a>
+<a href="packages.html">Packages</a>
+<a href="excursions.html">Excursions</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+<a class="nav-cta" href="booking.html">Plan Your Safari <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-content">
+<div class="eyebrow">Kenya Nature & Wildlife Safari · 4 Days / 3 Nights</div>
+<h1>4-Day Lake Naivasha & Lake Nakuru Safari</h1>
+<p>Enjoy a memorable journey through the Great Rift Valley, combining the beautiful freshwater scenery of Lake Naivasha with wildlife viewing in Lake Nakuru National Park.</p>
+<div class="hero-buttons">
+<a class="btn gold" href="booking.html?destination=Lake%20Naivasha%20and%20Lake%20Nakuru">Enquire About This Safari <i class="fa-solid fa-arrow-right"></i></a>
+<a class="btn outline" href="#itinerary">Explore Itinerary</a>
+</div>
+</div>
+</section>
+
+<div class="quick-facts">
+<div class="container facts">
+<div class="fact"><i class="fa-regular fa-clock"></i><div><strong>4 Days / 3 Nights</strong><span>Safari duration</span></div></div>
+<div class="fact"><i class="fa-solid fa-location-dot"></i><div><strong>Naivasha & Nakuru</strong><span>Kenya, Rift Valley</span></div></div>
+<div class="fact"><i class="fa-solid fa-car-side"></i><div><strong>Safari Transport</strong><span>As confirmed in quotation</span></div></div>
+<div class="fact"><i class="fa-solid fa-binoculars"></i><div><strong>Nature & Wildlife</strong><span>Scenic experiences</span></div></div>
+</div>
+</div>
+
+<section>
+<div class="container intro-grid">
+<div class="intro-image">
+<img src="itinerary-naivasha-nakuru-overview.jpg" alt="Lake Naivasha and Lake Nakuru safari landscape">
+</div>
+<div class="intro-copy">
+<div class="eyebrow">Discover the Great Rift Valley</div>
+<h2>Two Lakes, Beautiful Landscapes and Wildlife</h2>
+<p>Lake Naivasha is a freshwater lake surrounded by scenic landscapes and rich birdlife. It is a popular destination for boat excursions and nature experiences.</p>
+<p>Lake Nakuru National Park offers a different experience, with varied habitats and opportunities to see wildlife including rhinos, giraffes, buffaloes and other species.</p>
+<p>This suggested four-day itinerary gives you time to experience both destinations at a comfortable pace. Activities and accommodation can be tailored to your travel preferences.</p>
+<div class="highlights">
+<div class="highlight"><i class="fa-solid fa-check"></i> Lake Naivasha scenery</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> Optional boat ride</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> Lake Nakuru game drives</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> Birdwatching opportunities</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> Rift Valley landscapes</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> Wildlife photography</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="itinerary-section" id="itinerary">
+<div class="container">
+<div class="section-heading">
+<div class="eyebrow">Your Safari Experience</div>
+<h2>Day-by-Day Itinerary</h2>
+<p>A suggested four-day programme. The final route and activities will be confirmed according to your departure point, accommodation and selected experiences.</p>
+</div>
+
+<div class="day-list">
+<article class="day-card">
+<div class="day-number"><small>Day</small><strong>01</strong></div>
+<div>
+<h3>Arrival in Naivasha</h3>
+<p>Depart for the Lake Naivasha area, enjoying views of the Great Rift Valley along the way. On arrival, check in at your selected accommodation and enjoy the surroundings. Depending on your arrival time, you may have an opportunity for a relaxed afternoon activity.</p>
+<ul>
+<li>Travel to the Lake Naivasha area</li>
+<li>Enjoy scenic Rift Valley views</li>
+<li>Check in at your selected accommodation</li>
+<li>Relax and enjoy the lakeside environment</li>
+</ul>
+</div>
+</article>
+
+<article class="day-card">
+<div class="day-number"><small>Day</small><strong>02</strong></div>
+<div>
+<h3>Lake Naivasha Nature Experiences</h3>
+<p>Spend the day discovering the natural beauty of Lake Naivasha. An optional boat ride can offer opportunities to observe the lake's birdlife and see hippos in their natural habitat. Other activities may be arranged depending on your interests and the package selected.</p>
+<ul>
+<li>Breakfast at your accommodation</li>
+<li>Optional Lake Naivasha boat excursion</li>
+<li>Birdwatching and lakeside photography</li>
+<li>Optional additional nature activities</li>
+</ul>
+</div>
+</article>
+
+<article class="day-card">
+<div class="day-number"><small>Day</small><strong>03</strong></div>
+<div>
+<h3>Transfer to Lake Nakuru National Park</h3>
+<p>After breakfast, travel towards Lake Nakuru National Park. Enjoy a game drive through the park's varied habitats, with opportunities to spot wildlife such as rhinos, Rothschild's giraffes, buffaloes, zebras and other animals. Later, proceed to your selected accommodation.</p>
+<ul>
+<li>Breakfast and departure from Naivasha</li>
+<li>Travel to Lake Nakuru National Park</li>
+<li>Game drive and wildlife viewing</li>
+<li>Overnight at selected accommodation</li>
+</ul>
+</div>
+</article>
+
+<article class="day-card">
+<div class="day-number"><small>Day</small><strong>04</strong></div>
+<div>
+<h3>Morning Experience & Return Journey</h3>
+<p>Enjoy breakfast and, depending on your agreed schedule, an additional morning game drive or relaxed time at your accommodation. Check out and begin your return journey to the agreed drop-off point.</p>
+<ul>
+<li>Breakfast at the accommodation</li>
+<li>Optional morning game drive, subject to arrangements</li>
+<li>Check-out and departure</li>
+<li>Return transfer to your agreed destination</li>
+</ul>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-heading">
+<div class="eyebrow">Plan With Confidence</div>
+<h2>Safari Inclusions & Exclusions</h2>
+<p>Final inclusions depend on the accommodation, transport and activities confirmed in your quotation.</p>
+</div>
+
+<div class="inclusions-grid">
+<div class="inclusion-box">
+<h3><i class="fa-solid fa-circle-check"></i> May Include</h3>
+<ul>
+<li><i class="fa-solid fa-check"></i> Transport as specified in the quotation</li>
+<li><i class="fa-solid fa-check"></i> Driver-guide services where applicable</li>
+<li><i class="fa-solid fa-check"></i> Three nights' accommodation</li>
+<li><i class="fa-solid fa-check"></i> Meals as specified in the package</li>
+<li><i class="fa-solid fa-check"></i> Lake Nakuru game drives</li>
+<li><i class="fa-solid fa-check"></i> Park fees where specified</li>
+</ul>
+</div>
+
+<div class="inclusion-box">
+<h3><i class="fa-solid fa-circle-xmark"></i> May Exclude</h3>
+<ul>
+<li><i class="fa-solid fa-minus"></i> Optional boat rides and activities unless included</li>
+<li><i class="fa-solid fa-minus"></i> Personal expenses and souvenirs</li>
+<li><i class="fa-solid fa-minus"></i> Travel insurance</li>
+<li><i class="fa-solid fa-minus"></i> Tips and gratuities</li>
+<li><i class="fa-solid fa-minus"></i> Drinks and items not specified</li>
+<li><i class="fa-solid fa-minus"></i> Services not expressly listed as included</li>
+</ul>
+</div>
+</div>
+
+<div class="note">
+<strong>Important travel information:</strong> This is a sample itinerary, not a confirmed booking schedule. Accommodation, meals, transport, park fees, boat excursions and other activities will be confirmed in your quotation. Wildlife sightings and birdlife encounters cannot be guaranteed.
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<div class="eyebrow">Start Planning</div>
+<h2>Discover Naivasha & Nakuru</h2>
+<p>Contact Liamber Prime Travels Limited to plan your four-day Rift Valley safari. Share your preferred travel dates, group size and accommodation preferences for a tailored quotation.</p>
+<a class="btn gold" href="booking.html?destination=Lake%20Naivasha%20and%20Lake%20Nakuru">Request a Safari Quote <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<h3>Liamber Prime Travels Limited</h3>
+<p>Explore. Experience. Enjoy. Discover Kenya through memorable safaris, coastal escapes and tailor-made travel experiences.</p>
+<p style="margin-top:14px"><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com<br><i class="fa-solid fa-phone"></i> +254 721 116 715</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="destinations.html">Destinations</a>
+<a href="packages.html">Safari Packages</a>
+<a href="gallery.html">Gallery</a>
+</div>
+</div>
+<div>
+<h3>Explore More</h3>
+<div class="footer-links">
+<a href="itinerary-maasai-mara.html">Maasai Mara Safari</a>
+<a href="itinerary-amboseli.html">Amboseli Safari</a>
+<a href="itinerary-3-day-tsavo-east-and-west.html">Tsavo East & West Safari</a>
+<a href="booking.html">Book Your Trip</a>
+<a href="contact.html">Contact Us</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">© <span id="year"></span> Liamber Prime Travels Limited. All rights reserved.</div>
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20am%20interested%20in%20the%204-day%20Lake%20Naivasha%20and%20Lake%20Nakuru%20safari." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
