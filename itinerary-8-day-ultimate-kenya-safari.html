@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8-Day Ultimate Kenya Safari | Liamber Prime Travels Limited</title>
+<meta name="description" content="Discover Kenya's incredible wildlife, landscapes and safari destinations on an eight-day journey with Liamber Prime Travels Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+:root {
+  --green:#123d32;
+  --green-light:#1c5948;
+  --gold:#c49a42;
+  --cream:#f7f5ef;
+  --white:#fff;
+  --dark:#202820;
+  --muted:#737a72;
+  --border:#e8e5dc;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--dark);line-height:1.7}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.2;color:var(--green)}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.container{width:min(1160px,92%);margin:auto}
+
+.topbar{background:var(--green);color:white;padding:9px 0;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.topbar a{margin-right:17px}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);box-shadow:0 3px 15px rgba(0,0,0,.06)}
+.navbar{min-height:83px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand img{width:190px;max-height:70px;object-fit:contain}
+nav{display:flex;align-items:center;gap:20px;font-size:13px;font-weight:600}
+nav a:hover,nav a.active{color:var(--gold)}
+.nav-cta{background:var(--green);color:white!important;padding:12px 19px}
+.menu-toggle{display:none;border:0;background:none;color:var(--green);font-size:25px;cursor:pointer}
+
+.hero{
+  min-height:590px;display:flex;align-items:center;color:white;
+  background:linear-gradient(90deg,rgba(8,30,23,.83),rgba(8,30,23,.22)),
+  url('itinerary-ultimate-kenya-hero.jpg') center/cover no-repeat;
+}
+.hero-content{max-width:780px;padding:100px 0}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+.hero h1{color:white;font-size:clamp(42px,6vw,70px);margin-bottom:22px}
+.hero p{max-width:680px;font-size:17px;color:rgba(255,255,255,.9);margin-bottom:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 23px;font-size:13px;font-weight:700;transition:.25s;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:white}
+.btn-gold:hover{background:#a98131;transform:translateY(-2px)}
+.btn-outline{border-color:rgba(255,255,255,.8);color:white;margin-left:9px}
+.btn-outline:hover{background:white;color:var(--green)}
+
+.quick-info{background:var(--cream);border-bottom:1px solid var(--border)}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:23px 0;gap:20px}
+.quick-item{display:flex;align-items:center;gap:13px;border-right:1px solid var(--border);padding-left:15px}
+.quick-item:last-child{border:0}
+.quick-item i{color:var(--gold);font-size:22px}
+.quick-item strong{display:block;color:var(--green);font-size:13px}
+.quick-item span{color:var(--muted);font-size:12px}
+
+section{padding:85px 0}
+.section-heading{max-width:720px;margin-bottom:38px}
+.section-heading.center{text-align:center;margin-left:auto;margin-right:auto}
+.section-heading h2{font-size:clamp(31px,4vw,44px);margin-bottom:17px}
+.section-heading p{color:var(--muted)}
+
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.intro-image img{width:100%;height:450px;object-fit:cover}
+.intro-copy p{color:var(--muted);margin-bottom:17px}
+.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:25px}
+.feature-list span{color:var(--green);font-weight:600;font-size:13px}
+.feature-list i{color:var(--gold);margin-right:7px}
+
+.route-section{background:var(--green);color:white;padding:48px 0}
+.route-section h2{color:white;text-align:center;font-size:30px;margin-bottom:25px}
+.route-list{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:13px}
+.route-stop{border:1px solid rgba(255,255,255,.3);padding:12px 17px;font-size:13px;color:white}
+.route-list i{color:var(--gold);font-size:13px}
+
+.itinerary-section{background:var(--cream)}
+.day-list{max-width:900px;margin:auto}
+.day-card{display:grid;grid-template-columns:125px 1fr;background:white;margin-bottom:17px;box-shadow:0 5px 20px rgba(0,0,0,.035)}
+.day-number{background:var(--green);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px 12px;text-align:center}
+.day-number span{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#dfc17e}
+.day-number strong{font-family:'Playfair Display',serif;font-size:34px;color:white}
+.day-content{padding:27px 30px}
+.day-content h3{font-size:23px;margin-bottom:11px}
+.day-content p{color:var(--muted);font-size:14px;margin-bottom:12px}
+.day-meta{display:flex;flex-wrap:wrap;gap:16px;font-size:12px;color:var(--green);font-weight:600}
+.day-meta i{color:var(--gold);margin-right:5px}
+.note{max-width:900px;margin:25px auto 0;color:var(--muted);font-size:12px;font-style:italic}
+
+.highlights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:23px}
+.highlight-card{border:1px solid var(--border)}
+.highlight-card img{width:100%;height:225px;object-fit:cover}
+.highlight-card div{padding:23px}
+.highlight-card h3{font-size:21px;margin-bottom:10px}
+.highlight-card p{font-size:13px;color:var(--muted)}
+
+.planning{background:var(--cream)}
+.planning-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}
+.planning h3{font-size:25px;margin-bottom:18px}
+.planning p{color:var(--muted);font-size:14px;margin-bottom:15px}
+.planning ul{list-style:none}
+.planning li{padding:9px 0;border-bottom:1px solid var(--border);color:var(--muted);font-size:13px}
+.planning li i{color:var(--gold);margin-right:9px}
+
+.cta{
+  background:linear-gradient(rgba(12,42,32,.84),rgba(12,42,32,.84)),
+  url('itinerary-ultimate-kenya-cta.jpg') center/cover no-repeat;
+  text-align:center;color:white
+}
+.cta h2{color:white;font-size:clamp(32px,4vw,46px);margin-bottom:17px}
+.cta p{max-width:680px;margin:0 auto 27px;color:rgba(255,255,255,.85)}
+
+footer{background:#0d2d25;color:rgba(255,255,255,.75);padding:65px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:35px;padding-bottom:40px}
+.footer-logo{width:185px;max-height:75px;object-fit:contain;margin-bottom:18px;background:white}
+footer h3{color:white;font-size:19px;margin-bottom:18px}
+footer p,footer li{font-size:13px;margin-bottom:10px}
+footer ul{list-style:none}
+footer a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.13);padding-top:20px;text-align:center;font-size:12px}
+
+.whatsapp-float{position:fixed;bottom:23px;right:23px;z-index:999;width:57px;height:57px;display:flex;justify-content:center;align-items:center;border-radius:50%;background:#25d366;color:white;font-size:29px;box-shadow:0 5px 18px rgba(0,0,0,.2)}
+
+@media(max-width:950px){
+ nav{display:none;position:absolute;top:83px;left:0;width:100%;background:white;padding:25px 5%;flex-direction:column;align-items:flex-start;box-shadow:0 12px 35px rgba(18,61,50,.09)}
+ nav.show{display:flex}
+ .menu-toggle{display:block}
+ .quick-grid{grid-template-columns:1fr 1fr}
+ .quick-item:nth-child(2){border:0}
+ .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+ .hero{min-height:520px}
+ .hero-content{padding:75px 0}
+ .btn{margin:5px 5px 5px 0}
+ .intro-grid,.planning-grid{grid-template-columns:1fr}
+ .intro-image img{height:310px}
+ .highlights-grid{grid-template-columns:1fr}
+ .day-card{grid-template-columns:82px 1fr}
+ .day-content{padding:20px 17px}
+ .day-content h3{font-size:19px}
+ .day-number strong{font-size:27px}
+ .quick-grid{gap:15px 5px}
+ .quick-item{padding-left:5px}
+ .footer-grid{grid-template-columns:1fr}
+ section{padding:65px 0}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div>
+      <a href="tel:+254721116715"><i class="fa-solid fa-phone"></i> +254 721 116 715</a>
+      <a href="mailto:chirchirkb@gmail.com"><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</a>
+    </div>
+    <div>Explore. Experience. Enjoy.</div>
+  </div>
+</div>
+
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="brand">
+      <img src="liamber-logo.png" alt="Liamber Prime Travels Limited">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="safaris.html" class="active">Safaris</a>
+      <a href="excursions.html">Excursions</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">Eight Days • Ultimate Kenya Safari</div>
+        <h1>The Ultimate Kenya Safari Experience</h1>
+        <p>
+          Discover the remarkable diversity of Kenya on an eight-day safari.
+          Explore iconic wildlife destinations, admire spectacular scenery
+          and enjoy memorable encounters in the African wilderness.
+        </p>
+        <a href="booking.html?destination=8-Day%20Ultimate%20Kenya%20Safari" class="btn btn-gold">
+          Enquire About This Safari <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#itinerary" class="btn btn-outline">Explore Itinerary</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="quick-info">
+    <div class="container quick-grid">
+      <div class="quick-item">
+        <i class="fa-regular fa-calendar"></i>
+        <div><strong>Duration</strong><span>8 Days / 7 Nights</span></div>
+      </div>
+      <div class="quick-item">
+        <i class="fa-solid fa-binoculars"></i>
+        <div><strong>Experience</strong><span>Wildlife & Nature</span></div>
+      </div>
+      <div class="quick-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <div><strong>Starting Point</strong><span>Nairobi, Kenya</span></div>
+      </div>
+      <div class="quick-item">
+        <i class="fa-solid fa-car"></i>
+        <div><strong>Travel Style</strong><span>Private or tailor-made</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container intro-grid">
+      <div class="intro-image">
+        <img src="itinerary-ultimate-kenya-overview.jpg" alt="Kenyan safari landscape">
+      </div>
+
+      <div class="intro-copy">
+        <div class="eyebrow">A Journey Across Kenya</div>
+        <div class="section-heading">
+          <h2>Eight Days. Endless Discoveries.</h2>
+        </div>
+        <p>
+          Kenya is home to extraordinary wildlife, diverse landscapes and
+          some of Africa's most celebrated safari destinations. This
+          suggested eight-day journey brings together several memorable
+          experiences in one holiday.
+        </p>
+        <p>
+          From the wildlife-rich plains of the Maasai Mara to the scenic
+          beauty of the Great Rift Valley and the elephant country of
+          Amboseli, this itinerary offers a varied introduction to Kenya.
+        </p>
+        <p>
+          The route can be adjusted to suit your travel dates, interests,
+          accommodation preferences and budget.
+        </p>
+
+        <div class="feature-list">
+          <span><i class="fa-solid fa-check"></i> Iconic safari destinations</span>
+          <span><i class="fa-solid fa-check"></i> Wildlife encounters</span>
+          <span><i class="fa-solid fa-check"></i> Scenic road journeys</span>
+          <span><i class="fa-solid fa-check"></i> Customisable itinerary</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="route-section">
+    <div class="container">
+      <h2>Suggested Safari Route</h2>
+      <div class="route-list">
+        <span class="route-stop">Nairobi</span>
+        <i class="fa-solid fa-arrow-right"></i>
+        <span class="route-stop">Maasai Mara</span>
+        <i class="fa-solid fa-arrow-right"></i>
+        <span class="route-stop">Lake Nakuru</span>
+        <i class="fa-solid fa-arrow-right"></i>
+        <span class="route-stop">Amboseli</span>
+        <i class="fa-solid fa-arrow-right"></i>
+        <span class="route-stop">Nairobi</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="itinerary-section" id="itinerary">
+    <div class="container">
+      <div class="section-heading center">
+        <div class="eyebrow">Your Journey</div>
+        <h2>8-Day Safari Itinerary</h2>
+        <p>
+          Explore the suggested day-by-day programme. Final destinations,
+          accommodation and travel arrangements will be confirmed in your
+          personalised quotation.
+        </p>
+      </div>
+
+      <div class="day-list">
+
+        <article class="day-card">
+          <div class="day-number"><span>Day</span><strong>01</strong></div>
+          <div class="day-content">
+            <h3>Nairobi – Maasai Mara National Reserve</h3>
+            <p>
+              Depart Nairobi and travel through the Great Rift Valley
+              towards the world-famous Maasai Mara. Enjoy the scenic journey
+              before arriving in the reserve area. Depending on arrival
+              time and the confirmed programme, enjoy an introductory
+              afternoon game drive.
+            </p>
+            <div class="day-meta">
+              <span><i class="fa-solid fa-bed"></i> Overnight: Maasai Mara area</span>
+              <span><i class="fa-solid fa-binoculars"></i> Optional afternoon game drive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <div class="day-number"><span>Day</span><strong>02</strong></div>
+          <div class="day-content">
+            <h3>Full-Day Maasai Mara Safari</h3>
+            <p>
+              Spend the day exploring the Maasai Mara's expansive savannahs.
+              Look out for elephants, lions, giraffes, zebras, buffaloes
+              and other wildlife. The reserve is also renowned for its
+              seasonal Great Migration, when conditions allow.
+            </p>
+            <div class="day-meta">
+              <span><i class="fa-solid fa-bed"></i> Overnight: Maasai Mara area</span>
+              <span><i class="fa-solid fa-camera"></i> Wildlife photography</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <div class="day-number"><span>Day</span><strong>03</strong></div>
+          <div class="day-content">
+            <h3>Another Day in the Maasai Mara</h3>
+            <p>
+              Enjoy more time in the reserve, exploring different areas
+              and searching for wildlife. Take in the open grasslands,
+              dramatic scenery and remarkable animal encounters that
+              make the Maasai Mara a celebrated safari destination.
+            </p>
+            <div class="day-meta">
+              <span><i class="fa-solid fa-bed"></i> Overnight: Maasai Mara area</span>
+              <span><i class="fa-solid fa-binoculars"></i> Game-viewing activities</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <div class="day-number"><span>Day</span><strong>04</strong></div>
+          <div class="day-content">
+            <h3>Maasai Mara – Lake Nakuru National Park</h3>
+            <p>
+              Depart the Mara and travel towards Lake Nakuru. Arrive in
+              the Lake Nakuru region and enjoy the planned safari activities.
+              The park is known for its birdlife, scenic lake environment
+              and wildlife, including rhinos and Rothschild's giraffes.
+            </p>
+            <div class="day-meta">
+              <span><i class="fa-solid fa-bed"></i> Overnight: Lake Nakuru area</span>
+              <span><i class="fa-solid fa-route"></i> Scenic transfer</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <div class="day-number"><span>Day</span><strong>05</strong></div>
+          <div class="day-content">
+            <h3>Lake Nakuru – Nairobi</h3>
+            <p>
+              Depending on the confirmed programme, enjoy a morning
+              activity in the Lake Nakuru area before proceeding to Nairobi.
+              The journey offers views of the Rift Valley landscape.
+              Arrive in Nairobi for the next stage of your safari journey.
+            </p>
+            <div class="day-meta">
+              <span><i class="fa-solid fa-bed"></i> Overnight: Nairobi</span>
+              <span><i class="fa-solid fa-location-dot"></i> Nairobi stopover</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <div class="day-number"><span>Day</span><strong>06</strong></div>
+          <div class="day-content">
+            <h3>Nairobi – Amboseli National Park</h3>
+            <p>
+              Depart Nairobi for Amboseli National Park. Enjoy the changing
+              scenery on the journey south. On arrival, explore the park
+              according to the day's schedule and enjoy views of its
+              beautiful plains, with Mount Kilimanjaro visible in suitable
+              weather conditions.
+            </p>
+            <div class="day-meta">
+              <span><i class="fa-solid fa-bed"></i> Overnight: Amboseli area</span>
+              <span><i class="fa-solid fa-binoculars"></i> Safari activities</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <div class="day-number"><span>Day</span><strong>07</strong></div>
+          <div class="day-content">
+            <h3>Full-Day Amboseli Safari</h3>
+            <p>
+              Explore Amboseli's varied habitats and enjoy opportunities
+              to see its famous elephant herds. Look out for giraffes,
+              zebras, buffaloes, antelopes and birdlife while appreciating
+              the magnificent scenery.
+            </p>
+            <div class="day-meta">
+              <span><i class="fa-solid fa-bed"></i> Overnight: Amboseli area</span>
+              <span><i class="fa-solid fa-camera"></i> Wildlife photography</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <div class="day-number"><span>Day</span><strong>08</strong></div>
+          <div class="day-content">
+            <h3>Amboseli – Nairobi</h3>
+            <p>
+              After breakfast, depart Amboseli and return to Nairobi.
+              Enjoy the final views of Kenya's countryside as your
+              eight-day safari comes to an end. Drop-off arrangements
+              will be made according to your confirmed travel plan.
+            </p>
+            <div class="day-meta">
+              <span><i class="fa-solid fa-flag-checkered"></i> Safari concludes</span>
+              <span><i class="fa-solid fa-location-dot"></i> Nairobi</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="note">
+        Important: This is a suggested sample itinerary. The route includes
+        several long road transfers and should be reviewed against actual
+        travel times, park access arrangements and accommodation locations
+        before being offered as a confirmed package.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-heading center">
+        <div class="eyebrow">Safari Highlights</div>
+        <h2>Explore Kenya's Iconic Destinations</h2>
+        <p>
+          Discover different wildlife habitats and landscapes across
+          three remarkable safari destinations.
+        </p>
+      </div>
+
+      <div class="highlights-grid">
+        <article class="highlight-card">
+          <img src="ultimate-kenya-mara.jpg" alt="Wildlife in Maasai Mara">
+          <div>
+            <h3>Maasai Mara</h3>
+            <p>
+              Explore the open savannahs and enjoy opportunities to see
+              some of Africa's most celebrated wildlife.
+            </p>
+          </div>
+        </article>
+
+        <article class="highlight-card">
+          <img src="ultimate-kenya-nakuru.jpg" alt="Lake Nakuru landscape">
+          <div>
+            <h3>Lake Nakuru</h3>
+            <p>
+              Discover a beautiful Rift Valley park known for its birdlife,
+              rhinos and scenic lake environment.
+            </p>
+          </div>
+        </article>
+
+        <article class="highlight-card">
+          <img src="ultimate-kenya-amboseli.jpg" alt="Elephants in Amboseli">
+          <div>
+            <h3>Amboseli</h3>
+            <p>
+              Experience elephant country and enjoy the dramatic scenery
+              beneath Mount Kilimanjaro.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="planning">
+    <div class="container planning-grid">
+      <div>
+        <div class="eyebrow">Prepare for Your Journey</div>
+        <h3>What to Pack</h3>
+        <p>
+          Pack comfortable essentials for game drives, road transfers
+          and changing weather conditions.
+        </p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Comfortable safari clothing</li>
+          <li><i class="fa-solid fa-check"></i> Walking shoes or comfortable trainers</li>
+          <li><i class="fa-solid fa-check"></i> Hat, sunglasses and sunscreen</li>
+          <li><i class="fa-solid fa-check"></i> Camera and spare batteries</li>
+          <li><i class="fa-solid fa-check"></i> Personal medication and toiletries</li>
+          <li><i class="fa-solid fa-check"></i> Light jacket for early mornings</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="eyebrow">Booking Details</div>
+        <h3>Make It Your Own</h3>
+        <p>
+          Your safari can be tailored to your preferred travel dates,
+          group size, accommodation standard and transport arrangements.
+        </p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Request a personalised quotation</li>
+          <li><i class="fa-solid fa-check"></i> Confirm accommodation options</li>
+          <li><i class="fa-solid fa-check"></i> Confirm park fees and applicable charges</li>
+          <li><i class="fa-solid fa-check"></i> Agree on meals and transport arrangements</li>
+          <li><i class="fa-solid fa-check"></i> Receive your final safari programme</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="eyebrow">Your Adventure Starts Here</div>
+      <h2>Experience the Ultimate Kenya Safari</h2>
+      <p>
+        Let Liamber Prime Travels Limited help you plan an unforgettable
+        eight-day journey. Contact us to customise your safari and receive
+        a quotation based on your travel requirements.
+      </p>
+      <a href="booking.html?destination=8-Day%20Ultimate%20Kenya%20Safari" class="btn btn-gold">
+        Start Your Booking <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20the%208-Day%20Ultimate%20Kenya%20Safari."
+         class="btn btn-outline" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="liamber-logo.png" alt="Liamber Prime Travels Limited" class="footer-logo">
+        <p>
+          Creating memorable travel experiences through personalised
+          journeys, wildlife safaris and holiday adventures.
+        </p>
+        <p><strong>Explore. Experience. Enjoy.</strong></p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="safaris.html">Safaris</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Travel Services</h3>
+        <ul>
+          <li><a href="excursions.html">Excursions</a></li>
+          <li><a href="booking.html">Holiday Bookings</a></li>
+          <li><a href="booking.html">Hotel Reservations</a></li>
+          <li><a href="booking.html">Airport Transfers</a></li>
+          <li><a href="booking.html">Flight Bookings</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-phone"></i> +254 721 116 715</p>
+        <p><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+        <p><a href="https://wa.me/254721116715" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Chat with us
+        </a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> Liamber Prime Travels Limited. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20your%20safaris."
+   target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+
+menuToggle.addEventListener('click', function() {
+  mainNav.classList.toggle('show');
+  const icon = menuToggle.querySelector('i');
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-xmark');
+});
+
+document.querySelectorAll('#mainNav a').forEach(link => {
+  link.addEventListener('click', () => {
+    mainNav.classList.remove('show');
+    const icon = menuToggle.querySelector('i');
+    icon.classList.add('fa-bars');
+    icon.classList.remove('fa-xmark');
+  });
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
