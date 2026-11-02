@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3-Day Maasai Mara Balloon Safari | Liamber Prime Travels Limited</title>
+<meta name="description" content="Enjoy a three-day Maasai Mara safari with an optional hot-air balloon experience, wildlife viewing and scenic landscapes with Liamber Prime Travels Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+:root{--green:#123d32;--green2:#1c5948;--gold:#c49a42;--cream:#f7f5ef;--dark:#242a26;--muted:#6e7771}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--dark);line-height:1.7}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%;object-fit:cover}
+.container{width:min(1160px,92%);margin:auto}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.2}
+h2{font-size:clamp(30px,4vw,43px);color:var(--green)}
+p{color:var(--muted)}
+.topbar{background:var(--green);color:#fff;padding:9px 4%;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 3px 18px #0000000c}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:65px;height:65px;object-fit:contain}
+.brand strong{display:block;color:var(--green);font-family:'Playfair Display',serif;font-size:19px;line-height:1.1}
+.brand small{display:block;color:var(--gold);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.navlinks{display:flex;align-items:center;gap:19px;font-size:13px;font-weight:600}
+.navlinks a:hover{color:var(--gold)}
+.navlinks .book{background:var(--green);color:#fff;padding:12px 19px}
+.menu-toggle{display:none;border:0;background:none;font-size:25px;color:var(--green)}
+.hero{min-height:570px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(8,35,27,.84),rgba(8,35,27,.2)),url('itinerary-mara-balloon-hero.jpg') center/cover}
+.hero-content{padding:90px 0;color:#fff;max-width:760px}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:15px}
+.hero h1{font-size:clamp(42px,6vw,70px);margin-bottom:22px}
+.hero p{color:#fff;font-size:17px;max-width:620px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;font-size:13px;font-weight:700;transition:.25s}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-outline{border:1px solid #fff;color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn:hover{transform:translateY(-2px);opacity:.9}
+.facts{background:var(--cream);padding:23px 0}
+.fact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.fact{display:flex;align-items:center;gap:13px}
+.fact i{font-size:22px;color:var(--gold)}
+.fact strong{display:block;color:var(--green);font-size:14px}
+.fact span{display:block;color:var(--muted);font-size:12px}
+section{padding:85px 0}
+.heading{text-align:center;max-width:720px;margin:0 auto 45px}
+.heading p{margin-top:13px}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.intro-image{height:440px}
+.intro-image img{height:100%}
+.intro-copy p{margin:17px 0}
+.checklist{list-style:none;margin:20px 0}
+.checklist li{margin:10px 0;font-size:14px}
+.checklist i{color:var(--gold);margin-right:9px}
+.balloon{background:var(--cream)}
+.balloon-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.balloon-image{height:380px}
+.balloon-image img{height:100%}
+.balloon-copy p{margin:15px 0}
+.itinerary{max-width:900px;margin:auto}
+.day{display:grid;grid-template-columns:100px 1fr;gap:25px;padding:25px 0;border-bottom:1px solid #e9e9e4}
+.day-number{background:var(--green);color:#fff;text-align:center;padding:15px 8px;height:max-content}
+.day-number span{display:block;color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.day-number strong{font-family:'Playfair Display',serif;font-size:26px}
+.day-content h3{font-size:22px;color:var(--green);margin-bottom:8px}
+.day-content p{font-size:14px}
+.location{color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}
+.note{background:var(--cream);padding:18px 22px;margin-top:30px;border-left:3px solid var(--gold);font-size:13px;color:var(--muted)}
+.highlights{background:var(--green);color:#fff}
+.highlights h2{color:#fff}
+.highlights .heading p{color:#d7e1db}
+.highlight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.highlight{border:1px solid #ffffff25;padding:25px}
+.highlight i{font-size:27px;color:var(--gold);margin-bottom:17px}
+.highlight h3{font-size:21px;margin-bottom:9px}
+.highlight p{color:#d7e1db;font-size:13px}
+.cta{background:linear-gradient(90deg,rgba(13,48,37,.88),rgba(13,48,37,.4)),url('itinerary-mara-balloon-cta.jpg') center/cover;padding:95px 0;color:#fff}
+.cta h2{color:#fff;font-size:clamp(32px,4vw,46px)}
+.cta p{color:#fff;margin:17px 0 25px;max-width:650px}
+footer{background:#0d2c24;color:#fff;padding:55px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:45px}
+footer h3{font-size:21px;margin-bottom:17px}
+footer p,footer li{color:#c4d0ca;font-size:13px}
+footer ul{list-style:none}
+footer li{margin:9px 0}
+footer a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid #ffffff20;margin-top:35px;padding-top:18px;text-align:center;font-size:12px;color:#c4d0ca}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:55px;height:55px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:27px;z-index:1001;box-shadow:0 5px 18px #0003}
+@media(max-width:900px){.navlinks{gap:11px;font-size:12px}}
+@media(max-width:700px){
+ .topbar .container{justify-content:center;text-align:center}
+ .nav{min-height:72px}
+ .brand img{width:55px;height:55px}
+ .brand strong{font-size:16px}
+ .menu-toggle{display:block}
+ .navlinks{display:none;position:absolute;top:72px;left:0;width:100%;background:#fff;padding:20px 5%;flex-direction:column;align-items:stretch;box-shadow:0 8px 15px #0001}
+ .navlinks.active{display:flex}
+ .navlinks a{padding:8px 0}
+ .navlinks .book{text-align:center;padding:12px}
+ .hero{min-height:510px}
+ .hero-content{padding:65px 0}
+ section{padding:65px 0}
+ .fact-grid{grid-template-columns:repeat(2,1fr);gap:18px}
+ .intro-grid,.balloon-grid{grid-template-columns:1fr;gap:25px}
+ .intro-image,.balloon-image{height:300px}
+ .day{grid-template-columns:70px 1fr;gap:15px}
+ .day-number strong{font-size:22px}
+ .highlight-grid{grid-template-columns:1fr}
+ .footer-grid{grid-template-columns:1fr;gap:28px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+ <div class="container">
+  <span><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</span>
+  <span><i class="fa-solid fa-phone"></i> +254 721 116 715</span>
+  <span>Explore. Experience. Enjoy.</span>
+ </div>
+</div>
+
+<header>
+ <div class="container nav">
+  <a href="index.html" class="brand">
+   <img src="liamber-logo.png" alt="Liamber Prime Travels Limited Logo">
+   <span><strong>LIAMBER PRIME</strong><small>Travels Limited</small></span>
+  </a>
+  <button class="menu-toggle" aria-label="Open navigation" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+  <nav class="navlinks" id="navlinks">
+   <a href="index.html">Home</a>
+   <a href="safaris.html">Safaris</a>
+   <a href="excursions.html">Excursions</a>
+   <a href="destinations.html">Destinations</a>
+   <a href="packages.html">Packages</a>
+   <a href="about.html">About</a>
+   <a href="gallery.html">Gallery</a>
+   <a href="contact.html">Contact</a>
+   <a class="book" href="booking.html">Book Now</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="container hero-content">
+  <div class="eyebrow">An unforgettable Mara experience</div>
+  <h1>3-Day Maasai Mara Balloon Safari</h1>
+  <p>Discover the iconic Maasai Mara from the ground and, subject to confirmation, from the sky on a memorable hot-air balloon experience over the African savannah.</p>
+  <div class="buttons">
+   <a class="btn btn-gold" href="booking.html?destination=3-Day%20Maasai%20Mara%20Balloon%20Safari">Plan This Safari <i class="fa-solid fa-arrow-right"></i></a>
+   <a class="btn btn-outline" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20am%20interested%20in%20the%203-Day%20Maasai%20Mara%20Balloon%20Safari." target="_blank">Enquire on WhatsApp</a>
+  </div>
+ </div>
+</section>
+
+<div class="facts">
+ <div class="container fact-grid">
+  <div class="fact"><i class="fa-regular fa-calendar"></i><div><strong>3 Days</strong><span>Suggested duration</span></div></div>
+  <div class="fact"><i class="fa-solid fa-map-location-dot"></i><div><strong>Maasai Mara</strong><span>Kenya safari destination</span></div></div>
+  <div class="fact"><i class="fa-solid fa-fire"></i><div><strong>Balloon Experience</strong><span>Subject to availability</span></div></div>
+  <div class="fact"><i class="fa-solid fa-binoculars"></i><div><strong>Wildlife Viewing</strong><span>Explore the Mara</span></div></div>
+ </div>
+</div>
+
+<section>
+ <div class="container intro-grid">
+  <div class="intro-image">
+   <img src="itinerary-mara-balloon-overview.jpg" alt="Hot air balloon floating above the Maasai Mara plains">
+  </div>
+  <div class="intro-copy">
+   <div class="eyebrow">See the Mara differently</div>
+   <h2>A Safari Above the African Plains</h2>
+   <p>The Maasai Mara is renowned for its open grasslands, wildlife and remarkable natural scenery. This suggested three-day experience combines a traditional safari with the possibility of a hot-air balloon flight.</p>
+   <p>Take in the landscape from a new perspective and enjoy time exploring the Mara's wildlife habitats.</p>
+   <ul class="checklist">
+    <li><i class="fa-solid fa-check"></i> Travel from Nairobi to the Maasai Mara</li>
+    <li><i class="fa-solid fa-check"></i> Experience game viewing in the Mara ecosystem</li>
+    <li><i class="fa-solid fa-check"></i> Option to arrange a hot-air balloon flight</li>
+    <li><i class="fa-solid fa-check"></i> Enjoy scenic views and photography opportunities</li>
+    <li><i class="fa-solid fa-check"></i> Return to Nairobi at the end of the safari</li>
+   </ul>
+   <a href="booking.html?destination=3-Day%20Maasai%20Mara%20Balloon%20Safari" class="btn btn-green">Request a Safari Plan</a>
+  </div>
+ </div>
+</section>
+
+<section class="balloon">
+ <div class="container balloon-grid">
+  <div class="balloon-copy">
+   <div class="eyebrow">The balloon experience</div>
+   <h2>Float Above the Mara</h2>
+   <p>A hot-air balloon flight offers a remarkable aerial perspective of the Maasai Mara's landscapes. Depending on the operator and confirmed arrangements, the experience may begin around sunrise.</p>
+   <p>Watch the plains come alive from above and appreciate the scale of this celebrated wildlife ecosystem.</p>
+   <p><strong>Important:</strong> Balloon flights are operated by specialist providers and are subject to availability, weather and safety conditions. The flight and any associated extras must be confirmed in your quotation.</p>
+  </div>
+  <div class="balloon-image">
+   <img src="mara-balloon-flight.jpg" alt="Hot air balloon safari over the Maasai Mara">
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="heading">
+   <div class="eyebrow">Your journey</div>
+   <h2>Suggested 3-Day Itinerary</h2>
+   <p>A sample programme that can be customised around balloon flight availability and your travel preferences.</p>
+  </div>
+
+  <div class="itinerary">
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>01</strong></div>
+    <div class="day-content">
+     <div class="location">Nairobi to Maasai Mara</div>
+     <h3>Journey to the Mara</h3>
+     <p>Depart Nairobi and travel towards the Maasai Mara through the Great Rift Valley region. Arrive at your selected accommodation and settle in. Depending on arrival time and the confirmed programme, enjoy an introductory game-viewing experience.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>02</strong></div>
+    <div class="day-content">
+     <div class="location">Maasai Mara</div>
+     <h3>Balloon Safari and Wildlife Exploration</h3>
+     <p>If booked and confirmed, begin the day with a hot-air balloon flight, subject to weather and operator arrangements. Continue with the day's planned wildlife viewing and enjoy the remarkable scenery of the Mara.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>03</strong></div>
+    <div class="day-content">
+     <div class="location">Maasai Mara to Nairobi</div>
+     <h3>Farewell to the Mara</h3>
+     <p>Enjoy your final moments in the Mara according to the confirmed schedule, then begin the return journey to Nairobi. Arrive in Nairobi, marking the end of your three-day safari.</p>
+    </div>
+   </article>
+  </div>
+
+  <div class="note">
+   <strong>Planning note:</strong> The balloon flight is not automatically included in the safari price. It must be requested and confirmed separately in the final quotation. Flight availability, departure time, operator requirements and weather conditions may affect the programme.
+  </div>
+ </div>
+</section>
+
+<section class="highlights">
+ <div class="container">
+  <div class="heading">
+   <div class="eyebrow">Safari highlights</div>
+   <h2>Make Your Mara Visit Memorable</h2>
+   <p>Enjoy the destination through its wildlife, scenery and unique aerial experience.</p>
+  </div>
+  <div class="highlight-grid">
+   <div class="highlight">
+    <i class="fa-solid fa-earth-africa"></i>
+    <h3>Iconic Landscapes</h3>
+    <p>Discover the wide-open grasslands and beautiful scenery of the Maasai Mara.</p>
+   </div>
+   <div class="highlight">
+    <i class="fa-solid fa-fire"></i>
+    <h3>Balloon Flight Option</h3>
+    <p>Arrange a specialist hot-air balloon experience, subject to availability and confirmation.</p>
+   </div>
+   <div class="highlight">
+    <i class="fa-solid fa-camera"></i>
+    <h3>Wildlife Photography</h3>
+    <p>Capture the wildlife and scenery that make the Mara a celebrated safari destination.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container">
+  <div class="eyebrow">Your Mara adventure starts here</div>
+  <h2>Ready for a Different View of the Wild?</h2>
+  <p>Contact Liamber Prime Travels Limited to customise your three-day Maasai Mara safari and enquire about arranging a hot-air balloon flight.</p>
+  <div class="buttons">
+   <a class="btn btn-gold" href="booking.html?destination=3-Day%20Maasai%20Mara%20Balloon%20Safari">Request a Quote</a>
+   <a class="btn btn-outline" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%203-Day%20Maasai%20Mara%20Balloon%20Safari." target="_blank">Chat on WhatsApp</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <h3>Liamber Prime Travels Limited</h3>
+    <p>Creating memorable journeys through Kenya and beyond. Explore. Experience. Enjoy.</p>
+   </div>
+   <div>
+    <h3>Quick Links</h3>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="safaris.html">Safaris</a></li>
+     <li><a href="destinations.html">Destinations</a></li>
+     <li><a href="packages.html">Packages</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </div>
+   <div>
+    <h3>Get in Touch</h3>
+    <ul>
+     <li><i class="fa-solid fa-phone"></i> +254 721 116 715</li>
+     <li><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</li>
+     <li><a href="https://wa.me/254721116715" target="_blank">WhatsApp Us</a></li>
+     <li><a href="booking.html">Make an Enquiry</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="footer-bottom">© <span id="year"></span> Liamber Prime Travels Limited. All Rights Reserved.</div>
+ </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels" target="_blank" aria-label="Chat with us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+function toggleMenu(){
+ document.getElementById('navlinks').classList.toggle('active');
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
