@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact Liamber Prime Travels Limited to plan your Kenya safari, coastal holiday or tailor-made travel experience.">
+<title>Contact Us | Liamber Prime Travels Limited</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+:root {
+    --green: #123d32;
+    --green2: #1c5948;
+    --gold: #c49a42;
+    --cream: #f7f5ef;
+    --ink: #24312d;
+    --muted: #68736e;
+    --line: #e5e8e3;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink);
+    line-height: 1.65;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.topbar {
+    background: var(--green);
+    color: white;
+    padding: 9px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.topbar a { margin-right: 18px; }
+
+.topbar i {
+    color: var(--gold);
+    margin-right: 7px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: white;
+    box-shadow: 0 3px 18px #102a2010;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 13px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.brand img {
+    width: 178px;
+    max-height: 68px;
+    object-fit: contain;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.navlinks a:hover,
+.navlinks a.active {
+    color: var(--gold);
+}
+
+.navcta, .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 20px;
+    border: 1px solid var(--green);
+    background: var(--green);
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.navcta:hover, .btn:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+}
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: none;
+    color: var(--green);
+    font-size: 24px;
+}
+
+.hero {
+    min-height: 390px;
+    background:
+        linear-gradient(90deg, #092a22d9, #092a2280),
+        url('contact-hero.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 75px 24px;
+}
+
+.eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font: 600 clamp(38px, 6vw, 62px)/1.1 'Playfair Display', serif;
+    margin: 14px 0;
+}
+
+.hero p {
+    max-width: 610px;
+    color: #f3f4ef;
+}
+
+.crumb {
+    font-size: 12px;
+    margin-bottom: 18px;
+    color: #e7e9e4;
+}
+
+.crumb a { color: white; }
+
+.section { padding: 76px 24px; }
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section-head {
+    text-align: center;
+    max-width: 690px;
+    margin: 0 auto 38px;
+}
+
+.section-head h2 {
+    font: 600 clamp(29px, 4vw, 42px)/1.2 'Playfair Display', serif;
+    color: var(--green);
+    margin: 9px 0 12px;
+}
+
+.section-head p { color: var(--muted); }
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 28px;
+}
+
+.info-panel {
+    background: var(--green);
+    color: white;
+    padding: 36px;
+}
+
+.info-panel h2 {
+    font: 600 29px 'Playfair Display', serif;
+    margin: 0 0 12px;
+}
+
+.info-panel > p {
+    color: #dbe5df;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin: 23px 0;
+}
+
+.info-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: grid;
+    place-items: center;
+    background: #ffffff15;
+    color: var(--gold);
+}
+
+.info-item strong {
+    display: block;
+    font-size: 13px;
+}
+
+.info-item span, .info-item a {
+    font-size: 13px;
+    color: #dbe5df;
+    overflow-wrap: anywhere;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.socials a {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #ffffff50;
+    color: white;
+}
+
+.socials a:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+}
+
+.form-panel {
+    border: 1px solid var(--line);
+    padding: 36px;
+    background: white;
+}
+
+.form-panel h2 {
+    font: 600 29px 'Playfair Display', serif;
+    color: var(--green);
+    margin: 0 0 8px;
+}
+
+.form-panel > p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 24px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.field.full { grid-column: 1/-1; }
+
+.field label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #dfe4df;
+    background: #fcfcfa;
+    outline: none;
+    color: var(--ink);
+    font-size: 13px;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: var(--gold);
+}
+
+.field textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.form-note {
+    font-size: 11px;
+    color: var(--muted);
+    margin: 12px 0 18px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    background: white;
+    color: var(--green);
+}
+
+.quick-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.quick-card {
+    border: 1px solid var(--line);
+    padding: 25px;
+    background: white;
+    text-align: center;
+}
+
+.quick-card i {
+    font-size: 23px;
+    color: var(--gold);
+}
+
+.quick-card h3 {
+    font: 600 20px 'Playfair Display', serif;
+    color: var(--green);
+    margin: 12px 0 5px;
+}
+
+.quick-card p {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.quick-card a {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.cta {
+    padding: 70px 24px;
+    background:
+        linear-gradient(90deg, #0d332bdc, #0d332b99),
+        url('contact-cta.jpg') center/cover;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font: 600 clamp(29px, 4vw, 40px) 'Playfair Display', serif;
+}
+
+.cta p {
+    color: #e5eae5;
+    margin: 0 auto 22px;
+    max-width: 650px;
+    font-size: 14px;
+}
+
+.cta .btn {
+    background: var(--gold);
+    border-color: var(--gold);
+}
+
+.footer {
+    background: #0d2e26;
+    color: #d7e0da;
+    padding: 50px 24px 20px;
+}
+
+.footer-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 35px;
+}
+
+.footer img {
+    width: 165px;
+    max-height: 65px;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
+}
+
+.footer p, .footer a {
+    font-size: 12px;
+    color: #c5d1ca;
+}
+
+.footer h3 {
+    font: 600 19px 'Playfair Display', serif;
+    color: white;
+}
+
+.footer-links {
+    display: grid;
+    gap: 8px;
+}
+
+.footer a:hover { color: var(--gold); }
+
+.copyright {
+    max-width: 1150px;
+    margin: 30px auto 0;
+    border-top: 1px solid #ffffff20;
+    padding-top: 17px;
+    font-size: 11px;
+    color: #aebdb4;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 30;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #20bd62;
+    color: white;
+    font-size: 27px;
+    box-shadow: 0 6px 20px #0003;
+}
+
+@media(max-width:900px) {
+    .navlinks { gap: 12px; font-size: 11px; }
+    .contact-layout { grid-template-columns: 1fr 1.15fr; }
+}
+
+@media(max-width:760px) {
+    .topbar { justify-content: center; text-align: center; }
+    .menu-toggle { display: block; }
+    .nav { flex-wrap: wrap; }
+    .navlinks {
+        display: none;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 0;
+        gap: 0;
+    }
+    .navlinks.open { display: flex; }
+    .navlinks a {
+        padding: 11px 4px;
+        border-top: 1px solid var(--line);
+    }
+    .contact-layout { grid-template-columns: 1fr; }
+    .section { padding: 58px 18px; }
+    .info-panel, .form-panel { padding: 27px 22px; }
+    .quick-cards { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero { min-height: 340px; }
+}
+
+@media(max-width:480px) {
+    .brand img { width: 145px; }
+    .form-grid { grid-template-columns: 1fr; }
+    .field.full { grid-column: auto; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div>
+        <a href="tel:+254721116715"><i class="fa-solid fa-phone"></i>+254 721 116 715</a>
+        <a href="mailto:chirchirkb@gmail.com"><i class="fa-regular fa-envelope"></i>chirchirkb@gmail.com</a>
+    </div>
+    <div><i class="fa-solid fa-location-dot"></i> Kenya • East Africa</div>
+</div>
+
+<header class="header">
+<nav class="nav">
+    <a class="brand" href="index.html">
+        <img src="liamber-logo.png" alt="Liamber Prime Travels Limited">
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="safaris.html">Safaris</a>
+        <a href="excursions.html">Experiences</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="contact.html">Contact</a>
+    </div>
+
+    <a class="navcta" href="booking.html">Plan Your Trip <i class="fa-solid fa-arrow-right"></i></a>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-inner">
+        <div class="crumb"><a href="index.html">Home</a> / Contact</div>
+        <div class="eyebrow">We are here to help</div>
+        <h1>Let's Plan Your<br>Next Journey</h1>
+        <p>Tell us what you have in mind. Whether it is a wildlife safari, a coastal escape or a tailor-made Kenya experience, our team will be glad to help you plan it.</p>
+    </div>
+</section>
+
+<section class="section">
+<div class="container">
+
+    <div class="section-head">
+        <div class="eyebrow">Get in touch</div>
+        <h2>Start a Conversation With Us</h2>
+        <p>Reach out using the contact details below or send us your travel enquiry. We will get back to you to discuss the details of your trip.</p>
+    </div>
+
+    <div class="contact-layout">
+
+        <aside class="info-panel">
+            <h2>Contact Information</h2>
+            <p>We would love to hear from you. Contact Liamber Prime Travels Limited and let us help turn your travel plans into a memorable experience.</p>
+
+            <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div><strong>Call or WhatsApp</strong><a href="tel:+254721116715">+254 721 116 715</a></div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div><strong>Email</strong><a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a></div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-globe"></i></div>
+                <div><strong>Destination</strong><span>Kenya and East Africa</span></div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                <div><strong>Enquiries</strong><span>Contact us to discuss availability and arrangements</span></div>
+            </div>
+
+            <div class="socials">
+                <a href="https://wa.me/254721116715" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:chirchirkb@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="tel:+254721116715" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </aside>
+
+        <div class="form-panel">
+            <h2>Send Us an Enquiry</h2>
+            <p>Share a few details and choose how you would like to send your enquiry.</p>
+
+            <form id="contactForm">
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label for="name">Full Name *</label>
+                        <input id="name" name="name" required placeholder="Your full name">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address *</label>
+                        <input id="email" name="email" type="email" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone / WhatsApp</label>
+                        <input id="phone" name="phone" type="tel" placeholder="Include country code">
+                    </div>
+
+                    <div class="field">
+                        <label for="interest">What are you interested in?</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select an experience</option>
+                            <option>Wildlife Safari</option>
+                            <option>Beach Holiday</option>
+                            <option>Coastal Excursion</option>
+                            <option>Culture and Community</option>
+                            <option>Airport Transfer</option>
+                            <option>Tailor-made Journey</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="date">Preferred Travel Date</label>
+                        <input id="date" name="date" type="date">
+                    </div>
+
+                    <div class="field">
+                        <label for="guests">Number of Travellers</label>
+                        <input id="guests" name="guests" type="number" min="1" placeholder="e.g. 2">
+                    </div>
+
+                    <div class="field full">
+                        <label for="message">Tell Us About Your Plans *</label>
+                        <textarea id="message" name="message" required placeholder="Destination, number of days, accommodation preference, activities or any other details..."></textarea>
+                    </div>
+
+                </div>
+
+                <p class="form-note">This form prepares your enquiry for WhatsApp or email. It does not process payments or confirm a booking.</p>
+
+                <div class="form-actions">
+                    <button class="btn" type="button" id="sendWhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                    </button>
+                    <button class="btn btn-outline" type="button" id="sendEmail">
+                        <i class="fa-regular fa-envelope"></i> Send via Email
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="quick-cards">
+
+        <div class="quick-card">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>WhatsApp Us</h3>
+            <p>Chat with us directly about your travel plans.</p>
+            <a href="https://wa.me/254721116715">START A CHAT <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="quick-card">
+            <i class="fa-regular fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p>Send us your questions or request a tailored quotation.</p>
+            <a href="mailto:chirchirkb@gmail.com">SEND AN EMAIL <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="quick-card">
+            <i class="fa-solid fa-suitcase-rolling"></i>
+            <h3>Ready to Book?</h3>
+            <p>Share your trip requirements through our booking page.</p>
+            <a href="booking.html">PLAN YOUR TRIP <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="eyebrow">Your journey begins here</div>
+        <h2>Discover Kenya With Liamber Prime Travels</h2>
+        <p>From memorable safari moments to relaxing coastal holidays, let us help you create a journey that suits your interests.</p>
+        <a class="btn" href="booking.html">Plan Your Journey <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="footer-grid">
+
+    <div>
+        <img src="liamber-logo.png" alt="Liamber Prime Travels Limited">
+        <p>Thoughtfully planned travel experiences across Kenya and East Africa. Get in touch and let us help you plan your next journey.</p>
+    </div>
+
+    <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="packages.html">Packages</a>
+            <a href="safaris.html">Safaris</a>
+            <a href="excursions.html">Experiences</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <div>
+        <h3>Contact</h3>
+        <div class="footer-links">
+            <a href="tel:+254721116715">+254 721 116 715</a>
+            <a href="mailto:chirchirkb@gmail.com">chirchirkb@gmail.com</a>
+            <a href="https://wa.me/254721116715">WhatsApp Us</a>
+            <a href="booking.html">Plan Your Trip</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="copyright">
+    <span>© <span id="year"></span> Liamber Prime Travels Limited. All rights reserved.</span>
+    <span>Explore. Experience. Enjoy.</span>
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254721116715" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+const menuButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.navlinks');
+
+menuButton.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.innerHTML = open
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+function getEnquiry() {
+    const form = document.getElementById('contactForm');
+
+    if (!form.reportValidity()) return null;
+
+    const data = new FormData(form);
+
+    return `Travel Enquiry - Liamber Prime Travels Limited
+
+Name: ${data.get('name')}
+Email: ${data.get('email')}
+Phone/WhatsApp: ${data.get('phone') || 'Not provided'}
+Interest: ${data.get('interest') || 'Not specified'}
+Preferred travel date: ${data.get('date') || 'Not specified'}
+Travellers: ${data.get('guests') || 'Not specified'}
+
+Message:
+${data.get('message')}`;
+}
+
+document.getElementById('sendWhatsApp').addEventListener('click', () => {
+    const message = getEnquiry();
+
+    if (message) {
+        const url = 'https://wa.me/254721116715?text=' + encodeURIComponent(message);
+        window.open(url, '_blank', 'noopener');
+    }
+});
+
+document.getElementById('sendEmail').addEventListener('click', () => {
+    const message = getEnquiry();
+
+    if (message) {
+        const subject = encodeURIComponent('Travel Enquiry - Liamber Prime Travels');
+        window.location.href =
+            'mailto:chirchirkb@gmail.com?subject=' + subject +
+            '&body=' + encodeURIComponent(message);
+    }
+});
+</script>
+
+</body>
+</html>
