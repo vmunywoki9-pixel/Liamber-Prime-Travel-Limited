@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3-Day Tsavo East Safari | Liamber Prime Travels Limited</title>
+<meta name="description" content="Discover Tsavo East National Park on a 3-day safari with Liamber Prime Travels Limited. Explore Kenya's wilderness and encounter its iconic wildlife.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+:root{--green:#123d32;--green2:#1c5948;--gold:#c49a42;--cream:#f7f5ef;--ink:#24332d;--muted:#68756e;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);line-height:1.7;background:#fff}
+a{text-decoration:none;color:inherit}
+img{width:100%;display:block;object-fit:cover}
+.container{width:min(1160px,92%);margin:auto}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.2}
+.topbar{background:var(--green);color:#fff;padding:9px 4%;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{position:sticky;top:0;background:#fff;z-index:1000;box-shadow:0 3px 18px #0000000c}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--green);font-weight:700}
+.brand img{width:65px;height:65px;object-fit:contain}
+.brand span{font-family:'Playfair Display',serif;font-size:19px;line-height:1.15}
+nav{display:flex;align-items:center;gap:23px;font-size:14px;font-weight:600}
+nav a:hover{color:var(--gold)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:#fff;padding:13px 22px;border:1px solid var(--green);font-size:13px;font-weight:700;transition:.25s}
+.nav-cta:hover,.btn:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.menu-toggle{display:none;background:none;border:0;font-size:24px;color:var(--green)}
+.hero{min-height:510px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,#081e19d9,#081e1960),url('itinerary-tsavo-hero.jpg') center/cover}
+.hero-content{max-width:760px;padding:90px 0}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.hero h1{font-size:clamp(42px,6vw,68px);margin:17px 0}
+.hero p{font-size:17px;max-width:650px;color:#f1f1ed}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn.gold{background:var(--gold);border-color:var(--gold)}
+.btn.outline{background:transparent;border-color:#ffffffa8}
+.btn.outline:hover{background:#fff;color:var(--green)}
+.quick-facts{background:var(--cream);padding:24px 0}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fact{display:flex;align-items:center;gap:13px}
+.fact i{font-size:23px;color:var(--gold)}
+.fact strong{display:block;color:var(--green);font-size:14px}
+.fact span{font-size:12px;color:var(--muted)}
+section{padding:85px 0}
+.section-heading{text-align:center;max-width:720px;margin:0 auto 42px}
+.section-heading .eyebrow{color:var(--gold)}
+.section-heading h2{font-size:clamp(30px,4vw,43px);color:var(--green);margin:12px 0}
+.section-heading p{color:var(--muted)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.intro-image{height:440px}
+.intro-image img{height:100%}
+.intro-copy h2{font-size:38px;color:var(--green);margin:13px 0 20px}
+.intro-copy p{color:var(--muted);margin-bottom:16px}
+.highlights{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:25px}
+.highlight{display:flex;gap:10px;align-items:center;font-size:14px;font-weight:600}
+.highlight i{color:var(--gold)}
+.itinerary-section{background:var(--cream)}
+.day-list{max-width:900px;margin:auto;display:grid;gap:18px}
+.day-card{background:#fff;border:1px solid #e8e5dc;padding:28px 32px;display:grid;grid-template-columns:90px 1fr;gap:25px}
+.day-number{width:72px;height:72px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.day-number small{font-size:10px;text-transform:uppercase;letter-spacing:1px}
+.day-number strong{font-family:'Playfair Display',serif;font-size:27px;line-height:1}
+.day-card h3{font-size:23px;color:var(--green);margin:2px 0 10px}
+.day-card p{color:var(--muted);font-size:14px}
+.day-card ul{padding-left:19px;margin-top:10px;color:var(--muted);font-size:14px}
+.day-card li{margin:4px 0}
+.inclusions-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.inclusion-box{padding:32px;background:var(--cream);border:1px solid #e8e5dc}
+.inclusion-box h3{font-size:25px;color:var(--green);margin-bottom:20px}
+.inclusion-box ul{list-style:none;display:grid;gap:12px}
+.inclusion-box li{display:flex;gap:11px;color:var(--muted);font-size:14px}
+.inclusion-box li i{color:var(--gold);margin-top:5px}
+.note{background:#f8f2e6;padding:20px 23px;margin-top:25px;border-left:4px solid var(--gold);font-size:13px;color:#62563f}
+.cta{background:linear-gradient(90deg,#0c2d25df,#0c2d25c9),url('itinerary-tsavo-cta.jpg') center/cover;color:#fff;text-align:center}
+.cta h2{font-size:clamp(32px,4vw,45px);margin:13px 0}
+.cta p{max-width:650px;margin:0 auto 25px;color:#e8eee9}
+footer{background:#0b2822;color:#d9e1dc;padding:55px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h3{font-size:22px;color:#fff;margin-bottom:17px}
+footer p,footer a{font-size:13px;color:#c3d0c8}
+footer a:hover{color:var(--gold)}
+.footer-links{display:grid;gap:9px}
+.footer-bottom{border-top:1px solid #ffffff20;margin-top:35px;padding-top:18px;text-align:center;font-size:12px;color:#aebdb5}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:55px;height:55px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:27px;z-index:999;box-shadow:0 5px 20px #0003}
+@media(max-width:850px){
+.menu-toggle{display:block}
+nav{display:none;position:absolute;top:82px;left:0;width:100%;background:#fff;padding:20px 5%;box-shadow:0 10px 15px #0001;flex-direction:column;align-items:flex-start}
+nav.open{display:flex}
+.nav-cta{display:none}
+.facts{grid-template-columns:repeat(2,1fr)}
+.intro-grid{grid-template-columns:1fr;gap:30px}
+.intro-image{height:330px}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+.topbar .container{justify-content:center;text-align:center}
+.brand span{font-size:16px}
+.brand img{width:52px;height:52px}
+.hero{min-height:470px}
+.hero-content{padding:70px 0}
+.facts{grid-template-columns:1fr 1fr;gap:18px 10px}
+.fact{gap:9px}
+.fact i{font-size:19px}
+.day-card{grid-template-columns:1fr;padding:22px}
+.day-number{width:62px;height:62px}
+.inclusions-grid{grid-template-columns:1fr}
+section{padding:65px 0}
+.footer-grid{grid-template-columns:1fr}
+.highlights{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</span><span><i class="fa-solid fa-phone"></i> +254 721 116 715</span></div></div>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html"><img src="liamber-logo.png" alt="Liamber Prime Travels logo"><span>LIAMBER PRIME<br>TRAVELS LIMITED</span></a>
+<button class="menu-toggle" aria-label="Open navigation" onclick="document.querySelector('nav').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="destinations.html">Destinations</a><a href="packages.html">Packages</a><a href="excursions.html">Excursions</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+</nav>
+<a class="nav-cta" href="booking.html">Plan Your Safari <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-content">
+<div class="eyebrow">Kenya Wildlife Safari · 3 Days / 2 Nights</div>
+<h1>3-Day Tsavo East Safari</h1>
+<p>Explore the vast landscapes of Tsavo East, discover its iconic red elephants and enjoy unforgettable wildlife viewing in one of Kenya's largest national parks.</p>
+<div class="hero-buttons">
+<a class="btn gold" href="booking.html?destination=Tsavo%20East">Enquire About This Safari <i class="fa-solid fa-arrow-right"></i></a>
+<a class="btn outline" href="#itinerary">Explore Itinerary</a>
+</div>
+</div>
+</section>
+
+<div class="quick-facts"><div class="container facts">
+<div class="fact"><i class="fa-regular fa-clock"></i><div><strong>3 Days / 2 Nights</strong><span>Safari duration</span></div></div>
+<div class="fact"><i class="fa-solid fa-location-dot"></i><div><strong>Tsavo East</strong><span>Kenya</span></div></div>
+<div class="fact"><i class="fa-solid fa-car-side"></i><div><strong>Safari Vehicle</strong><span>Private or shared options</span></div></div>
+<div class="fact"><i class="fa-solid fa-binoculars"></i><div><strong>Game Drives</strong><span>Wildlife experiences</span></div></div>
+</div></div>
+
+<section><div class="container intro-grid">
+<div class="intro-image"><img src="itinerary-tsavo-overview.jpg" alt="Elephants in the Tsavo East wilderness"></div>
+<div class="intro-copy">
+<div class="eyebrow">Discover Tsavo East</div>
+<h2>A Journey Into Kenya's Wild Heart</h2>
+<p>Tsavo East National Park is known for its expansive open plains, striking landscapes and the famous red-dusted elephants. Its wilderness offers opportunities to encounter a variety of wildlife in their natural habitat.</p>
+<p>This suggested three-day safari combines scenic travel, guided game drives and time to enjoy the atmosphere of the African bush.</p>
+<div class="highlights">
+<div class="highlight"><i class="fa-solid fa-check"></i> Red elephants</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> Aruba Dam area</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> Galana River scenery</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> Guided game drives</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> African savannah</div>
+<div class="highlight"><i class="fa-solid fa-check"></i> Safari lodge stay</div>
+</div>
+</div>
+</div></section>
+
+<section class="itinerary-section" id="itinerary">
+<div class="container">
+<div class="section-heading"><div class="eyebrow">Your Safari Experience</div><h2>Day-by-Day Itinerary</h2><p>A suggested itinerary that can be adjusted to suit your travel dates, accommodation preference and departure location.</p></div>
+<div class="day-list">
+<article class="day-card">
+<div class="day-number"><small>Day</small><strong>01</strong></div>
+<div><h3>Travel to Tsavo East & Afternoon Game Drive</h3>
+<p>Depart for Tsavo East National Park, enjoying the changing scenery along the way. Arrive at the park and proceed for an afternoon game drive, exploring the open plains in search of elephants, giraffes, zebras, antelopes and other wildlife.</p>
+<ul><li>Scenic journey to Tsavo East</li><li>Park entry and afternoon game drive</li><li>Check-in at your selected safari accommodation</li></ul>
+</div></article>
+<article class="day-card">
+<div class="day-number"><small>Day</small><strong>02</strong></div>
+<div><h3>Full-Day Wildlife Exploration</h3>
+<p>Enjoy an early morning game drive when wildlife is often active. After breakfast, continue exploring the park, with opportunities to visit areas around the Galana River and Aruba Dam depending on the route and conditions.</p>
+<ul><li>Early morning game drive</li><li>Breakfast and further park exploration</li><li>Wildlife viewing and photography</li><li>Afternoon game drive and return to the lodge</li></ul>
+</div></article>
+<article class="day-card">
+<div class="day-number"><small>Day</small><strong>03</strong></div>
+<div><h3>Morning Game Drive & Return Journey</h3>
+<p>Start the day with a final morning game drive, taking in the park's landscapes and looking out for wildlife. Return to the lodge for breakfast, check out and begin your journey back to your agreed drop-off point.</p>
+<ul><li>Morning game drive</li><li>Breakfast and check-out</li><li>Return transfer</li></ul>
+</div></article>
+</div>
+</div>
+</section>
+
+<section><div class="container">
+<div class="section-heading"><div class="eyebrow">Plan With Confidence</div><h2>Safari Inclusions & Exclusions</h2><p>Final inclusions depend on the accommodation, transport and package option confirmed at booking.</p></div>
+<div class="inclusions-grid">
+<div class="inclusion-box"><h3><i class="fa-solid fa-circle-check"></i> May Include</h3><ul>
+<li><i class="fa-solid fa-check"></i> Transport in a safari vehicle</li>
+<li><i class="fa-solid fa-check"></i> Services of a professional driver-guide</li>
+<li><i class="fa-solid fa-check"></i> Two nights' accommodation</li>
+<li><i class="fa-solid fa-check"></i> Meals as specified in the selected package</li>
+<li><i class="fa-solid fa-check"></i> Game drives as outlined in the itinerary</li>
+<li><i class="fa-solid fa-check"></i> Park fees where stated in the quotation</li>
+</ul></div>
+<div class="inclusion-box"><h3><i class="fa-solid fa-circle-xmark"></i> May Exclude</h3><ul>
+<li><i class="fa-solid fa-minus"></i> Personal expenses and souvenirs</li>
+<li><i class="fa-solid fa-minus"></i> Travel insurance</li>
+<li><i class="fa-solid fa-minus"></i> Tips and gratuities</li>
+<li><i class="fa-solid fa-minus"></i> Drinks and items not specified</li>
+<li><i class="fa-solid fa-minus"></i> Optional activities not included in the quotation</li>
+<li><i class="fa-solid fa-minus"></i> Any service not expressly listed as included</li>
+</ul></div>
+</div>
+<div class="note"><strong>Important:</strong> This is a sample itinerary, not a confirmed booking schedule. Accommodation, meals, park fees, departure arrangements and the final inclusions will be confirmed in your personalised quotation. Wildlife sightings are not guaranteed.</div>
+</div></section>
+
+<section class="cta"><div class="container">
+<div class="eyebrow">Start Planning</div>
+<h2>Ready to Explore Tsavo East?</h2>
+<p>Talk to Liamber Prime Travels Limited about arranging your Tsavo East safari. We can tailor the journey around your preferred dates, group size and accommodation choice.</p>
+<a class="btn gold" href="booking.html?destination=Tsavo%20East">Request a Safari Quote <i class="fa-solid fa-arrow-right"></i></a>
+</div></section>
+</main>
+
+<footer><div class="container">
+<div class="footer-grid">
+<div><h3>Liamber Prime Travels Limited</h3><p>Explore. Experience. Enjoy. Discover Kenya through memorable safaris, coastal escapes and tailor-made travel experiences.</p><p style="margin-top:14px"><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com<br><i class="fa-solid fa-phone"></i> +254 721 116 715</p></div>
+<div><h3>Quick Links</h3><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="destinations.html">Destinations</a><a href="packages.html">Safari Packages</a><a href="gallery.html">Gallery</a></div></div>
+<div><h3>Explore More</h3><div class="footer-links"><a href="itinerary-maasai-mara.html">Maasai Mara Safari</a><a href="itinerary-amboseli.html">Amboseli Safari</a><a href="itinerary-tsavo-east.html">Tsavo East Safari</a><a href="booking.html">Book Your Trip</a><a href="contact.html">Contact Us</a></div></div>
+</div>
+<div class="footer-bottom">© <span id="year"></span> Liamber Prime Travels Limited. All rights reserved.</div>
+</div></footer>
+<a class="whatsapp" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20am%20interested%20in%20the%203-day%20Tsavo%20East%20safari." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
