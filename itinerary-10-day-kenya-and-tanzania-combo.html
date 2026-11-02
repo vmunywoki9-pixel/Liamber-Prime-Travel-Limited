@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10-Day Kenya & Tanzania Safari | Liamber Prime Travels</title>
+<meta name="description" content="Discover Kenya and Tanzania on a suggested 10-day East African safari with Liamber Prime Travels Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+:root{--green:#123d32;--green2:#1c5948;--gold:#c49a42;--cream:#f7f5ef;--ink:#26332e;--muted:#68736d}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);line-height:1.7;background:#fff}
+a{text-decoration:none;color:inherit}
+img{width:100%;display:block;object-fit:cover}
+.container{width:min(1160px,91%);margin:auto}
+header{background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 3px 18px #0000000c}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--green);font-weight:700}
+.brand img{width:62px;height:62px;object-fit:contain}
+.brand span{font-family:'Playfair Display',serif;font-size:19px;line-height:1.2}
+nav{display:flex;align-items:center;gap:20px;font-size:13px;font-weight:600}
+nav a:hover{color:var(--gold)}
+.nav-cta,.btn{background:var(--green);color:white;padding:12px 20px;display:inline-block;font-size:12px;font-weight:700;letter-spacing:.5px;border:0}
+.nav-cta:hover,.btn:hover{background:var(--gold);color:#fff}
+.menu-toggle{display:none;background:none;border:0;font-size:24px;color:var(--green)}
+.hero{min-height:590px;background:linear-gradient(90deg,rgba(7,28,23,.84),rgba(7,28,23,.18)),url('itinerary-kenya-tanzania-hero.jpg') center/cover;display:flex;align-items:center;color:#fff}
+.hero-content{max-width:780px;padding:95px 0}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.2}
+h1{font-size:clamp(40px,6vw,68px);margin:17px 0}
+.hero p{max-width:680px;color:#f1f1eb;font-size:17px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn.gold{background:var(--gold)}
+.btn.outline{background:transparent;border:1px solid #fff}
+.quick-facts{background:var(--cream);padding:25px 0}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.fact{display:flex;align-items:center;gap:13px}
+.fact i{font-size:23px;color:var(--gold)}
+.fact strong{display:block;color:var(--green);font-size:14px}
+.fact small{font-size:12px;color:var(--muted)}
+section{padding:85px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 45px}
+.section-head h2{font-size:clamp(30px,4vw,43px);color:var(--green);margin:12px 0}
+.section-head p{color:var(--muted)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.intro-grid img{height:440px}
+.intro-copy h2{font-size:39px;color:var(--green);margin:12px 0 20px}
+.intro-copy p{color:var(--muted);margin-bottom:15px}
+.route{background:var(--cream)}
+.route-line{max-width:850px;margin:auto}
+.route-item{display:grid;grid-template-columns:75px 1fr;gap:22px;padding:0 0 32px;position:relative}
+.route-item:not(:last-child):before{content:"";position:absolute;left:28px;top:58px;bottom:0;width:2px;background:#d8c9a5}
+.day-number{width:58px;height:58px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:700;position:relative;z-index:1}
+.route-content{background:#fff;padding:25px 28px;box-shadow:0 8px 25px #173b3010}
+.route-content h3{font-size:23px;color:var(--green);margin-bottom:8px}
+.route-content p{color:var(--muted);font-size:14px}
+.route-content .place{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px}
+.highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.highlight{background:#fff;box-shadow:0 8px 30px #0000000c}
+.highlight img{height:220px}
+.highlight div{padding:22px}
+.highlight h3{color:var(--green);font-size:22px;margin-bottom:8px}
+.highlight p{font-size:14px;color:var(--muted)}
+.note{background:#f4eee0;border-left:4px solid var(--gold);padding:20px 24px;margin-top:35px;color:#5e6259;font-size:14px}
+.cta{background:linear-gradient(90deg,rgba(10,38,30,.9),rgba(10,38,30,.55)),url('itinerary-kenya-tanzania-cta.jpg') center/cover;color:#fff;text-align:center}
+.cta h2{font-size:clamp(32px,4vw,46px);margin:12px 0}
+.cta p{max-width:680px;margin:0 auto 25px;color:#eee}
+footer{background:#102f27;color:#d9e1dc;padding:55px 0 22px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:45px}
+footer h3{font-size:22px;color:#fff;margin-bottom:15px}
+footer p,footer a{font-size:13px;color:#c1cec7}
+footer a:hover{color:var(--gold)}
+.footer-links{display:grid;gap:9px}
+.copyright{border-top:1px solid #ffffff20;margin-top:35px;padding-top:20px;text-align:center;font-size:12px;color:#aabbb2}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:55px;height:55px;border-radius:50%;background:#25d366;color:white;display:grid;place-items:center;font-size:27px;z-index:99;box-shadow:0 5px 20px #0003}
+@media(max-width:850px){
+.menu-toggle{display:block}
+nav{display:none;position:absolute;top:82px;left:0;width:100%;background:#fff;padding:22px 5%;flex-direction:column;align-items:flex-start;box-shadow:0 10px 15px #0001}
+nav.open{display:flex}
+.nav-cta{display:none}
+.facts{grid-template-columns:repeat(2,1fr)}
+.intro-grid{grid-template-columns:1fr;gap:30px}
+.highlights{grid-template-columns:1fr 1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+.hero{min-height:530px}
+.hero-content{padding:70px 0}
+.facts{grid-template-columns:1fr 1fr;gap:18px 10px}
+.fact{align-items:flex-start}
+.intro-grid img{height:280px}
+.highlights{grid-template-columns:1fr}
+.route-item{grid-template-columns:55px 1fr;gap:12px}
+.day-number{width:48px;height:48px}
+.route-item:not(:last-child):before{left:23px;top:48px}
+.route-content{padding:20px}
+.footer-grid{grid-template-columns:1fr}
+section{padding:65px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a class="brand" href="index.html">
+<img src="liamber-logo.png" alt="Liamber Prime Travels logo">
+<span>LIAMBER PRIME<br>TRAVELS LIMITED</span>
+</a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+<nav id="mainNav">
+<a href="index.html">Home</a>
+<a href="safaris.html">Safaris</a>
+<a href="excursions.html">Excursions</a>
+<a href="destinations.html">Destinations</a>
+<a href="packages.html">Packages</a>
+<a href="about.html">About Us</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+<a class="nav-cta" href="booking.html?destination=10-Day%20Kenya%20%26%20Tanzania">BOOK THIS SAFARI</a>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-content">
+<div class="eyebrow">Discover East Africa</div>
+<h1>10-Day Kenya & Tanzania Safari</h1>
+<p>Experience an East African adventure combining Kenya's iconic wildlife destinations with the remarkable landscapes and wildlife of Tanzania.</p>
+<div class="hero-actions">
+<a class="btn gold" href="booking.html?destination=10-Day%20Kenya%20%26%20Tanzania">ENQUIRE ABOUT THIS SAFARI</a>
+<a class="btn outline" href="#itinerary">EXPLORE THE ITINERARY</a>
+</div>
+</div>
+</section>
+
+<div class="quick-facts">
+<div class="container facts">
+<div class="fact"><i class="fa-regular fa-calendar"></i><div><strong>10 Days</strong><small>Suggested itinerary</small></div></div>
+<div class="fact"><i class="fa-solid fa-earth-africa"></i><div><strong>2 Countries</strong><small>Kenya & Tanzania</small></div></div>
+<div class="fact"><i class="fa-solid fa-binoculars"></i><div><strong>Wildlife Safari</strong><small>Game-viewing opportunities</small></div></div>
+<div class="fact"><i class="fa-solid fa-car"></i><div><strong>Starts in Nairobi</strong><small>Cross-border arrangements</small></div></div>
+</div>
+</div>
+
+<section>
+<div class="container intro-grid">
+<img src="itinerary-kenya-tanzania-overview.jpg" alt="East African safari landscape">
+<div class="intro-copy">
+<div class="eyebrow">One journey, two countries</div>
+<h2>Explore the Wildlife of Kenya and Tanzania</h2>
+<p>Discover the beauty of East Africa through a journey that links Kenya's famous safari landscapes with Tanzania's celebrated wildlife regions.</p>
+<p>This sample programme is designed to give travellers a taste of two countries, with opportunities for game drives, photography and scenic travel.</p>
+<p>Cross-border transport, park access, accommodation and border procedures must be arranged and confirmed before travel.</p>
+<a class="btn" href="booking.html?destination=10-Day%20Kenya%20%26%20Tanzania">PLAN YOUR JOURNEY</a>
+</div>
+</div>
+</section>
+
+<section class="route" id="itinerary">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Your East African journey</div>
+<h2>Suggested 10-Day Itinerary</h2>
+<p>A sample route from Nairobi through Kenya and into northern Tanzania. The final route is subject to confirmation with the travel operator and border arrangements.</p>
+</div>
+<div class="route-line">
+
+<div class="route-item">
+<div class="day-number">01</div>
+<div class="route-content">
+<div class="place">Nairobi, Kenya</div>
+<h3>Arrival and Nairobi Welcome</h3>
+<p>Arrive in Nairobi or begin your journey from the city. Meet your travel representative, review the programme and prepare for the safari adventure ahead.</p>
+</div>
+</div>
+
+<div class="route-item">
+<div class="day-number">02</div>
+<div class="route-content">
+<div class="place">Nairobi to Maasai Mara</div>
+<h3>Journey to the Maasai Mara</h3>
+<p>Travel from Nairobi towards the Maasai Mara. Arrive at your selected accommodation and, depending on arrival time, enjoy an afternoon game drive.</p>
+</div>
+</div>
+
+<div class="route-item">
+<div class="day-number">03</div>
+<div class="route-content">
+<div class="place">Maasai Mara, Kenya</div>
+<h3>Full Day in the Mara</h3>
+<p>Explore the reserve on game drives, looking out for elephants, giraffes, zebras, antelopes and big cats. Wildlife sightings vary depending on season and conditions.</p>
+</div>
+</div>
+
+<div class="route-item">
+<div class="day-number">04</div>
+<div class="route-content">
+<div class="place">Maasai Mara, Kenya</div>
+<h3>Another Day of Wildlife Discovery</h3>
+<p>Continue exploring the Mara's wildlife habitats and landscapes. Enjoy further game-viewing opportunities and time to appreciate the reserve.</p>
+</div>
+</div>
+
+<div class="route-item">
+<div class="day-number">05</div>
+<div class="route-content">
+<div class="place">Kenya to Tanzania</div>
+<h3>Cross-Border Journey to Tanzania</h3>
+<p>Travel towards the agreed Kenya–Tanzania border crossing. Complete the required immigration and customs procedures before continuing to your confirmed overnight destination in Tanzania.</p>
+</div>
+</div>
+
+<div class="route-item">
+<div class="day-number">06</div>
+<div class="route-content">
+<div class="place">Northern Tanzania</div>
+<h3>Explore the Tanzania Safari Region</h3>
+<p>Begin exploring the selected Tanzania safari area. The exact destination and game-drive schedule will depend on the confirmed route, accommodation and park arrangements.</p>
+</div>
+</div>
+
+<div class="route-item">
+<div class="day-number">07</div>
+<div class="route-content">
+<div class="place">Tanzania</div>
+<h3>Full Day of Safari Experiences</h3>
+<p>Enjoy a day of wildlife viewing and scenery in the selected national park or conservation area. Your guide can help plan the day around local conditions and park regulations.</p>
+</div>
+</div>
+
+<div class="route-item">
+<div class="day-number">08</div>
+<div class="route-content">
+<div class="place">Tanzania</div>
+<h3>Discover More of Tanzania</h3>
+<p>Continue your Tanzania experience with a further day for wildlife viewing or a planned activity in the selected destination.</p>
+</div>
+</div>
+
+<div class="route-item">
+<div class="day-number">09</div>
+<div class="route-content">
+<div class="place">Tanzania to Kenya</div>
+<h3>Return Journey Towards Kenya</h3>
+<p>Begin the return journey towards the agreed border crossing. Complete the necessary border formalities and continue to the confirmed overnight stop.</p>
+</div>
+</div>
+
+<div class="route-item">
+<div class="day-number">10</div>
+<div class="route-content">
+<div class="place">Kenya</div>
+<h3>Conclude Your East African Safari</h3>
+<p>Continue to Nairobi or the agreed departure point, depending on your travel arrangements. Conclude your journey with memorable experiences from two East African countries.</p>
+</div>
+</div>
+
+</div>
+<div class="note"><strong>Important cross-border planning note:</strong> This is a preliminary itinerary concept. The Tanzania destinations, border crossing, transport provider, guide arrangements, immigration requirements, park fees and accommodation have not been specified in the source package listing. They must all be confirmed before the safari is sold or booked. Cross-border vehicle and guide arrangements may require separate operators or approved arrangements.</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Discover East Africa</div>
+<h2>Highlights of Your Journey</h2>
+<p>Experience the diversity of two neighbouring countries through one carefully planned safari.</p>
+</div>
+<div class="highlights">
+<div class="highlight">
+<img src="masai-mara.jpg" alt="Maasai Mara wildlife">
+<div><h3>Maasai Mara, Kenya</h3><p>Explore famous savannah landscapes and wildlife habitats in one of Kenya's best-known reserves.</p></div>
+</div>
+<div class="highlight">
+<img src="tanzania-safari.jpg" alt="Tanzania safari landscape">
+<div><h3>Tanzania Safari Region</h3><p>Discover Tanzania's remarkable natural landscapes and wildlife destinations, selected to suit your travel plans.</p></div>
+</div>
+<div class="highlight">
+<img src="east-africa-landscape.jpg" alt="East African landscape">
+<div><h3>East African Adventure</h3><p>Experience the variety of scenery, wildlife and travel experiences across two countries.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<div class="eyebrow">Plan your East African adventure</div>
+<h2>Ready to Explore Kenya and Tanzania?</h2>
+<p>Contact Liamber Prime Travels Limited to discuss your preferred travel dates, Tanzania destinations, border arrangements and a personalised quotation.</p>
+<a class="btn gold" href="booking.html?destination=10-Day%20Kenya%20%26%20Tanzania">REQUEST A SAFARI QUOTATION</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<h3>Liamber Prime Travels</h3>
+<p>Explore. Experience. Enjoy. Discover Kenya and beyond with journeys planned around your travel interests.</p>
+<p style="margin-top:14px"><i class="fa-solid fa-phone"></i> +254 721 116 715</p>
+<p><i class="fa-regular fa-envelope"></i> chirchirkb@gmail.com</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="safaris.html">Safaris</a>
+<a href="destinations.html">Destinations</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<div>
+<h3>Plan Your Trip</h3>
+<div class="footer-links">
+<a href="packages.html">Safari Packages</a>
+<a href="excursions.html">Excursions</a>
+<a href="gallery.html">Gallery</a>
+<a href="booking.html">Make an Enquiry</a>
+</div>
+</div>
+</div>
+<div class="copyright">© 2026 Liamber Prime Travels Limited. All rights reserved.</div>
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20the%2010-Day%20Kenya%20and%20Tanzania%20Safari." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const mainNav=document.getElementById('mainNav');
+menuToggle.addEventListener('click',()=>mainNav.classList.toggle('open'));
+</script>
+</body>
+</html>
