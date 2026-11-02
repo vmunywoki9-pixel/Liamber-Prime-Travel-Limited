@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10-Day Best of Kenya Safari | Liamber Prime Travels Limited</title>
+<meta name="description" content="Discover Kenya on a 10-day safari featuring Maasai Mara, Lake Nakuru, Amboseli, Tsavo West and Tsavo East with Liamber Prime Travels Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+:root{
+ --green:#123d32;
+ --green2:#1c5948;
+ --gold:#c49a42;
+ --cream:#f7f5ef;
+ --dark:#242a26;
+ --muted:#6e7771;
+ --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--dark);line-height:1.7;background:#fff}
+a{text-decoration:none;color:inherit}
+img{width:100%;display:block;object-fit:cover}
+.container{width:min(1160px,92%);margin:auto}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.2}
+h2{font-size:clamp(30px,4vw,43px);color:var(--green)}
+p{color:var(--muted)}
+.topbar{background:var(--green);color:#fff;padding:9px 4%;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.topbar a{color:#fff}
+header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 3px 18px #0000000c}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;min-width:210px}
+.brand img{width:65px;height:65px;object-fit:contain}
+.brand strong{display:block;color:var(--green);font-family:'Playfair Display',serif;font-size:19px;line-height:1.1}
+.brand small{display:block;color:var(--gold);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.navlinks{display:flex;align-items:center;gap:22px;font-size:13px;font-weight:600}
+.navlinks a:hover{color:var(--gold)}
+.navlinks .book{background:var(--green);color:#fff;padding:12px 19px}
+.menu-toggle{display:none;border:0;background:none;font-size:25px;color:var(--green)}
+.hero{min-height:570px;display:flex;align-items:center;position:relative;background:linear-gradient(90deg,rgba(8,35,27,.83),rgba(8,35,27,.25)),url('itinerary-best-kenya-10day-hero.jpg') center/cover}
+.hero-content{padding:90px 0;color:#fff;max-width:760px}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:15px}
+.hero h1{font-size:clamp(42px,6vw,70px);margin-bottom:22px}
+.hero p{color:#fff;font-size:17px;max-width:620px}
+.hero-buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;font-size:13px;font-weight:700;transition:.25s}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-outline{border:1px solid #fff;color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn:hover{transform:translateY(-2px);opacity:.9}
+.quickfacts{background:var(--cream);padding:23px 0}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.fact{display:flex;align-items:center;gap:13px}
+.fact i{font-size:22px;color:var(--gold)}
+.fact strong{display:block;color:var(--green);font-size:14px}
+.fact span{display:block;color:var(--muted);font-size:12px}
+section{padding:85px 0}
+.section-heading{text-align:center;max-width:720px;margin:0 auto 45px}
+.section-heading p{margin-top:13px}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.intro-image{height:440px}
+.intro-image img{height:100%}
+.intro-copy p{margin:17px 0}
+.checklist{list-style:none;margin:20px 0}
+.checklist li{margin:10px 0;color:var(--dark);font-size:14px}
+.checklist i{color:var(--gold);margin-right:9px}
+.destinations{background:var(--cream)}
+.destination-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.destination-card{background:#fff;overflow:hidden}
+.destination-card img{height:190px;transition:.4s}
+.destination-card:hover img{transform:scale(1.04)}
+.destination-card h3{font-size:20px;color:var(--green);padding:17px 17px 5px}
+.destination-card p{font-size:13px;padding:0 17px 18px}
+.itinerary-list{max-width:900px;margin:auto}
+.day{display:grid;grid-template-columns:105px 1fr;gap:25px;padding:25px 0;border-bottom:1px solid #e9e9e4}
+.day-number{background:var(--green);color:#fff;text-align:center;padding:15px 8px;height:max-content}
+.day-number span{display:block;color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.day-number strong{font-family:'Playfair Display',serif;font-size:26px}
+.day-content h3{font-size:22px;color:var(--green);margin-bottom:8px}
+.day-content p{font-size:14px}
+.day-content .location{color:var(--gold);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}
+.note{background:var(--cream);padding:18px 22px;margin-top:30px;border-left:3px solid var(--gold);font-size:13px;color:var(--muted)}
+.experience{background:var(--green);color:#fff}
+.experience h2{color:#fff}
+.experience .section-heading p{color:#d7e1db}
+.experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.experience-item{border:1px solid #ffffff25;padding:25px}
+.experience-item i{font-size:27px;color:var(--gold);margin-bottom:17px}
+.experience-item h3{font-size:21px;margin-bottom:9px}
+.experience-item p{color:#d7e1db;font-size:13px}
+.cta{background:linear-gradient(90deg,rgba(13,48,37,.88),rgba(13,48,37,.45)),url('itinerary-best-kenya-10day-cta.jpg') center/cover;padding:95px 0;color:#fff}
+.cta-content{max-width:700px}
+.cta h2{color:#fff;font-size:clamp(32px,4vw,46px)}
+.cta p{color:#fff;margin:17px 0 25px}
+footer{background:#0d2c24;color:#fff;padding:55px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:45px}
+footer h3{font-size:21px;margin-bottom:17px}
+footer p,footer li{color:#c4d0ca;font-size:13px}
+footer ul{list-style:none}
+footer li{margin:9px 0}
+footer a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid #ffffff20;margin-top:35px;padding-top:18px;text-align:center;font-size:12px;color:#c4d0ca}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:55px;height:55px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:27px;z-index:1001;box-shadow:0 5px 18px #0003}
+@media(max-width:900px){
+ .navlinks{gap:12px;font-size:12px}
+ .destination-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+ .topbar .container{justify-content:center;text-align:center}
+ .nav{min-height:72px}
+ .brand img{width:55px;height:55px}
+ .brand strong{font-size:16px}
+ .menu-toggle{display:block}
+ .navlinks{display:none;position:absolute;top:72px;left:0;width:100%;background:#fff;padding:20px 5%;flex-direction:column;align-items:stretch;box-shadow:0 8px 15px #0001}
+ .navlinks.active{display:flex}
+ .navlinks a{padding:8px 0}
+ .navlinks .book{text-align:center;padding:12px}
+ .hero{min-height:510px}
+ .hero-content{padding:65px 0}
+ .facts{grid-template-columns:repeat(2,1fr);gap:18px}
+ section{padding:65px 0}
+ .intro-grid{grid-template-columns:1fr;gap:25px}
+ .intro-image{height:300px}
+ .destination-grid{grid-template-columns:1fr 1fr;gap:12px}
+ .destination-card img{height:140px}
+ .destination-card h3{font-size:17px;padding:12px 12px 5px}
+ .destination-card p{padding:0 12px 13px;font-size:12px}
+ .day{grid-template-columns:70px 1fr;gap:15px}
+ .day-number strong{font-size:22px}
+ .experience-grid{grid-template-columns:1fr}
+ .footer-grid{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:420px){
+ .facts{grid-template-columns:1fr 1fr}
+ .destination-grid{grid-template-columns:1fr}
+ .hero-buttons .btn{width:100%}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+ <div class="container">
+  <span><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</span>
+  <span><i class="fa-solid fa-phone"></i> +254 721 116 715</span>
+  <span>Explore. Experience. Enjoy.</span>
+ </div>
+</div>
+
+<header>
+ <div class="container nav">
+  <a href="index.html" class="brand">
+   <img src="liamber-logo.png" alt="Liamber Prime Travels Limited Logo">
+   <span><strong>LIAMBER PRIME</strong><small>Travels Limited</small></span>
+  </a>
+
+  <button class="menu-toggle" aria-label="Open navigation" onclick="toggleMenu()">
+   <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <nav class="navlinks" id="navlinks">
+   <a href="index.html">Home</a>
+   <a href="safaris.html">Safaris</a>
+   <a href="excursions.html">Excursions</a>
+   <a href="destinations.html">Destinations</a>
+   <a href="packages.html">Packages</a>
+   <a href="about.html">About</a>
+   <a href="gallery.html">Gallery</a>
+   <a href="contact.html">Contact</a>
+   <a class="book" href="booking.html">Book Now</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+
+<section class="hero">
+ <div class="container hero-content">
+  <div class="eyebrow">A journey through Kenya</div>
+  <h1>10-Day Best of Kenya Safari</h1>
+  <p>Experience the remarkable diversity of Kenya, from the open plains of the Maasai Mara to the lakes of the Rift Valley and the spectacular landscapes of Amboseli and Tsavo.</p>
+  <div class="hero-buttons">
+   <a class="btn btn-gold" href="booking.html?destination=10-Day%20Best%20of%20Kenya%20Safari">Plan This Safari <i class="fa-solid fa-arrow-right"></i></a>
+   <a class="btn btn-outline" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20am%20interested%20in%20the%2010-Day%20Best%20of%20Kenya%20Safari." target="_blank">Enquire on WhatsApp</a>
+  </div>
+ </div>
+</section>
+
+<div class="quickfacts">
+ <div class="container facts">
+  <div class="fact"><i class="fa-regular fa-calendar"></i><div><strong>10 Days</strong><span>Suggested duration</span></div></div>
+  <div class="fact"><i class="fa-solid fa-location-dot"></i><div><strong>Multiple Parks</strong><span>Kenya safari circuit</span></div></div>
+  <div class="fact"><i class="fa-solid fa-car-side"></i><div><strong>Safari Journey</strong><span>Road-based itinerary</span></div></div>
+  <div class="fact"><i class="fa-solid fa-binoculars"></i><div><strong>Wildlife & Scenery</strong><span>Explore Kenya's diversity</span></div></div>
+ </div>
+</div>
+
+<section>
+ <div class="container intro-grid">
+  <div class="intro-image">
+   <img src="itinerary-best-kenya-10day-overview.jpg" alt="Kenyan wildlife safari landscape">
+  </div>
+  <div class="intro-copy">
+   <div class="eyebrow">The ultimate Kenya experience</div>
+   <h2>Discover the Best of Kenya in Ten Days</h2>
+   <p>This suggested safari brings together some of Kenya's best-known wildlife destinations. Enjoy the famous savannah landscapes of the Maasai Mara, explore the Great Rift Valley and experience the dramatic scenery of southern Kenya.</p>
+   <p>From wildlife viewing to beautiful landscapes, every destination offers a different perspective of the country.</p>
+   <ul class="checklist">
+    <li><i class="fa-solid fa-check"></i> Explore the Maasai Mara ecosystem</li>
+    <li><i class="fa-solid fa-check"></i> Discover Lake Nakuru and the Rift Valley</li>
+    <li><i class="fa-solid fa-check"></i> Enjoy views of Mount Kilimanjaro in Amboseli</li>
+    <li><i class="fa-solid fa-check"></i> Visit the landscapes of Tsavo West and Tsavo East</li>
+    <li><i class="fa-solid fa-check"></i> Begin and end your journey in Nairobi</li>
+   </ul>
+   <a href="booking.html?destination=10-Day%20Best%20of%20Kenya%20Safari" class="btn btn-green">Request a Safari Plan</a>
+  </div>
+ </div>
+</section>
+
+<section class="destinations">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">Five remarkable destinations</div>
+   <h2>Explore Kenya's Natural Wonders</h2>
+   <p>Each stop introduces you to a different landscape, wildlife habitat and safari experience.</p>
+  </div>
+
+  <div class="destination-grid">
+   <article class="destination-card">
+    <img src="best-kenya-mara.jpg" alt="Maasai Mara wildlife and savannah">
+    <h3>Maasai Mara</h3>
+    <p>Vast open plains, abundant wildlife and memorable game-viewing opportunities.</p>
+   </article>
+   <article class="destination-card">
+    <img src="best-kenya-nakuru.jpg" alt="Lake Nakuru National Park">
+    <h3>Lake Nakuru</h3>
+    <p>A scenic Rift Valley destination known for its lake, birdlife and wildlife.</p>
+   </article>
+   <article class="destination-card">
+    <img src="best-kenya-amboseli.jpg" alt="Elephants in Amboseli National Park">
+    <h3>Amboseli</h3>
+    <p>Famous for elephant herds and beautiful views of Mount Kilimanjaro.</p>
+   </article>
+   <article class="destination-card">
+    <img src="best-kenya-tsavo.jpg" alt="Tsavo wilderness">
+    <h3>Tsavo</h3>
+    <p>Explore the expansive wilderness and distinctive landscapes of Tsavo West and East.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">Your journey</div>
+   <h2>Suggested 10-Day Safari Itinerary</h2>
+   <p>A sample route that can be adjusted to your travel dates, interests and accommodation preferences.</p>
+  </div>
+
+  <div class="itinerary-list">
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>01</strong></div>
+    <div class="day-content">
+     <div class="location">Nairobi to Maasai Mara</div>
+     <h3>Journey to the Maasai Mara</h3>
+     <p>Depart Nairobi and travel towards the Maasai Mara through the Great Rift Valley region. Arrive at your selected accommodation and prepare for your safari experience.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>02</strong></div>
+    <div class="day-content">
+     <div class="location">Maasai Mara</div>
+     <h3>Full Day Exploring the Mara</h3>
+     <p>Spend the day exploring the reserve and its surrounding ecosystem. Enjoy opportunities to spot wildlife across the open grasslands.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>03</strong></div>
+    <div class="day-content">
+     <div class="location">Maasai Mara</div>
+     <h3>Another Day in the Wild</h3>
+     <p>Continue discovering the Mara's wildlife and landscapes. Your activities and game-viewing schedule can be arranged according to the final safari programme.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>04</strong></div>
+    <div class="day-content">
+     <div class="location">Maasai Mara to Lake Nakuru</div>
+     <h3>Travel to Lake Nakuru</h3>
+     <p>Leave the Mara and travel towards Lake Nakuru National Park. Enjoy the changing scenery of the Great Rift Valley before settling in for the evening.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>05</strong></div>
+    <div class="day-content">
+     <div class="location">Lake Nakuru to Nairobi / Amboseli</div>
+     <h3>Continue to Amboseli</h3>
+     <p>After your Lake Nakuru experience, travel towards Amboseli National Park. This is a longer transfer day, with the route and timing confirmed during trip planning.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>06</strong></div>
+    <div class="day-content">
+     <div class="location">Amboseli</div>
+     <h3>Discover Amboseli National Park</h3>
+     <p>Explore the park's open plains and wetlands, with opportunities to see elephants and other wildlife against the backdrop of Mount Kilimanjaro when conditions allow.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>07</strong></div>
+    <div class="day-content">
+     <div class="location">Amboseli to Tsavo West</div>
+     <h3>Journey into Tsavo West</h3>
+     <p>Travel to Tsavo West and discover its varied terrain, hills and wilderness scenery. Visit sites such as Mzima Springs only where included in the confirmed programme.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>08</strong></div>
+    <div class="day-content">
+     <div class="location">Tsavo West to Tsavo East</div>
+     <h3>Explore the Tsavo Ecosystem</h3>
+     <p>Continue to Tsavo East, enjoying the transition between the landscapes of the two parks. Arrive at your selected accommodation.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>09</strong></div>
+    <div class="day-content">
+     <div class="location">Tsavo East</div>
+     <h3>Wildlife and Wilderness</h3>
+     <p>Spend time exploring Tsavo East's expansive landscapes and wildlife habitats. Enjoy a final full safari experience in the Tsavo ecosystem.</p>
+    </div>
+   </article>
+
+   <article class="day">
+    <div class="day-number"><span>Day</span><strong>10</strong></div>
+    <div class="day-content">
+     <div class="location">Tsavo East to Nairobi</div>
+     <h3>Return to Nairobi</h3>
+     <p>Depart Tsavo East and travel back to Nairobi, marking the end of your suggested 10-day Kenya safari.</p>
+    </div>
+   </article>
+
+  </div>
+
+  <div class="note">
+   <strong>Important itinerary note:</strong> This is a suggested route, not a confirmed departure schedule. The transfer from Lake Nakuru to Amboseli and the overall driving times should be reviewed when preparing the final programme. Accommodation, park visits, meals, transport and other inclusions will be confirmed in your personalised quotation.
+  </div>
+ </div>
+</section>
+
+<section class="experience">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">What makes this journey special</div>
+   <h2>A Variety of Safari Experiences</h2>
+   <p>One journey, several distinctive landscapes and opportunities to experience Kenya.</p>
+  </div>
+
+  <div class="experience-grid">
+   <div class="experience-item">
+    <i class="fa-solid fa-binoculars"></i>
+    <h3>Wildlife Encounters</h3>
+    <p>Explore different wildlife habitats across the Maasai Mara, Rift Valley and Tsavo ecosystems.</p>
+   </div>
+   <div class="experience-item">
+    <i class="fa-solid fa-mountain-sun"></i>
+    <h3>Scenic Landscapes</h3>
+    <p>Experience open savannahs, Rift Valley scenery, mountain views and expansive wilderness.</p>
+   </div>
+   <div class="experience-item">
+    <i class="fa-solid fa-camera"></i>
+    <h3>Photography Moments</h3>
+    <p>Capture memorable scenery and wildlife moments throughout your journey.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container">
+  <div class="cta-content">
+   <div class="eyebrow">Start planning your adventure</div>
+   <h2>Ready to Explore the Best of Kenya?</h2>
+   <p>Contact Liamber Prime Travels Limited to customise this 10-day safari around your preferred dates, accommodation style and travel interests.</p>
+   <div class="hero-buttons">
+    <a class="btn btn-gold" href="booking.html?destination=10-Day%20Best%20of%20Kenya%20Safari">Request a Quote</a>
+    <a class="btn btn-outline" href="https://wa.me/254721116715?text=Hello%2C%20I%20would%20like%20to%20plan%20the%2010-Day%20Best%20of%20Kenya%20Safari." target="_blank">Chat on WhatsApp</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <h3>Liamber Prime Travels Limited</h3>
+    <p>Creating memorable journeys through Kenya and beyond. Explore. Experience. Enjoy.</p>
+   </div>
+   <div>
+    <h3>Quick Links</h3>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="safaris.html">Safaris</a></li>
+     <li><a href="destinations.html">Destinations</a></li>
+     <li><a href="packages.html">Packages</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </div>
+   <div>
+    <h3>Get in Touch</h3>
+    <ul>
+     <li><i class="fa-solid fa-phone"></i> +254 721 116 715</li>
+     <li><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</li>
+     <li><a href="https://wa.me/254721116715" target="_blank">WhatsApp Us</a></li>
+     <li><a href="booking.html">Make an Enquiry</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="footer-bottom">
+   © <span id="year"></span> Liamber Prime Travels Limited. All Rights Reserved.
+  </div>
+ </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels" target="_blank" aria-label="Chat with us on WhatsApp">
+ <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+function toggleMenu(){
+ document.getElementById('navlinks').classList.toggle('active');
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html>
