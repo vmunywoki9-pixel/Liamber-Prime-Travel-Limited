@@ -1,0 +1,963 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6-Day Kenya Safari Circuit | Liamber Prime Travels Limited</title>
+  <meta name="description" content="Discover Kenya on a six-day safari circuit with Liamber Prime Travels Limited. Explore iconic wildlife destinations and experience the beauty of Kenya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    :root {
+      --green: #123d32;
+      --green-light: #1c5948;
+      --gold: #c49a42;
+      --cream: #f7f5ef;
+      --white: #fff;
+      --dark: #202820;
+      --muted: #737a72;
+      --border: #e8e5dc;
+      --shadow: 0 12px 35px rgba(18,61,50,.09);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--dark);
+      line-height: 1.7;
+      background: var(--white);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+      color: var(--green);
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    img { display: block; max-width: 100%; }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    .topbar {
+      background: var(--green);
+      color: white;
+      padding: 9px 0;
+      font-size: 13px;
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .topbar a { margin-right: 17px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      box-shadow: 0 3px 15px rgba(0,0,0,.06);
+    }
+
+    .navbar {
+      min-height: 83px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand img {
+      width: 190px;
+      max-height: 70px;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    nav a { transition: .2s; }
+
+    nav a:hover, nav a.active { color: var(--gold); }
+
+    .nav-cta {
+      background: var(--green);
+      color: white !important;
+      padding: 12px 19px;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: none;
+      color: var(--green);
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: 570px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(8,30,23,.82), rgba(8,30,23,.24)),
+        url('itinerary-kenya-circuit-hero.jpg') center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 100px 0;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: clamp(42px, 6vw, 70px);
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 17px;
+      color: rgba(255,255,255,.9);
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 23px;
+      font-size: 13px;
+      font-weight: 700;
+      transition: .25s;
+      border: 1px solid transparent;
+    }
+
+    .btn-gold { background: var(--gold); color: white; }
+    .btn-gold:hover { background: #a98131; transform: translateY(-2px); }
+    .btn-outline { border-color: rgba(255,255,255,.8); color: white; margin-left: 9px; }
+    .btn-outline:hover { background: white; color: var(--green); }
+
+    .quick-info {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 23px 0;
+      gap: 20px;
+    }
+
+    .quick-item {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      border-right: 1px solid var(--border);
+      padding-left: 15px;
+    }
+
+    .quick-item:last-child { border: 0; }
+
+    .quick-item i {
+      color: var(--gold);
+      font-size: 22px;
+    }
+
+    .quick-item strong {
+      display: block;
+      color: var(--green);
+      font-size: 13px;
+    }
+
+    .quick-item span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    section { padding: 85px 0; }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 38px;
+    }
+
+    .section-heading.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(31px, 4vw, 44px);
+      margin-bottom: 17px;
+    }
+
+    .section-heading p { color: var(--muted); }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .intro-image img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+    }
+
+    .intro-copy p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+      margin-top: 25px;
+    }
+
+    .feature-list span {
+      color: var(--green);
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .feature-list i {
+      color: var(--gold);
+      margin-right: 7px;
+    }
+
+    .itinerary-section { background: var(--cream); }
+
+    .day-list {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .day-card {
+      display: grid;
+      grid-template-columns: 125px 1fr;
+      background: white;
+      margin-bottom: 17px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.035);
+    }
+
+    .day-number {
+      background: var(--green);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 12px;
+      text-align: center;
+    }
+
+    .day-number span {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #dfc17e;
+    }
+
+    .day-number strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      color: white;
+    }
+
+    .day-content { padding: 27px 30px; }
+
+    .day-content h3 {
+      font-size: 23px;
+      margin-bottom: 11px;
+    }
+
+    .day-content p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .day-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 12px;
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    .day-meta i { color: var(--gold); margin-right: 5px; }
+
+    .note {
+      max-width: 900px;
+      margin: 25px auto 0;
+      color: var(--muted);
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 23px;
+    }
+
+    .experience-card {
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    .experience-card img {
+      width: 100%;
+      height: 225px;
+      object-fit: cover;
+    }
+
+    .experience-card div { padding: 23px; }
+
+    .experience-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .experience-card p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .planning { background: var(--cream); }
+
+    .planning-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+    }
+
+    .planning h3 {
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .planning p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .planning ul { list-style: none; }
+
+    .planning li {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .planning li i {
+      color: var(--gold);
+      margin-right: 9px;
+    }
+
+    .cta {
+      background:
+        linear-gradient(rgba(12,42,32,.82), rgba(12,42,32,.82)),
+        url('itinerary-kenya-circuit-cta.jpg') center/cover no-repeat;
+      text-align: center;
+      color: white;
+    }
+
+    .cta h2 {
+      color: white;
+      font-size: clamp(32px, 4vw, 46px);
+      margin-bottom: 17px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 27px;
+      color: rgba(255,255,255,.85);
+    }
+
+    footer {
+      background: #0d2d25;
+      color: rgba(255,255,255,.75);
+      padding: 65px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 35px;
+      padding-bottom: 40px;
+    }
+
+    .footer-logo {
+      width: 185px;
+      max-height: 75px;
+      object-fit: contain;
+      margin-bottom: 18px;
+      background: white;
+    }
+
+    footer h3 {
+      color: white;
+      font-size: 19px;
+      margin-bottom: 18px;
+    }
+
+    footer p, footer li {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    footer ul { list-style: none; }
+
+    footer a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.13);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 23px;
+      right: 23px;
+      z-index: 999;
+      width: 57px;
+      height: 57px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      font-size: 29px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.2);
+    }
+
+    @media(max-width: 950px) {
+      nav {
+        display: none;
+        position: absolute;
+        top: 83px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 25px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: var(--shadow);
+      }
+
+      nav.show { display: flex; }
+      .menu-toggle { display: block; }
+      .quick-grid { grid-template-columns: 1fr 1fr; }
+      .quick-item:nth-child(2) { border: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media(max-width: 700px) {
+      .hero { min-height: 520px; }
+      .hero-content { padding: 75px 0; }
+      .btn { margin: 5px 5px 5px 0; }
+      .intro-grid, .planning-grid { grid-template-columns: 1fr; }
+      .intro-image img { height: 310px; }
+      .experience-grid { grid-template-columns: 1fr; }
+      .day-card { grid-template-columns: 82px 1fr; }
+      .day-content { padding: 20px 17px; }
+      .day-content h3 { font-size: 19px; }
+      .day-number strong { font-size: 27px; }
+      .quick-grid { gap: 15px 5px; }
+      .quick-item { padding-left: 5px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      section { padding: 65px 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div>
+        <a href="tel:+254721116715"><i class="fa-solid fa-phone"></i> +254 721 116 715</a>
+        <a href="mailto:chirchirkb@gmail.com"><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</a>
+      </div>
+      <div>Explore. Experience. Enjoy.</div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <img src="liamber-logo.png" alt="Liamber Prime Travels Limited">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="safaris.html" class="active">Safaris</a>
+        <a href="excursions.html">Excursions</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-cta">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Six Days • Kenya Safari Circuit</div>
+          <h1>Discover the Wild Heart of Kenya</h1>
+          <p>
+            Experience a memorable six-day journey through Kenya's remarkable
+            landscapes, wildlife habitats and iconic safari destinations.
+            Enjoy scenic drives, exciting game-viewing opportunities and
+            unforgettable moments in the African wilderness.
+          </p>
+          <a href="booking.html?destination=6-Day%20Kenya%20Safari%20Circuit" class="btn btn-gold">
+            Enquire About This Safari <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#itinerary" class="btn btn-outline">View Itinerary</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="quick-info">
+      <div class="container quick-grid">
+        <div class="quick-item">
+          <i class="fa-regular fa-calendar"></i>
+          <div><strong>Duration</strong><span>6 Days / 5 Nights</span></div>
+        </div>
+        <div class="quick-item">
+          <i class="fa-solid fa-binoculars"></i>
+          <div><strong>Experience</strong><span>Wildlife & Nature</span></div>
+        </div>
+        <div class="quick-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong>Starting Point</strong><span>Nairobi, Kenya</span></div>
+        </div>
+        <div class="quick-item">
+          <i class="fa-solid fa-car"></i>
+          <div><strong>Travel Style</strong><span>Private or tailor-made</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container intro-grid">
+        <div class="intro-image">
+          <img src="itinerary-kenya-circuit-overview.jpg" alt="Kenyan wildlife and safari landscape">
+        </div>
+
+        <div class="intro-copy">
+          <div class="eyebrow">The Safari Experience</div>
+          <div class="section-heading">
+            <h2>Six Days of Kenyan Adventure</h2>
+          </div>
+          <p>
+            This six-day safari circuit is designed to introduce travellers
+            to the diversity of Kenya's natural attractions. From open
+            savannahs to scenic landscapes, each destination offers a
+            different perspective of the country's wildlife and beauty.
+          </p>
+          <p>
+            Travel between destinations with opportunities for game drives,
+            photography, relaxation and appreciation of Kenya's natural
+            heritage. The route and accommodation can be tailored to your
+            travel dates and preferences.
+          </p>
+
+          <div class="feature-list">
+            <span><i class="fa-solid fa-check"></i> Wildlife viewing</span>
+            <span><i class="fa-solid fa-check"></i> Scenic landscapes</span>
+            <span><i class="fa-solid fa-check"></i> Guided experiences</span>
+            <span><i class="fa-solid fa-check"></i> Customisable journey</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="itinerary-section" id="itinerary">
+      <div class="container">
+        <div class="section-heading center">
+          <div class="eyebrow">Your Journey</div>
+          <h2>6-Day Safari Itinerary</h2>
+          <p>
+            A suggested itinerary for your Kenyan safari. The final route,
+            parks and accommodation will be confirmed in your personalised
+            quotation.
+          </p>
+        </div>
+
+        <div class="day-list">
+
+          <article class="day-card">
+            <div class="day-number">
+              <span>Day</span>
+              <strong>01</strong>
+            </div>
+            <div class="day-content">
+              <h3>Nairobi – Amboseli National Park</h3>
+              <p>
+                Depart Nairobi for Amboseli National Park, travelling through
+                Kenya's scenic countryside. Arrive in the Amboseli region and
+                proceed with the day's planned safari activities. Enjoy views
+                of the expansive plains and, weather permitting, the
+                spectacular backdrop of Mount Kilimanjaro.
+              </p>
+              <div class="day-meta">
+                <span><i class="fa-solid fa-bed"></i> Overnight: Amboseli area</span>
+                <span><i class="fa-solid fa-binoculars"></i> Safari activities</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="day-card">
+            <div class="day-number">
+              <span>Day</span>
+              <strong>02</strong>
+            </div>
+            <div class="day-content">
+              <h3>Explore Amboseli National Park</h3>
+              <p>
+                Spend the day exploring Amboseli's wildlife habitats.
+                Look out for elephants, giraffes, zebras, buffaloes and
+                a variety of birdlife. Enjoy game-viewing opportunities
+                across the park and take in its beautiful natural scenery.
+              </p>
+              <div class="day-meta">
+                <span><i class="fa-solid fa-bed"></i> Overnight: Amboseli area</span>
+                <span><i class="fa-solid fa-camera"></i> Wildlife photography</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="day-card">
+            <div class="day-number">
+              <span>Day</span>
+              <strong>03</strong>
+            </div>
+            <div class="day-content">
+              <h3>Amboseli – Tsavo West National Park</h3>
+              <p>
+                Depart Amboseli and travel towards Tsavo West. Discover a
+                landscape of rugged hills, open plains and diverse habitats.
+                Depending on the confirmed programme, enjoy a game drive
+                and opportunities to explore the park's natural attractions.
+              </p>
+              <div class="day-meta">
+                <span><i class="fa-solid fa-bed"></i> Overnight: Tsavo West area</span>
+                <span><i class="fa-solid fa-route"></i> Scenic transfer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="day-card">
+            <div class="day-number">
+              <span>Day</span>
+              <strong>04</strong>
+            </div>
+            <div class="day-content">
+              <h3>Tsavo West – Tsavo East National Park</h3>
+              <p>
+                Continue your safari towards Tsavo East. Enjoy the changing
+                landscapes and the chance to spot wildlife along the way.
+                Tsavo East is known for its vast open spaces, red-earth
+                scenery and large elephant herds.
+              </p>
+              <div class="day-meta">
+                <span><i class="fa-solid fa-bed"></i> Overnight: Tsavo East area</span>
+                <span><i class="fa-solid fa-binoculars"></i> Game viewing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="day-card">
+            <div class="day-number">
+              <span>Day</span>
+              <strong>05</strong>
+            </div>
+            <div class="day-content">
+              <h3>Discover Tsavo East National Park</h3>
+              <p>
+                Enjoy further exploration of Tsavo East, with opportunities
+                to see elephants, giraffes, zebras, antelopes and other
+                wildlife. Experience the park's distinctive landscapes
+                and enjoy time for photography and relaxation.
+              </p>
+              <div class="day-meta">
+                <span><i class="fa-solid fa-bed"></i> Overnight: Tsavo East area</span>
+                <span><i class="fa-solid fa-camera"></i> Wildlife photography</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="day-card">
+            <div class="day-number">
+              <span>Day</span>
+              <strong>06</strong>
+            </div>
+            <div class="day-content">
+              <h3>Tsavo East – Nairobi</h3>
+              <p>
+                After breakfast, depart for Nairobi. Enjoy the scenery along
+                the return journey and arrive in the city, marking the end
+                of your six-day Kenyan safari adventure.
+              </p>
+              <div class="day-meta">
+                <span><i class="fa-solid fa-flag-checkered"></i> Safari concludes</span>
+                <span><i class="fa-solid fa-location-dot"></i> Nairobi</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="note">
+          This is a sample route for presentation purposes, not a confirmed
+          booking schedule. Actual park visits, travel times, overnight
+          locations and activities depend on the final itinerary and
+          availability.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading center">
+          <div class="eyebrow">Highlights</div>
+          <h2>What Makes This Safari Special</h2>
+          <p>
+            Experience a combination of wildlife habitats and distinctive
+            Kenyan landscapes during one memorable journey.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card">
+            <img src="kenya-circuit-amboseli.jpg" alt="Elephants in Amboseli">
+            <div>
+              <h3>Amboseli National Park</h3>
+              <p>
+                Explore open plains and enjoy opportunities to see elephants
+                against the backdrop of Mount Kilimanjaro.
+              </p>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <img src="kenya-circuit-tsavo-west.jpg" alt="Tsavo West landscape">
+            <div>
+              <h3>Tsavo West National Park</h3>
+              <p>
+                Discover rugged scenery, diverse habitats and exciting
+                wildlife-viewing opportunities.
+              </p>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <img src="kenya-circuit-tsavo-east.jpg" alt="Tsavo East wildlife landscape">
+            <div>
+              <h3>Tsavo East National Park</h3>
+              <p>
+                Experience expansive wilderness, red-earth landscapes and
+                the possibility of encountering large elephant herds.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="planning">
+      <div class="container planning-grid">
+        <div>
+          <div class="eyebrow">Plan Your Safari</div>
+          <h3>What to Pack</h3>
+          <p>
+            Prepare for changing weather conditions and outdoor safari
+            activities. We recommend packing light and bringing essentials
+            for comfortable travel.
+          </p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Comfortable neutral-coloured clothing</li>
+            <li><i class="fa-solid fa-check"></i> Comfortable walking shoes</li>
+            <li><i class="fa-solid fa-check"></i> Hat, sunglasses and sunscreen</li>
+            <li><i class="fa-solid fa-check"></i> Camera and spare batteries</li>
+            <li><i class="fa-solid fa-check"></i> Personal medication and toiletries</li>
+            <li><i class="fa-solid fa-check"></i> Light jacket for cool mornings</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="eyebrow">Before You Travel</div>
+          <h3>Booking Information</h3>
+          <p>
+            Every safari can be arranged according to your preferred travel
+            dates, group size, accommodation level and transport preferences.
+          </p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Request a personalised quotation</li>
+            <li><i class="fa-solid fa-check"></i> Confirm accommodation availability</li>
+            <li><i class="fa-solid fa-check"></i> Confirm park fees and applicable charges</li>
+            <li><i class="fa-solid fa-check"></i> Agree on transport and meal arrangements</li>
+            <li><i class="fa-solid fa-check"></i> Receive your confirmed travel programme</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="eyebrow">Your Kenyan Adventure Awaits</div>
+        <h2>Ready to Explore Kenya?</h2>
+        <p>
+          Let Liamber Prime Travels Limited help you plan a memorable
+          six-day safari. Contact our team to customise your route and
+          receive a quotation based on your travel requirements.
+        </p>
+        <a href="booking.html?destination=6-Day%20Kenya%20Safari%20Circuit" class="btn btn-gold">
+          Start Your Booking <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20the%206-Day%20Kenya%20Safari%20Circuit."
+           class="btn btn-outline" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="liamber-logo.png" alt="Liamber Prime Travels Limited" class="footer-logo">
+          <p>
+            Creating memorable travel experiences through personalised
+            journeys, wildlife safaris and holiday adventures.
+          </p>
+          <p><strong>Explore. Experience. Enjoy.</strong></p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="safaris.html">Safaris</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Travel Services</h3>
+          <ul>
+            <li><a href="excursions.html">Excursions</a></li>
+            <li><a href="booking.html">Holiday Bookings</a></li>
+            <li><a href="booking.html">Hotel Reservations</a></li>
+            <li><a href="booking.html">Airport Transfers</a></li>
+            <li><a href="booking.html">Flight Bookings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-phone"></i> +254 721 116 715</p>
+          <p><i class="fa-solid fa-envelope"></i> chirchirkb@gmail.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+          <p><a href="https://wa.me/254721116715" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Chat with us
+          </a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © <span id="year"></span> Liamber Prime Travels Limited. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float"
+     href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20your%20safaris."
+     target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    menuToggle.addEventListener('click', function () {
+      mainNav.classList.toggle('show');
+      const icon = menuToggle.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    });
+
+    document.querySelectorAll('#mainNav a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('show');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-xmark');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
