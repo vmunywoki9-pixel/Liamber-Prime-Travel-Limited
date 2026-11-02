@@ -320,6 +320,10 @@ section { padding: 85px 0; }
 }
 .package-actions .btn { padding: 9px 13px; font-size: 10px; }
 .no-results { text-align: center; color: var(--muted); padding: 30px; display: none; }
+.load-more-wrap { display:flex; justify-content:center; margin-top:38px; }
+.load-more-btn { min-width:190px; letter-spacing:.5px; }
+.package-card[hidden] { display:none !important; }
+@media(max-width:700px) { .load-more-wrap { margin-top:28px; } }
 
 .why { background: var(--dark); color: white; }
 .why .section-heading h2 { color: white; }
@@ -546,7 +550,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
     <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="safari.html">Safaris</a></li>
+      <li><a href="safaris.html">Safaris</a></li>
       <li><a href="excursions.html">Excursions</a></li>
       <li><a href="packages.html">Packages</a></li>
       <li><a href="transfers.html">Transfers</a></li>
@@ -665,7 +669,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Masai Mara</span><span>3 Days</span></div>
           <h3>3-Day Masai Mara Safari</h3>
           <p>Discover the famous Mara plains, wildlife habitats and unforgettable game-viewing opportunities.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Masai Mara Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Masai Mara Safari">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-3-day-masai-mara-safari.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="3-Day Masai Mara Safari">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -675,7 +679,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Tsavo</span><span>2 Days</span></div>
           <h3>2-Day Tsavo East Safari</h3>
           <p>A short wildlife escape into one of Kenya's expansive and scenic national parks.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="2-Day Tsavo East Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="2-Day Tsavo East Safari">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-2-day-tsavo-east-safari.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="2-Day Tsavo East Safari">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -685,7 +689,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Amboseli & Tsavo</span><span>4 Days</span></div>
           <h3>4-Day Amboseli & Tsavo</h3>
           <p>Combine elephant country and the wide wilderness of Tsavo in one safari journey.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="4-Day Amboseli & Tsavo Combo">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="4-Day Amboseli & Tsavo Combo">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-4-day-amboseli-and-tsavo-combo.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="4-Day Amboseli & Tsavo Combo">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -695,7 +699,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Mara & Nakuru</span><span>5 Days</span></div>
           <h3>5-Day Mara & Lake Nakuru</h3>
           <p>Explore two distinctive destinations with a combination of wildlife and scenic landscapes.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="5-Day Masai Mara & Lake Nakuru">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="5-Day Masai Mara & Lake Nakuru">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-5-day-masai-mara-and-lake-nakuru.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="5-Day Masai Mara & Lake Nakuru">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -705,7 +709,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Tsavo</span><span>1 Day</span></div>
           <h3>1-Day Tsavo Express</h3>
           <p>A sample short safari concept for travellers interested in a one-day wildlife experience.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="1-Day Tsavo East Express">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="1-Day Tsavo East Express">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-1-day-tsavo-east-express.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="1-Day Tsavo East Express">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -715,7 +719,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Kenya Circuit</span><span>6 Days</span></div>
           <h3>6-Day Kenya Safari Circuit</h3>
           <p>A multi-destination safari concept featuring some of Kenya's best-known wildlife areas.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="6-Day Kenya Safari Circuit">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="6-Day Kenya Safari Circuit">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-6-day-kenya-safari-circuit.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="6-Day Kenya Safari Circuit">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -725,7 +729,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Amboseli</span><span>3 Days</span></div>
           <h3>3-Day Amboseli Safari</h3>
           <p>Discover Amboseli's open plains, wildlife and iconic mountain scenery.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Amboseli Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Amboseli Safari">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-3-day-amboseli-safari.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="3-Day Amboseli Safari">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -735,7 +739,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Multi-destination</span><span>7 Days</span></div>
           <h3>7-Day Mara, Nakuru & Amboseli</h3>
           <p>A longer safari idea connecting three popular destinations across Kenya.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="7-Day Masai Mara, Nakuru & Amboseli">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="7-Day Masai Mara, Nakuru & Amboseli">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-7-day-masai-mara-nakuru-and-amboseli.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="7-Day Masai Mara, Nakuru & Amboseli">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -745,7 +749,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Tsavo</span><span>3 Days</span></div>
           <h3>3-Day Tsavo East & West</h3>
           <p>Explore the contrasting landscapes and wildlife experiences of Tsavo's two parks.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Tsavo East & West">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Tsavo East & West">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-3-day-tsavo-east-and-west.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="3-Day Tsavo East & West">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -755,7 +759,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Naivasha & Nakuru</span><span>4 Days</span></div>
           <h3>4-Day Naivasha & Nakuru</h3>
           <p>A scenic journey idea combining Rift Valley landscapes and nature experiences.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="4-Day Lake Naivasha & Nakuru">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="4-Day Lake Naivasha & Nakuru">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-4-day-lake-naivasha-and-nakuru.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="4-Day Lake Naivasha & Nakuru">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -765,7 +769,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Kenya Circuit</span><span>8 Days</span></div>
           <h3>8-Day Ultimate Kenya Safari</h3>
           <p>An extended safari concept for travellers seeking a broader Kenya experience.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="8-Day Ultimate Kenya Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="8-Day Ultimate Kenya Safari">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-8-day-ultimate-kenya-safari.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="8-Day Ultimate Kenya Safari">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -775,7 +779,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Tsavo West</span><span>3 Days</span></div>
           <h3>3-Day Tsavo West Safari</h3>
           <p>Discover rugged scenery, natural features and wildlife in Tsavo West.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Tsavo West Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Tsavo West Safari">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-3-day-tsavo-west-safari.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="3-Day Tsavo West Safari">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -785,7 +789,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Kenya & Tanzania</span><span>10 Days</span></div>
           <h3>10-Day Kenya & Tanzania</h3>
           <p>A cross-border safari concept subject to route, border and operator arrangements.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="10-Day Kenya & Tanzania Combo">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="10-Day Kenya & Tanzania Combo">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-10-day-kenya-and-tanzania-combo.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="10-Day Kenya & Tanzania Combo">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -795,7 +799,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Taita Taveta</span><span>2 Days</span></div>
           <h3>2-Day Salt Lick Safari</h3>
           <p>A short safari concept featuring the Taita Hills area and a distinctive lodge experience.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="2-Day Salt Lick Safari Lodge">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="2-Day Salt Lick Safari Lodge">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-2-day-salt-lick-safari-lodge.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="2-Day Salt Lick Safari Lodge">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -805,7 +809,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Masai Mara</span><span>5 Days</span></div>
           <h3>5-Day Great Migration Safari</h3>
           <p>A Mara safari idea that can be planned around seasonal wildlife movement.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="5-Day Great Migration Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="5-Day Great Migration Safari">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-5-day-great-migration-safari.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="5-Day Great Migration Safari">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -815,7 +819,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Samburu</span><span>4 Days</span></div>
           <h3>4-Day Samburu & Mount Kenya</h3>
           <p>Explore northern Kenya's distinctive landscapes and the Mount Kenya region.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="4-Day Samburu & Mount Kenya">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="4-Day Samburu & Mount Kenya">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-4-day-samburu-and-mount-kenya.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="4-Day Samburu & Mount Kenya">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -825,7 +829,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Tailor-made</span><span>7 Days</span></div>
           <h3>7-Day Luxury Kenya Honeymoon</h3>
           <p>A tailor-made safari concept for couples seeking a special Kenya getaway.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="7-Day Luxury Kenya Honeymoon">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="7-Day Luxury Kenya Honeymoon">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-7-day-luxury-kenya-honeymoon.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="7-Day Luxury Kenya Honeymoon">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -835,7 +839,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Southern Kenya</span><span>6 Days</span></div>
           <h3>6-Day Amboseli, Tsavo & Taita</h3>
           <p>A multi-stop journey idea through Kenya's southern safari region.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="6-Day Amboseli, Tsavo & Taita Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="6-Day Amboseli, Tsavo & Taita Safari">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-6-day-amboseli-tsavo-and-taita-safari.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="6-Day Amboseli, Tsavo & Taita Safari">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -845,7 +849,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Kenya Circuit</span><span>10 Days</span></div>
           <h3>10-Day Best of Kenya Safari</h3>
           <p>An extended itinerary concept connecting several of Kenya's celebrated destinations.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="10-Day Best of Kenya Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="10-Day Best of Kenya Safari">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-10-day-best-of-kenya-safari.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="10-Day Best of Kenya Safari">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -855,7 +859,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Masai Mara</span><span>3 Days</span></div>
           <h3>3-Day Mara Balloon Safari</h3>
           <p>A Mara safari concept with an optional hot-air balloon experience, subject to availability.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="3-Day Safari with Balloon Ride">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="3-Day Safari with Balloon Ride">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-3-day-safari-with-balloon-ride.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="3-Day Safari with Balloon Ride">ENQUIRE</button></div>
         </div>
       </article>
 
@@ -865,12 +869,13 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
           <div class="package-meta"><span>Masai Mara</span><span>4 Days</span></div>
           <h3>4-Day Masai Mara Safari</h3>
           <p>Spend more time exploring the Mara with a flexible multi-day safari plan.</p>
-          <div class="package-actions"><button class="text-btn itinerary-btn" data-package="4-Day Masai Mara Safari">VIEW ITINERARY ↗</button><button class="btn request-btn" data-package="4-Day Masai Mara Safari">ENQUIRE</button></div>
+          <div class="package-actions"><a class="text-btn itinerary-link" href="itinerary-4-day-masai-mara-safari.html">VIEW ITINERARY ↗</a><button class="btn request-btn" data-package="4-Day Masai Mara Safari">ENQUIRE</button></div>
         </div>
       </article>
 
     </div>
     <div class="no-results" id="noResults">No packages match this filter. Please try another category.</div>
+    <div class="load-more-wrap" id="loadMoreWrap"><button class="btn load-more-btn" id="loadMoreBtn" type="button">LOAD MORE SAFARIS</button></div>
   </div>
 </section>
 
@@ -1110,7 +1115,7 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
       <div class="footer-column">
         <h3>EXPLORE</h3>
         <ul>
-          <li><a href="safari.html">Kenya Safaris</a></li>
+          <li><a href="safaris.html">Kenya Safaris</a></li>
           <li><a href="excursions.html">Excursions</a></li>
           <li><a href="packages.html">Tour Packages</a></li>
           <li><a href="transfers.html">Transfers</a></li>
@@ -1147,16 +1152,6 @@ footer { background: #101a16; color: white; padding: 65px 0 20px; }
 
 <a class="whatsapp-float" href="https://wa.me/254721116715" target="_blank" rel="noopener">☏ WhatsApp</a>
 
-<div class="modal" id="itineraryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal-content">
-    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
-    <div class="eyebrow">Safari overview</div>
-    <h2 id="modalTitle">Safari itinerary</h2>
-    <div id="modalDescription"></div>
-    <p style="margin-top:18px"><strong>Important:</strong> This is an indicative itinerary outline, not a confirmed booking. Final routing, accommodation, availability, park fees, inclusions and pricing will be confirmed in your quotation.</p>
-    <button class="btn" id="modalEnquire" style="margin-top:20px">ENQUIRE ABOUT THIS SAFARI</button>
-  </div>
-</div>
 
 <script>
 const menuToggle = document.getElementById('menuToggle');
@@ -1173,37 +1168,56 @@ navLinks.querySelectorAll('a').forEach(link => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const filterButtons = document.querySelectorAll('.filter-btn');
-const packageCards = document.querySelectorAll('.package-card');
+const packageCards = [...document.querySelectorAll('.package-card')];
 const packageCount = document.getElementById('packageCount');
 const noResults = document.getElementById('noResults');
+const loadMoreWrap = document.getElementById('loadMoreWrap');
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const cardsPerPage = 6;
+let activeFilter = 'all';
+let visibleLimit = cardsPerPage;
 
-function applyFilter(filter) {
-  let visible = 0;
+function cardMatches(card, filter) {
+  const places = card.dataset.place.split(' ');
+  const days = Number(card.dataset.days);
+  if (filter === 'all') return true;
+  if (filter === 'short') return days <= 3;
+  if (filter === 'long') return days >= 4;
+  return places.includes(filter);
+}
+
+function renderPackages(resetLimit = false) {
+  if (resetLimit) visibleLimit = cardsPerPage;
+  const matchingCards = packageCards.filter(card => cardMatches(card, activeFilter));
 
   packageCards.forEach(card => {
-    const places = card.dataset.place.split(' ');
-    const days = Number(card.dataset.days);
-    let match = filter === 'all';
-
-    if (filter === 'short') match = days <= 3;
-    else if (filter === 'long') match = days >= 4;
-    else if (filter !== 'all') match = places.includes(filter);
-
-    card.style.display = match ? '' : 'none';
-    if (match) visible++;
+    const index = matchingCards.indexOf(card);
+    card.hidden = index === -1 || index >= visibleLimit;
   });
 
-  packageCount.textContent = `Showing ${visible} safari idea${visible === 1 ? '' : 's'}`;
-  noResults.style.display = visible ? 'none' : 'block';
+  const shown = Math.min(visibleLimit, matchingCards.length);
+  packageCount.textContent = `Showing ${shown} of ${matchingCards.length} safari packages`;
+  noResults.style.display = matchingCards.length ? 'none' : 'block';
+  loadMoreWrap.style.display = matchingCards.length > visibleLimit ? 'flex' : 'none';
+  loadMoreBtn.textContent = matchingCards.length - visibleLimit > cardsPerPage
+    ? 'LOAD MORE SAFARIS' : 'VIEW REMAINING SAFARIS';
 }
+
+loadMoreBtn.addEventListener('click', () => {
+  visibleLimit += cardsPerPage;
+  renderPackages();
+});
 
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
     filterButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
-    applyFilter(button.dataset.filter);
+    activeFilter = button.dataset.filter;
+    renderPackages(true);
   });
 });
+
+renderPackages();
 
 document.querySelectorAll('[data-destination-link]').forEach(link => {
   link.addEventListener('click', () => {
@@ -1212,7 +1226,8 @@ document.querySelectorAll('[data-destination-link]').forEach(link => {
     const target = [...filterButtons].find(btn => btn.dataset.filter === destination);
     if (target) {
       target.classList.add('active');
-      applyFilter(destination);
+      activeFilter = destination;
+      renderPackages(true);
     }
   });
 });
@@ -1221,39 +1236,6 @@ document.querySelectorAll('.faq-question').forEach(question => {
   question.addEventListener('click', () => {
     question.parentElement.classList.toggle('open');
   });
-});
-
-const modal = document.getElementById('itineraryModal');
-const modalTitle = document.getElementById('modalTitle');
-const modalDescription = document.getElementById('modalDescription');
-const modalEnquire = document.getElementById('modalEnquire');
-let selectedPackage = '';
-
-function itineraryText(name) {
-  return `
-    <p><strong>Departure:</strong> Nairobi, Kenya.</p>
-    <p><strong>Day 1:</strong> Depart Nairobi and travel towards the first destination. Arrive and proceed with the planned safari activities, subject to the confirmed itinerary.</p>
-    <p><strong>Middle days:</strong> Explore the destination and enjoy planned wildlife, nature or cultural experiences. Activities and overnight arrangements will depend on the final quotation.</p>
-    <p><strong>Final day:</strong> Enjoy the scheduled final activities before returning to Nairobi.</p>
-    <p>This is a general outline. The exact day-by-day itinerary will be prepared according to your chosen safari, dates and preferences.</p>
-  `;
-}
-
-document.querySelectorAll('.itinerary-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    selectedPackage = button.dataset.package;
-    modalTitle.textContent = selectedPackage;
-    modalDescription.innerHTML = itineraryText(selectedPackage);
-    modal.classList.add('show');
-  });
-});
-
-document.getElementById('modalClose').addEventListener('click', () => {
-  modal.classList.remove('show');
-});
-
-modal.addEventListener('click', event => {
-  if (event.target === modal) modal.classList.remove('show');
 });
 
 function selectPackage(name) {
@@ -1267,10 +1249,6 @@ document.querySelectorAll('.request-btn').forEach(button => {
   button.addEventListener('click', () => selectPackage(button.dataset.package));
 });
 
-modalEnquire.addEventListener('click', () => {
-  modal.classList.remove('show');
-  selectPackage(selectedPackage);
-});
 
 function getFormDetails() {
   const form = document.getElementById('safariForm');
