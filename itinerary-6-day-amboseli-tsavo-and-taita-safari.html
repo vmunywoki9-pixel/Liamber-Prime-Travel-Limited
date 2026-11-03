@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Amboseli, Tsavo West, Tsavo East and Taita Hills on a suggested 6-day southern Kenya safari with Liamber Prime Travels Limited.">
+<title>6-Day Amboseli, Tsavo & Taita Safari | Liamber Prime Travels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+:root{--green:#123d32;--green2:#1c5948;--gold:#c49a42;--cream:#f7f5ef;--ink:#26332e;--muted:#69756f;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);line-height:1.7;background:#fff}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%;object-fit:cover}
+.container{width:min(1160px,90%);margin:auto}
+header{height:88px;background:#fff;display:flex;align-items:center;position:sticky;top:0;z-index:50;box-shadow:0 3px 18px #0000000c}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--green);font-weight:700;line-height:1.15}
+.brand img{width:58px;height:58px;object-fit:contain}
+.brand span{font-size:15px;letter-spacing:.5px}
+nav{display:flex;align-items:center;gap:22px;font-size:13px;font-weight:600}
+nav a:hover{color:var(--gold)}
+.nav-cta,.btn{background:var(--gold);color:#fff;padding:12px 19px;font-size:12px;font-weight:700;letter-spacing:.5px;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0}
+.menu-toggle{display:none;background:none;border:0;font-size:24px;color:var(--green)}
+.hero{min-height:590px;position:relative;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,#071e19d9,#071e1966 60%,#071e1920),url('itinerary-amboseli-tsavo-taita-hero.jpg') center/cover}
+.hero-content{padding:95px 0;max-width:760px}
+.eyebrow{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase}
+.hero h1{font:600 clamp(42px,6vw,70px)/1.12 'Playfair Display',serif;margin:18px 0}
+.hero p{max-width:610px;color:#f2f3ee;font-size:16px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn-outline{border:1px solid #ffffffa8;color:#fff;padding:12px 19px;font-size:12px;font-weight:700}
+.quick-facts{background:var(--green);color:#fff}
+.facts-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:23px 18px;border-right:1px solid #ffffff25}
+.fact:last-child{border:0}
+.fact i{color:var(--gold);margin-right:9px}
+.fact strong{font-size:13px}
+section{padding:88px 0}
+.section-heading{text-align:center;max-width:730px;margin:0 auto 42px}
+.section-heading h2{font:600 clamp(30px,4vw,43px)/1.2 'Playfair Display',serif;color:var(--green);margin:12px 0}
+.section-heading p{color:var(--muted)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.intro-image{height:430px}
+.intro-image img{height:100%}
+.intro-copy h2{font:600 39px/1.2 'Playfair Display',serif;color:var(--green);margin:12px 0 20px}
+.intro-copy p{color:var(--muted);margin-bottom:15px}
+.note{background:var(--cream);border-left:3px solid var(--gold);padding:17px 20px;margin-top:22px;font-size:13px}
+.itinerary-section{background:var(--cream)}
+.day-list{max-width:900px;margin:auto}
+.day{display:grid;grid-template-columns:110px 1fr;gap:25px;padding:27px 0;border-bottom:1px solid #dedbd1}
+.day-number{color:var(--gold);font:600 25px 'Playfair Display',serif}
+.day h3{font:600 23px 'Playfair Display',serif;color:var(--green);margin-bottom:8px}
+.day p{color:var(--muted);font-size:14px}
+.day ul{margin:12px 0 0 18px;color:var(--muted);font-size:13px}
+.highlights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.highlight img{height:230px}
+.highlight h3{font:600 22px 'Playfair Display',serif;color:var(--green);margin:16px 0 6px}
+.highlight p{font-size:13px;color:var(--muted)}
+.travel-notes{background:var(--green);color:#fff}
+.travel-notes .section-heading h2{color:#fff}
+.notes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.note-card{border-top:1px solid #ffffff40;padding-top:20px}
+.note-card i{font-size:23px;color:var(--gold);margin-bottom:13px}
+.note-card h3{font:600 21px 'Playfair Display',serif;margin-bottom:8px}
+.note-card p{font-size:13px;color:#d4dfd9}
+.cta{background:linear-gradient(90deg,#09291fe8,#09291f8a),url('itinerary-amboseli-tsavo-taita-cta.jpg') center/cover;color:#fff;text-align:center}
+.cta h2{font:600 clamp(32px,4vw,48px) 'Playfair Display',serif;margin:12px 0}
+.cta p{max-width:650px;margin:0 auto 25px;color:#e2e9e4}
+.cta-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+footer{background:#09271f;color:#d8e1dc;padding:55px 0 22px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:45px}
+footer h3{font:600 22px 'Playfair Display',serif;color:#fff;margin-bottom:15px}
+footer p,footer a{font-size:13px;color:#c2d0c8}
+footer a:hover{color:var(--gold)}
+.footer-links{display:grid;gap:8px}
+.footer-bottom{border-top:1px solid #ffffff25;margin-top:35px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:26px;z-index:60;box-shadow:0 5px 18px #0003}
+@media(max-width:850px){
+ nav{display:none;position:absolute;top:88px;left:0;width:100%;background:#fff;padding:22px 5%;flex-direction:column;align-items:flex-start;box-shadow:0 10px 18px #0001}
+ nav.open{display:flex}.menu-toggle{display:block}.nav-cta{display:none}
+ .intro-grid{grid-template-columns:1fr;gap:30px}.intro-image{height:330px}
+ .highlights-grid,.notes-grid{grid-template-columns:1fr 1fr}
+ .facts-grid{grid-template-columns:1fr 1fr}.fact:nth-child(2){border-right:0}
+ .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+ section{padding:65px 0}.hero{min-height:520px}.hero-content{padding:75px 0}
+ .facts-grid{grid-template-columns:1fr 1fr}.fact{padding:17px 10px}
+ .day{grid-template-columns:1fr;gap:5px}.highlights-grid,.notes-grid,.footer-grid{grid-template-columns:1fr}
+ .brand img{width:49px;height:49px}.brand span{font-size:12px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="liamber-logo.png" alt="Liamber Prime Travels Limited logo">
+      <span>LIAMBER PRIME<br>TRAVELS LIMITED</span>
+    </a>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="safaris.html">Safaris</a>
+      <a href="excursions.html">Excursions</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="nav-cta" href="booking.html?destination=6-Day%20Amboseli%2C%20Tsavo%20%26%20Taita">BOOK THIS SAFARI</a>
+    <button class="menu-toggle" aria-label="Open navigation" onclick="document.getElementById('mainNav').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-content">
+    <span class="eyebrow">Southern Kenya • 6 Days</span>
+    <h1>6-Day Amboseli, Tsavo & Taita Safari</h1>
+    <p>Discover the dramatic landscapes of southern Kenya, from Amboseli's elephant country and mountain views to the rugged wilderness of Tsavo and the scenic Taita Hills.</p>
+    <div class="hero-actions">
+      <a class="btn" href="booking.html?destination=6-Day%20Amboseli%2C%20Tsavo%20%26%20Taita">ENQUIRE ABOUT THIS SAFARI <i class="fa-solid fa-arrow-right"></i></a>
+      <a class="btn-outline" href="#itinerary">EXPLORE THE ITINERARY</a>
+    </div>
+  </div>
+</section>
+
+<div class="quick-facts">
+  <div class="container facts-grid">
+    <div class="fact"><i class="fa-regular fa-clock"></i><strong>6 Days / 5 Nights</strong></div>
+    <div class="fact"><i class="fa-solid fa-map-location-dot"></i><strong>Southern Kenya</strong></div>
+    <div class="fact"><i class="fa-solid fa-car-side"></i><strong>Safari by Road</strong></div>
+    <div class="fact"><i class="fa-solid fa-binoculars"></i><strong>Wildlife & Landscapes</strong></div>
+  </div>
+</div>
+
+<section>
+  <div class="container intro-grid">
+    <div class="intro-image">
+      <img src="itinerary-amboseli-tsavo-taita-overview.jpg" alt="Southern Kenya safari landscape">
+    </div>
+    <div class="intro-copy">
+      <span class="eyebrow">The journey</span>
+      <h2>Experience the Best of Southern Kenya</h2>
+      <p>This suggested six-day journey brings together three distinctive safari regions. Begin in Amboseli, known for its large elephant herds and views towards Mount Kilimanjaro when conditions are clear.</p>
+      <p>Continue through Tsavo West and Tsavo East, where wide open spaces, volcanic scenery and varied habitats create a memorable safari experience. Finish in the Taita Hills region, with time to enjoy its landscapes and wildlife surroundings.</p>
+      <div class="note"><strong>Planning note:</strong> This is a sample itinerary. The final route, accommodation, park visits and travel times will be confirmed when your dates and preferences are discussed.</div>
+    </div>
+  </div>
+</section>
+
+<section class="itinerary-section" id="itinerary">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Your day-by-day journey</span>
+      <h2>Suggested 6-Day Itinerary</h2>
+      <p>A proposed route through Amboseli, Tsavo West, Tsavo East and the Taita Hills area.</p>
+    </div>
+
+    <div class="day-list">
+      <article class="day">
+        <div class="day-number">DAY 01</div>
+        <div>
+          <h3>Nairobi to Amboseli National Park</h3>
+          <p>Depart Nairobi and travel towards Amboseli, enjoying the changing scenery along the way. Arrive in the area, check in at your selected accommodation and enjoy lunch, subject to the chosen lodge's schedule. Head out for an afternoon game drive.</p>
+          <ul><li>Road transfer from Nairobi</li><li>Afternoon game drive, subject to arrival time</li><li>Overnight in the Amboseli area</li></ul>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="day-number">DAY 02</div>
+        <div>
+          <h3>Full Day in Amboseli</h3>
+          <p>Spend the day exploring Amboseli's varied habitats. Look out for elephants, buffaloes, zebras, giraffes and other wildlife. Enjoy views of Mount Kilimanjaro when the weather is clear, with time for a relaxed break at your lodge or camp.</p>
+          <ul><li>Morning game drive</li><li>Leisure and lunch at the lodge</li><li>Afternoon game drive</li><li>Overnight in the Amboseli area</li></ul>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="day-number">DAY 03</div>
+        <div>
+          <h3>Amboseli to Tsavo West National Park</h3>
+          <p>After breakfast, depart for Tsavo West. The journey introduces you to a different landscape, with rugged hills, volcanic features and natural springs. Depending on the route and park access arrangements, enjoy wildlife viewing en route and an afternoon exploration.</p>
+          <ul><li>Breakfast and departure</li><li>Transfer to Tsavo West</li><li>Afternoon exploration and game viewing</li><li>Overnight in or near Tsavo West</li></ul>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="day-number">DAY 04</div>
+        <div>
+          <h3>Tsavo West to Tsavo East</h3>
+          <p>Enjoy a morning game drive before continuing towards Tsavo East. The two parks offer contrasting scenery and wildlife habitats. Arrive in the Tsavo East area and enjoy an afternoon game drive if time and park arrangements allow.</p>
+          <ul><li>Morning game viewing</li><li>Transfer between the parks</li><li>Afternoon game drive, subject to timing</li><li>Overnight in or near Tsavo East</li></ul>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="day-number">DAY 05</div>
+        <div>
+          <h3>Tsavo East to Taita Hills</h3>
+          <p>Enjoy an early game drive in Tsavo East before travelling towards the Taita Hills region. The area is known for its scenic highlands and wildlife surroundings. Settle into your selected accommodation and enjoy the remainder of the day at leisure or an arranged wildlife activity.</p>
+          <ul><li>Early morning game drive</li><li>Transfer towards Taita Hills</li><li>Afternoon at leisure or arranged activity</li><li>Overnight in the Taita Hills area</li></ul>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="day-number">DAY 06</div>
+        <div>
+          <h3>Taita Hills to Nairobi</h3>
+          <p>After breakfast, check out and begin the return journey to Nairobi. Your arrival time will depend on road conditions, the selected accommodation and any planned stops along the way.</p>
+          <ul><li>Breakfast and check-out</li><li>Road transfer to Nairobi</li><li>Drop-off at an agreed location</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Discover the destinations</span>
+      <h2>Four Distinctive Safari Settings</h2>
+      <p>Each stop brings a different landscape and atmosphere to your southern Kenya journey.</p>
+    </div>
+    <div class="highlights-grid">
+      <article class="highlight">
+        <img src="amboseli-elephants.jpg" alt="Elephants in Amboseli">
+        <h3>Amboseli</h3>
+        <p>Known for elephant herds, open plains and views towards Mount Kilimanjaro on clear days.</p>
+      </article>
+      <article class="highlight">
+        <img src="tsavo-west-landscape.jpg" alt="Tsavo West landscape">
+        <h3>Tsavo West</h3>
+        <p>A varied wilderness of rugged terrain, volcanic scenery and natural features.</p>
+      </article>
+      <article class="highlight">
+        <img src="taita-hills-wildlife.jpg" alt="Wildlife in the Taita Hills region">
+        <h3>Taita Hills</h3>
+        <p>A scenic highland setting offering a different perspective on Kenya's southern safari region.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="travel-notes">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Before you travel</span>
+      <h2>Helpful Safari Information</h2>
+      <p>A few details to consider as we tailor the journey to your travel plans.</p>
+    </div>
+    <div class="notes-grid">
+      <article class="note-card">
+        <i class="fa-solid fa-bed"></i>
+        <h3>Accommodation</h3>
+        <p>Accommodation can be discussed according to your preferred comfort level, availability and budget. The final properties will be confirmed in your quotation.</p>
+      </article>
+      <article class="note-card">
+        <i class="fa-solid fa-calendar-days"></i>
+        <h3>Best Travel Dates</h3>
+        <p>This journey can be planned at different times of the year. Wildlife sightings and weather conditions vary by season and are not guaranteed.</p>
+      </article>
+      <article class="note-card">
+        <i class="fa-solid fa-route"></i>
+        <h3>Route & Transfers</h3>
+        <p>Travel times and park entry arrangements depend on the final route, road conditions and accommodation locations. We will confirm these before booking.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow">Plan your southern Kenya adventure</span>
+    <h2>Ready to Explore Amboseli, Tsavo & Taita?</h2>
+    <p>Contact Liamber Prime Travels Limited to discuss your preferred dates, group size, accommodation style and a personalised quotation for this six-day safari.</p>
+    <div class="cta-actions">
+      <a class="btn" href="booking.html?destination=6-Day%20Amboseli%2C%20Tsavo%20%26%20Taita">REQUEST A QUOTATION <i class="fa-solid fa-arrow-right"></i></a>
+      <a class="btn-outline" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20the%206-Day%20Amboseli%2C%20Tsavo%20%26%20Taita%20Safari." target="_blank" rel="noopener">WHATSAPP US</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Liamber Prime Travels Limited</h3>
+        <p>Explore. Experience. Enjoy. Discover Kenya through wildlife safaris, holidays and tailor-made travel experiences starting from Nairobi.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="safaris.html">Kenya Safaris</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="packages.html">Holiday Packages</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <div class="footer-links">
+          <a href="tel:+254721116715"><i class="fa-solid fa-phone"></i> +254 721 116 715</a>
+          <a href="mailto:chirchirkb@gmail.com"><i class="fa-regular fa-envelope"></i> chirchirkb@gmail.com</a>
+          <a href="contact.html">Contact & Enquiries</a>
+          <a href="booking.html">Plan Your Trip</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Liamber Prime Travels Limited. All rights reserved.</span>
+      <span>Explore. Experience. Enjoy.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254721116715?text=Hello%20Liamber%20Prime%20Travels%2C%20I%20would%20like%20to%20enquire%20about%20a%20safari." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
